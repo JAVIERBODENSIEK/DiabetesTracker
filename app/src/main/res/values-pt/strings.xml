@@ -1,0 +1,605 @@
+<resources>
+
+<string name="app_name">Rastreador de Diabetes</string>
+
+<string name="undo">Desfazer</string>
+
+<string name="redo">Refazer</string>
+
+<string name="undo_actions">Desfazer Ações</string>
+
+<string name="redo_actions">Refazer Ações</string>
+
+<string name="redo_prefix">Refazer: %1$s</string>
+
+<string name="action_add_new_entry">Adicionar nova entrada</string>
+
+<string name="action_delete_entry">Excluir entrada</string>
+
+<string name="action_edit_morning_blood_sugar">Editar glicemia matinal</string>
+
+<string name="action_edit_afternoon_blood_sugar">Editar glicemia da tarde</string>
+
+<string name="action_edit_evening_blood_sugar">Editar glicemia da noite</string>
+
+<string name="action_edit_night_blood_sugar">Editar glicemia noturna</string>
+
+<string name="action_edit_morning_insulin">Editar insulina matinal</string>
+
+<string name="action_edit_afternoon_insulin">Editar insulina da tarde</string>
+
+<string name="action_edit_evening_insulin">Editar insulina da noite</string>
+
+<string name="action_edit_remarks">Editar observações</string>
+
+<string name="action_add_food_item">Adicionar alimento</string>
+
+<string name="action_remove_food_item">Remover alimento</string>
+
+<string name="action_edit_food_item">Editar alimento</string>
+
+<string name="action_edit_entry">Editar entrada</string>
+
+<string name="date_filter_all">Todas as Entradas</string>
+
+<string name="date_filter_flexible">Período Flexível</string>
+
+<string name="date_filter_custom">Período Personalizado</string>
+
+<string name="date_filter_specific">Data Específica</string>
+
+<string name="showing_all_entries">Mostrando todas as entradas</string>
+
+<string name="showing_entries_last">Mostrando entradas dos últimos %1$d %2$s</string>
+
+<string name="custom_range_format">Período personalizado: %1$s a %2$s</string>
+
+<string name="custom_range_not_set">Período personalizado (não definido)</string>
+
+<string name="specific_date_format">Data específica: %1$s</string>
+
+<string name="specific_date_not_set">Data específica (não definida)</string>
+
+<string name="time_unit_day">dia</string>
+
+<string name="time_unit_days">dias</string>
+
+<string name="time_unit_week">semana</string>
+
+<string name="time_unit_weeks">semanas</string>
+
+<string name="time_unit_month">mês</string>
+
+<string name="time_unit_months">meses</string>
+
+<string name="time_unit_year">ano</string>
+
+<string name="time_unit_years">anos</string>
+
+<string name="backup_type_settings">Configurações</string>
+
+<string name="backup_type_data">Dados</string>
+
+<string name="backup_type_complete">Completo</string>
+
+<string name="backup_exported_success">Backup de %1$s exportado com sucesso</string>
+
+<string name="backup_export_failed">Falha ao exportar backup: %1$s</string>
+
+<string name="backup_read_failed">Falha ao ler arquivo de backup: %1$s</string>
+
+<string name="backup_merged">mesclado</string>
+
+<string name="backup_restored">restaurado</string>
+
+<string name="backup_import_success">Backup %1$s com sucesso</string>
+
+<string name="backup_import_failed">Falha ao importar backup: %1$s</string>
+
+<string name="menu">Menu</string>
+
+<string name="zoom_controls">Controles de Zoom</string>
+
+<string name="filter_entries_by_date">Filtrar entradas por data</string>
+
+<string name="language_english">English</string>
+
+<string name="language_spanish">Español</string>
+
+<string name="language_german">Deutsch</string>
+
+<string name="language_french">Français</string>
+
+<string name="language_italian">Italiano</string>
+
+<string name="language_portuguese">Português</string>
+
+<string name="language_dutch">Nederlands</string>
+
+<string name="language_russian">Русский</string>
+
+<string name="language_japanese">日本語</string>
+
+<string name="language_chinese">中文</string>
+
+<string name="language_arabic">العربية</string>
+
+<string name="language_hindi">हिन्दी</string>
+
+<string name="settings">Configurações</string>
+
+<string name="language">Idioma</string>
+
+<string name="theme">Tema</string>
+
+<string name="colors">Cores</string>
+
+<string name="font_color">Cor da Fonte</string>
+
+<string name="background_color">Cor de Fundo</string>
+
+<string name="grid_color">Cor da Grade</string>
+
+<string name="insulin_column_color">Cor da Coluna de Insulina</string>
+
+<string name="advanced_settings">Configurações Avançadas</string>
+
+<string name="view_settings_presets">Configurações de Vista e Predefinições</string>
+
+<string name="color_schemes">Esquemas de Cores</string>
+
+<string name="save_current_colors_scheme">Salvar Cores Atuais como Esquema</string>
+
+<string name="load_color_schemes">Carregar Esquemas de Cores</string>
+
+<string name="reset_to_defaults">Redefinir para Padrões</string>
+
+<string name="save_current_view">Salvar Visualização Atual</string>
+
+<string name="saved_presets">Predefinições Salvas</string>
+
+<string name="close">Fechar</string>
+
+<string name="zoom_in">Aumentar Zoom</string>
+
+<string name="zoom_out">Diminuir Zoom</string>
+
+<string name="increase_width">Aumentar Largura</string>
+
+<string name="decrease_width">Diminuir Largura</string>
+
+<string name="reset_zoom_width">Redefinir Zoom e Largura</string>
+
+<string name="reset_view">Redefinir Visualização</string>
+
+<string name="zoom_format">Zoom: %1$d%%</string>
+
+<string name="width_format">Largura: %1$d%%</string>
+
+<string name="scale_format">Escala: %1$d%%</string>
+
+<string name="width_scale_format">Escala de Largura: %1$sx</string>
+
+<string name="zoom_settings">Configurações de Zoom</string>
+
+<string name="dark_mode_schemes">Esquemas de Modo Escuro</string>
+
+<string name="light_mode_schemes">Esquemas de Modo Claro</string>
+
+<string name="no_dark_schemes">Nenhum esquema de modo escuro salvo</string>
+
+<string name="no_light_schemes">Nenhum esquema de modo claro salvo</string>
+
+<string name="apply_scheme">Aplicar Esquema</string>
+
+<string name="delete_scheme">Excluir Esquema</string>
+
+<string name="export_pdf">Exportar como PDF</string>
+
+<string name="export_txt">Exportar como TXT</string>
+
+<string name="pdf_export_options">Opções de Exportação PDF</string>
+
+<string name="export_content">Conteúdo para Exportar:</string>
+
+<string name="table">Tabela</string>
+
+<string name="chart_graph">Gráfico</string>
+
+<string name="chart_type">Tipo de Gráfico:</string>
+
+<string name="select_chart_types">Selecionar Tipos de Gráfico</string>
+
+<string name="chart_selected_count">%1$d gráfico(s) selecionado(s)</string>
+
+<string name="select_all_charts">Selecionar Todos os Gráficos</string>
+
+<string name="date_range">Intervalo de Datas:</string>
+
+<string name="export_all_data">Exportar todos os dados</string>
+
+<string name="custom_date_range">Intervalo de datas personalizado</string>
+
+<string name="selected_date_range">Selecionado: %1$s a %2$s</string>
+
+<string name="start_date_format">Início: %1$s</string>
+
+<string name="end_date_format">Fim: %1$s</string>
+
+<string name="tap_to_select_date_range">Toque para selecionar intervalo de datas</string>
+
+<string name="select_date_range">Selecionar Intervalo de Datas</string>
+
+<string name="choose_start_end_dates">Escolha as datas de início e fim para sua exportação:</string>
+
+<string name="select_start_date">Selecionar Data de Início</string>
+
+<string name="select_end_date">Selecionar Data de Fim</string>
+
+<string name="done">Concluído</string>
+
+<string name="export">Exportar</string>
+
+<string name="txt_export_options">Opções de Exportação TXT</string>
+
+<string name="morning_blood_sugar">Glicemia Matinal</string>
+
+<string name="afternoon_blood_sugar">Glicemia da Tarde</string>
+
+<string name="evening_blood_sugar">Glicemia da Noite</string>
+
+<string name="night_blood_sugar">Glicemia Noturna</string>
+
+<string name="average_blood_sugar">Glicemia Média</string>
+
+<string name="morning_insulin">Insulina Matinal</string>
+
+<string name="afternoon_insulin">Insulina da Tarde</string>
+
+<string name="evening_insulin">Insulina da Noite</string>
+
+<string name="press_back_again_to_exit">Pressione voltar novamente para sair</string>
+
+<string name="edit_saved_data_title">Editar Dados Salvos?</string>
+
+<string name="edit_saved_data_message">Estes dados já foram salvos. Você realmente deseja editá-los?</string>
+
+<string name="yes_edit">Sim, Editar</string>
+
+<string name="cancel">Cancelar</string>
+
+<string name="unsaved_changes_title">Alterações não Salvas</string>
+
+<string name="unsaved_changes_message">Você tem alterações não salvas. Deseja salvar todas as alterações?</string>
+
+<string name="close_without_saving">Fechar sem salvar</string>
+
+<string name="save_and_close">Salvar e Fechar</string>
+
+<string name="save">Salvar</string>
+
+<string name="delete">Excluir</string>
+
+<string name="preset_name">Nome da Predefinição</string>
+
+<string name="delete_preset">Excluir Predefinição</string>
+
+<string name="delete_preset_confirmation">Tem certeza de que deseja excluir \"%1$s\"?</string>
+
+<string name="all_changes_saved">Todas as alterações salvas!</string>
+
+<string name="delete_entry">Excluir Entrada</string>
+
+<string name="delete_entry_confirmation">Tem certeza de que deseja excluir esta entrada?</string>
+
+<string name="show_chart">Mostrar Gráfico</string>
+
+<string name="blood_sugar_over_time">Glicemia ao Longo do Tempo</string>
+
+<string name="insulin_over_time">Insulina ao Longo do Tempo</string>
+
+<string name="chart_title">Gráfico</string>
+
+<string name="blood_sugar">Glicemia</string>
+
+<string name="insulin">Insulina</string>
+
+<string name="average">Média</string>
+
+<string name="morning">Manhã</string>
+
+<string name="afternoon">Tarde</string>
+
+<string name="evening">Noite</string>
+
+<string name="night">Madrugada</string>
+
+<string name="date">Data</string>
+
+<string name="statistics_summary">Resumo Estatístico</string>
+
+<string name="blood_sugar_statistics">Estatísticas de Glicemia</string>
+
+<string name="insulin_statistics">Estatísticas de Insulina</string>
+
+<string name="latest">Último</string>
+
+<string name="range">Intervalo</string>
+
+<string name="total">Total</string>
+
+<string name="data_points">Pontos de dados</string>
+
+<string name="filter">Filtrar</string>
+
+<string name="no_data_available_time_period">Nenhum dado disponível para o período selecionado</string>
+
+<string name="no_numeric_data_available">Nenhum dado numérico disponível para</string>
+
+<string name="enter_numeric_values_chart">Insira valores numéricos na tabela para ver o gráfico</string>
+
+<string name="mg_dl">mg/dL</string>
+
+<string name="units">unidades</string>
+
+<string name="custom_over_time">%1$s ao Longo do Tempo</string>
+
+<string name="settings_data_presets">Configurações, dados e predefinições</string>
+
+<string name="settings_only">Apenas Configurações</string>
+
+<string name="colors_zoom_language_etc">Cores, zoom, idioma, etc.</string>
+
+<string name="auto_save_tip">💡 Dica: Nas Configurações Avançadas, você pode habilitar \'Salvar automaticamente ao sair\' para pular este diálogo.</string>
+
+<string name="select_date">Selecionar Data</string>
+
+<string name="today">Hoje</string>
+
+<string name="ok">OK</string>
+
+<string name="clear">Limpar</string>
+
+<string name="pick_date">Escolher Data...</string>
+
+<string name="dark_mode">Modo Escuro</string>
+
+<string name="preset_management">Gerenciamento de Predefinições</string>
+
+<string name="current_view_saved">Visualização atual salva</string>
+
+<string name="saved_view_loaded">Visualização salva carregada</string>
+
+<string name="no_saved_view_found">Nenhuma visualização salva encontrada</string>
+
+<string name="preset_saved">Predefinição salva</string>
+
+<string name="preset_loaded">Predefinição carregada</string>
+
+<string name="preset_deleted">Predefinição excluída</string>
+
+<string name="backup_restore">Backup e Restauração</string>
+
+<string name="export_backup">Exportar Backup</string>
+
+<string name="import_backup">Importar Backup</string>
+
+<string name="common_foods">Alimentos Comuns</string>
+
+<string name="food_apple">Maçã</string>
+
+<string name="food_banana">Banana</string>
+
+<string name="food_bread">Pão</string>
+
+<string name="food_meat">Carne</string>
+
+<string name="food_salad">Salada</string>
+
+<string name="food_milk">Leite</string>
+
+<string name="food_rice">Arroz</string>
+
+<string name="food_egg">Ovo</string>
+
+<string name="food_fish">Peixe</string>
+
+<string name="food_potato">Batata</string>
+
+<string name="food_carrot">Cenoura</string>
+
+<string name="food_pasta">Massa</string>
+
+<string name="action_edit_common_food">Editar alimento comum</string>
+
+<string name="action_delete_common_food">Excluir alimento comum</string>
+
+<string name="edit_common_food">Editar Alimento Comum</string>
+
+<string name="select_emoji">Selecionar Emoji</string>
+
+<string name="custom_columns">Colunas Personalizadas</string>
+
+<string name="manage_custom_columns">Gerenciar Colunas Personalizadas</string>
+
+<string name="action_edit_custom_column">Editar coluna personalizada</string>
+
+<string name="pattern_analysis">📊 Análise de Padrões</string>
+
+<string name="back">Voltar</string>
+
+<string name="export_analysis">Exportar Análise</string>
+
+<string name="no_patterns_detected">🔍 Nenhum padrão detectado ainda</string>
+
+<string name="keep_tracking_message">Continue registrando seus dados e os padrões aparecerão aqui</string>
+
+<string name="pattern_details">Detalhes do Padrão</string>
+
+<string name="detected_patterns">Detectado(s) %1$d padrão(ões)</string>
+
+<string name="showing_patterns">Mostrando %1$d de %2$d padrão(ões)</string>
+
+<string name="clear_filter">Limpar Filtro</string>
+
+<string name="no_patterns_match_filter">Nenhum padrão corresponde ao filtro atual</string>
+
+<string name="export_analysis_title">📤 Exportar Análise</string>
+
+<string name="export_analysis_description">Exporte sua análise de padrões para compartilhar com seu médico ou guardar em seus registros.</string>
+
+<string name="export_will_include">A exportação incluirá:</string>
+
+<string name="export_includes_list">• Todos os padrões detectados\n• Pontuações de confiança\n• Detalhes de ocorrências\n• Análise de risco\n• Sugestões</string>
+
+<string name="export_to_txt">Exportar para TXT</string>
+
+<string name="after">Depois: %1$s</string>
+
+<string name="dismiss">Descartar</string>
+
+<string name="occurrences">%1$d ocorrência(s)</string>
+
+<string name="ignore_this_food">🚫 Ignorar Este Alimento</string>
+
+<string name="show_details">Mostrar detalhes</string>
+
+<string name="hide_details">Ocultar detalhes</string>
+
+<string name="occurrences_label">Ocorrências:</string>
+
+<string name="show_all_occurrences">Mostrar todas as %1$d ocorrências</string>
+
+<string name="show_less">Mostrar menos</string>
+
+<string name="ignore_food_title">Ignorar Alimento?</string>
+
+<string name="ignore_food_message">Tem certeza de que deseja ignorar \'%1$s\'?</string>
+
+<string name="ignore_food_warning">Este alimento não acionará mais alertas de padrões, mesmo que correlações sejam detectadas no futuro.</string>
+
+<string name="ignore_food_button">Ignorar Alimento</string>
+
+<string name="high_confidence">Confiança Alta</string>
+
+<string name="medium_confidence">Confiança Média</string>
+
+<string name="low_confidence">Confiança Baixa</string>
+
+<string name="pattern_overview">📊 Visão Geral de Padrões</string>
+
+<string name="risk_distribution">Distribuição de Risco</string>
+
+<string name="high_risk">Risco Alto</string>
+
+<string name="medium_risk">Risco Médio</string>
+
+<string name="low_risk">Risco Baixo</string>
+
+<string name="pattern_types">Tipos de Padrões</string>
+
+<string name="food_marker_correlations">Correlações Alimento-Marcador</string>
+
+<string name="blood_sugar_spikes">Picos de Glicemia</string>
+
+<string name="time_based_patterns">Padrões Baseados no Tempo</string>
+
+<string name="top_risky_foods">⚠️ Principais Alimentos de Risco</string>
+
+<string name="times">vezes</string>
+
+<string name="blood_sugar_label">Glicemia: %1$s</string>
+
+<string name="marker_feel_bad">Sente-se Mal</string>
+
+<string name="marker_blood_sugar_spike">Pico de Glicemia</string>
+
+<string name="export_pattern_analysis">Análise de Padrões</string>
+
+<string name="include_pattern_analysis">Incluir relatório de análise de padrões</string>
+
+<string name="export_format">Formato de Exportação:</string>
+
+<string name="pdf_document">Documento PDF</string>
+
+<string name="text_file">Arquivo de Texto</string>
+
+<string name="pattern_analysis_exported_pdf">Análise de padrões exportada como PDF com sucesso!</string>
+
+<string name="pattern_analysis_exported_txt">Análise de padrões exportada como TXT com sucesso!</string>
+
+<string name="export_failed">A exportação falhou. Tente novamente.</string>
+
+<string name="pdf_report_title">RELATÓRIO DE ANÁLISE DE PADRÕES DE DIABETES</string>
+
+<string name="pdf_generated">Gerado em:</string>
+
+<string name="pdf_total_patterns">Total de Padrões:</string>
+
+<string name="pdf_summary">RESUMO</string>
+
+<string name="pdf_risk_distribution">Distribuição de Risco:</string>
+
+<string name="pdf_high_risk">Risco Alto (≥80%):</string>
+
+<string name="pdf_medium_risk">Risco Médio (60-79%):</string>
+
+<string name="pdf_low_risk">Risco Baixo (&lt;60%):</string>
+
+<string name="pdf_pattern_types">Tipos de Padrões:</string>
+
+<string name="pdf_food_marker_correlations">Correlações Alimento-Marcador:</string>
+
+<string name="pdf_blood_sugar_spikes">Picos de Glicemia:</string>
+
+<string name="pdf_time_based_patterns">Padrões Baseados no Tempo:</string>
+
+<string name="pdf_top_risky_foods">Principais Alimentos de Risco:</string>
+
+<string name="pdf_confidence">confiança</string>
+
+<string name="pdf_detailed_analysis">ANÁLISE DETALHADA DE PADRÕES</string>
+
+<string name="pdf_pattern_number">PADRÃO Nº %1$d</string>
+
+<string name="pdf_type">Tipo:</string>
+
+<string name="pdf_food_item">Alimento/Item:</string>
+
+<string name="pdf_effect">Efeito:</string>
+
+<string name="pdf_occurrences">Ocorrências:</string>
+
+<string name="pdf_confidence_label">Confiança:</string>
+
+<string name="pdf_time_range">Intervalo de Tempo:</string>
+
+<string name="pdf_risk_level">Nível de Risco:</string>
+
+<string name="pdf_high_risk_label">RISCO ALTO</string>
+
+<string name="pdf_medium_risk_label">RISCO MÉDIO</string>
+
+<string name="pdf_low_risk_label">RISCO BAIXO</string>
+
+<string name="pdf_suggestion">Sugestão:</string>
+
+<string name="pdf_recent_occurrences">Ocorrências Recentes:</string>
+
+<string name="pdf_blood_sugar">Glicemia:</string>
+
+<string name="pdf_more_occurrences">... e mais %1$d ocorrência(s)</string>
+
+<string name="pdf_disclaimer">AVISO LEGAL:</string>
+
+<string name="pdf_disclaimer_text">Esta análise é baseada em seus dados registrados e destina-se apenas a fins informativos. Consulte seu médico antes de fazer qualquer alteração em sua dieta ou plano de tratamento.</string>
+
+<string name="pdf_pattern_s">padrão(ões)</string>
+
+<string name="pattern_alert_single">⚠️ Novo padrão: %1$s → %2$s (%3$dx)</string>
+
+<string name="pattern_alert_multiple">⚠️ %1$d novos padrões detectados! Toque para ver.</string>
+
+<string name="pattern_alert_action">Ver</string>
+
+</resources>

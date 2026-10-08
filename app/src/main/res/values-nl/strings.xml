@@ -1,0 +1,605 @@
+<resources>
+
+<string name="app_name">Diabetes Tracker</string>
+
+<string name="undo">Ongedaan maken</string>
+
+<string name="redo">Opnieuw</string>
+
+<string name="undo_actions">Acties ongedaan maken</string>
+
+<string name="redo_actions">Acties opnieuw uitvoeren</string>
+
+<string name="redo_prefix">Opnieuw: %1$s</string>
+
+<string name="action_add_new_entry">Nieuwe invoer toevoegen</string>
+
+<string name="action_delete_entry">Invoer verwijderen</string>
+
+<string name="action_edit_morning_blood_sugar">Bloedsuiker ochtend bewerken</string>
+
+<string name="action_edit_afternoon_blood_sugar">Bloedsuiker middag bewerken</string>
+
+<string name="action_edit_evening_blood_sugar">Bloedsuiker avond bewerken</string>
+
+<string name="action_edit_night_blood_sugar">Bloedsuiker nacht bewerken</string>
+
+<string name="action_edit_morning_insulin">Insuline ochtend bewerken</string>
+
+<string name="action_edit_afternoon_insulin">Insuline middag bewerken</string>
+
+<string name="action_edit_evening_insulin">Insuline avond bewerken</string>
+
+<string name="action_edit_remarks">Opmerkingen bewerken</string>
+
+<string name="action_add_food_item">Voedingsmiddel toevoegen</string>
+
+<string name="action_remove_food_item">Voedingsmiddel verwijderen</string>
+
+<string name="action_edit_food_item">Voedingsmiddel bewerken</string>
+
+<string name="action_edit_entry">Invoer bewerken</string>
+
+<string name="date_filter_all">Alle gegevens</string>
+
+<string name="date_filter_flexible">Flexibel bereik</string>
+
+<string name="date_filter_custom">Aangepast bereik</string>
+
+<string name="date_filter_specific">Specifieke datum</string>
+
+<string name="showing_all_entries">Alle gegevens worden weergegeven</string>
+
+<string name="showing_entries_last">Gegevens van de laatste %1$d %2$s weergeven</string>
+
+<string name="custom_range_format">Aangepast bereik: %1$s tot %2$s</string>
+
+<string name="custom_range_not_set">Aangepast bereik (niet ingesteld)</string>
+
+<string name="specific_date_format">Specifieke datum: %1$s</string>
+
+<string name="specific_date_not_set">Specifieke datum (niet ingesteld)</string>
+
+<string name="time_unit_day">dag</string>
+
+<string name="time_unit_days">dagen</string>
+
+<string name="time_unit_week">week</string>
+
+<string name="time_unit_weeks">weken</string>
+
+<string name="time_unit_month">maand</string>
+
+<string name="time_unit_months">maanden</string>
+
+<string name="time_unit_year">jaar</string>
+
+<string name="time_unit_years">jaren</string>
+
+<string name="backup_type_settings">Instellingen</string>
+
+<string name="backup_type_data">Gegevens</string>
+
+<string name="backup_type_complete">Volledig</string>
+
+<string name="backup_exported_success">%1$s-back-up succesvol geëxporteerd</string>
+
+<string name="backup_export_failed">Exporteren van back-up mislukt: %1$s</string>
+
+<string name="backup_read_failed">Lezen van back-upbestand mislukt: %1$s</string>
+
+<string name="backup_merged">samengevoegd</string>
+
+<string name="backup_restored">hersteld</string>
+
+<string name="backup_import_success">Back-up %1$s succesvol</string>
+
+<string name="backup_import_failed">Importeren van back-up mislukt: %1$s</string>
+
+<string name="menu">Menu</string>
+
+<string name="zoom_controls">Zoom-knoppen</string>
+
+<string name="filter_entries_by_date">Gegevens filteren op datum</string>
+
+<string name="language_english">English</string>
+
+<string name="language_spanish">Español</string>
+
+<string name="language_german">Deutsch</string>
+
+<string name="language_french">Français</string>
+
+<string name="language_italian">Italiano</string>
+
+<string name="language_portuguese">Português</string>
+
+<string name="language_dutch">Nederlands</string>
+
+<string name="language_russian">Русский</string>
+
+<string name="language_japanese">日本語</string>
+
+<string name="language_chinese">中文</string>
+
+<string name="language_arabic">العربية</string>
+
+<string name="language_hindi">हिन्दी</string>
+
+<string name="settings">Instellingen</string>
+
+<string name="language">Taal</string>
+
+<string name="theme">Thema</string>
+
+<string name="colors">Kleuren</string>
+
+<string name="font_color">Lettertypekleur</string>
+
+<string name="background_color">Achtergrondkleur</string>
+
+<string name="grid_color">Rasterkleur</string>
+
+<string name="insulin_column_color">Kleur insulinekolom</string>
+
+<string name="advanced_settings">Geavanceerde instellingen</string>
+
+<string name="view_settings_presets">Weergave-instellingen &amp; presets</string>
+
+<string name="color_schemes">Kleurenschema\'s</string>
+
+<string name="save_current_colors_scheme">Huidige kleuren opslaan als schema</string>
+
+<string name="load_color_schemes">Kleurenschema\'s laden</string>
+
+<string name="reset_to_defaults">Standaardinstellingen herstellen</string>
+
+<string name="save_current_view">Huidige weergave opslaan</string>
+
+<string name="saved_presets">Opgeslagen presets</string>
+
+<string name="close">Sluiten</string>
+
+<string name="zoom_in">Inzoomen</string>
+
+<string name="zoom_out">Uitzoomen</string>
+
+<string name="increase_width">Breedte vergroten</string>
+
+<string name="decrease_width">Breedte verkleinen</string>
+
+<string name="reset_zoom_width">Zoom en breedte resetten</string>
+
+<string name="reset_view">Weergave resetten</string>
+
+<string name="zoom_format">Zoom: %1$d%%</string>
+
+<string name="width_format">Breedte: %1$d%%</string>
+
+<string name="scale_format">Schaal: %1$d%%</string>
+
+<string name="width_scale_format">Breedteschaal: %1$sx</string>
+
+<string name="zoom_settings">Zoom-instellingen</string>
+
+<string name="dark_mode_schemes">Donkere modus schema\'s</string>
+
+<string name="light_mode_schemes">Lichte modus schema\'s</string>
+
+<string name="no_dark_schemes">Geen donkere modus schema\'s opgeslagen</string>
+
+<string name="no_light_schemes">Geen lichte modus schema\'s opgeslagen</string>
+
+<string name="apply_scheme">Schema toepassen</string>
+
+<string name="delete_scheme">Schema verwijderen</string>
+
+<string name="export_pdf">Exporteren als PDF</string>
+
+<string name="export_txt">Exporteren als TXT</string>
+
+<string name="pdf_export_options">PDF-exportopties</string>
+
+<string name="export_content">Inhoud exporteren:</string>
+
+<string name="table">Tabel</string>
+
+<string name="chart_graph">Grafiek/Diagram</string>
+
+<string name="chart_type">Grafiektype:</string>
+
+<string name="select_chart_types">Grafiektypes selecteren</string>
+
+<string name="chart_selected_count">%1$d grafiek(en) geselecteerd</string>
+
+<string name="select_all_charts">Alle grafieken selecteren</string>
+
+<string name="date_range">Datumbereik:</string>
+
+<string name="export_all_data">Alle gegevens exporteren</string>
+
+<string name="custom_date_range">Aangepast datumbereik</string>
+
+<string name="selected_date_range">Geselecteerd: %1$s tot %2$s</string>
+
+<string name="start_date_format">Start: %1$s</string>
+
+<string name="end_date_format">Einde: %1$s</string>
+
+<string name="tap_to_select_date_range">Tik om datumbereik te selecteren</string>
+
+<string name="select_date_range">Datumbereik selecteren</string>
+
+<string name="choose_start_end_dates">Kies start- en einddatum voor de export:</string>
+
+<string name="select_start_date">Startdatum selecteren</string>
+
+<string name="select_end_date">Einddatum selecteren</string>
+
+<string name="done">Gereed</string>
+
+<string name="export">Exporteren</string>
+
+<string name="txt_export_options">TXT-exportopties</string>
+
+<string name="morning_blood_sugar">Bloedsuiker ochtend</string>
+
+<string name="afternoon_blood_sugar">Bloedsuiker middag</string>
+
+<string name="evening_blood_sugar">Bloedsuiker avond</string>
+
+<string name="night_blood_sugar">Bloedsuiker nacht</string>
+
+<string name="average_blood_sugar">Gemiddelde bloedsuiker</string>
+
+<string name="morning_insulin">Insuline ochtend</string>
+
+<string name="afternoon_insulin">Insuline middag</string>
+
+<string name="evening_insulin">Insuline avond</string>
+
+<string name="press_back_again_to_exit">Druk nogmaals op terug om af te sluiten</string>
+
+<string name="edit_saved_data_title">Opgeslagen gegevens bewerken?</string>
+
+<string name="edit_saved_data_message">Deze gegevens zijn al opgeslagen. Wilt u deze echt bewerken?</string>
+
+<string name="yes_edit">Ja, bewerken</string>
+
+<string name="cancel">Annuleren</string>
+
+<string name="unsaved_changes_title">Niet-opgeslagen wijzigingen</string>
+
+<string name="unsaved_changes_message">U heeft niet-opgeslagen wijzigingen. Wilt u alle wijzigingen opslaan?</string>
+
+<string name="close_without_saving">Sluiten zonder opslaan</string>
+
+<string name="save_and_close">Opslaan &amp; sluiten</string>
+
+<string name="save">Opslaan</string>
+
+<string name="delete">Verwijderen</string>
+
+<string name="preset_name">Naam preset</string>
+
+<string name="delete_preset">Preset verwijderen</string>
+
+<string name="delete_preset_confirmation">Weet u zeker dat u \"%1$s\" wilt verwijderen?</string>
+
+<string name="all_changes_saved">Alle wijzigingen opgeslagen!</string>
+
+<string name="delete_entry">Invoer verwijderen</string>
+
+<string name="delete_entry_confirmation">Weet u zeker dat u deze invoer wilt verwijderen?</string>
+
+<string name="show_chart">Grafiek weergeven</string>
+
+<string name="blood_sugar_over_time">Bloedsuikerverloop</string>
+
+<string name="insulin_over_time">Insulineverloop</string>
+
+<string name="chart_title">Grafiek</string>
+
+<string name="blood_sugar">Bloedsuiker</string>
+
+<string name="insulin">Insuline</string>
+
+<string name="average">Gemiddelde</string>
+
+<string name="morning">Ochtend</string>
+
+<string name="afternoon">Middag</string>
+
+<string name="evening">Avond</string>
+
+<string name="night">Nacht</string>
+
+<string name="date">Datum</string>
+
+<string name="statistics_summary">Statistisch overzicht</string>
+
+<string name="blood_sugar_statistics">Bloedsuikerstatistieken</string>
+
+<string name="insulin_statistics">Insulinestatistieken</string>
+
+<string name="latest">Laatste</string>
+
+<string name="range">Bereik</string>
+
+<string name="total">Totaal</string>
+
+<string name="data_points">Gegevenspunten</string>
+
+<string name="filter">Filter</string>
+
+<string name="no_data_available_time_period">Geen gegevens beschikbaar voor de geselecteerde periode</string>
+
+<string name="no_numeric_data_available">Geen numerieke gegevens beschikbaar voor</string>
+
+<string name="enter_numeric_values_chart">Voer numerieke waarden in de tabel in om de grafiek te zien</string>
+
+<string name="mg_dl">mg/dL</string>
+
+<string name="units">eenheden</string>
+
+<string name="custom_over_time">%1$s over tijd</string>
+
+<string name="settings_data_presets">Instellingen, gegevens &amp; presets</string>
+
+<string name="settings_only">Alleen instellingen</string>
+
+<string name="colors_zoom_language_etc">Kleuren, zoom, taal, etc.</string>
+
+<string name="auto_save_tip">💡 Tip: In de geavanceerde instellingen kunt u \'Automatisch opslaan bij afsluiten\' inschakelen om dit venster over te slaan.</string>
+
+<string name="select_date">Datum selecteren</string>
+
+<string name="today">Vandaag</string>
+
+<string name="ok">OK</string>
+
+<string name="clear">Wissen</string>
+
+<string name="pick_date">Datum kiezen...</string>
+
+<string name="dark_mode">Donkere modus</string>
+
+<string name="preset_management">Preset-beheer</string>
+
+<string name="current_view_saved">Huidige weergave opgeslagen</string>
+
+<string name="saved_view_loaded">Opgeslagen weergave geladen</string>
+
+<string name="no_saved_view_found">Geen opgeslagen weergave gevonden</string>
+
+<string name="preset_saved">Preset opgeslagen</string>
+
+<string name="preset_loaded">Preset geladen</string>
+
+<string name="preset_deleted">Preset verwijderd</string>
+
+<string name="backup_restore">Back-up &amp; herstel</string>
+
+<string name="export_backup">Back-up exporteren</string>
+
+<string name="import_backup">Back-up importeren</string>
+
+<string name="common_foods">Veelvoorkomende voeding</string>
+
+<string name="food_apple">Appel</string>
+
+<string name="food_banana">Banaan</string>
+
+<string name="food_bread">Brood</string>
+
+<string name="food_meat">Vlees</string>
+
+<string name="food_salad">Salade</string>
+
+<string name="food_milk">Melk</string>
+
+<string name="food_rice">Rijst</string>
+
+<string name="food_egg">Ei</string>
+
+<string name="food_fish">Vis</string>
+
+<string name="food_potato">Aardappel</string>
+
+<string name="food_carrot">Wortel</string>
+
+<string name="food_pasta">Pasta</string>
+
+<string name="action_edit_common_food">Veelvoorkomende voeding bewerken</string>
+
+<string name="action_delete_common_food">Veelvoorkomende voeding verwijderen</string>
+
+<string name="edit_common_food">Veelvoorkomende voeding bewerken</string>
+
+<string name="select_emoji">Emoji selecteren</string>
+
+<string name="custom_columns">Aangepaste kolommen</string>
+
+<string name="manage_custom_columns">Aangepaste kolommen beheren</string>
+
+<string name="action_edit_custom_column">Aangepaste kolom bewerken</string>
+
+<string name="pattern_analysis">📊 Patroonanalyse</string>
+
+<string name="back">Terug</string>
+
+<string name="export_analysis">Analyse exporteren</string>
+
+<string name="no_patterns_detected">🔍 Nog geen patronen gedetecteerd</string>
+
+<string name="keep_tracking_message">Blijf uw gegevens bijhouden en patronen zullen hier verschijnen</string>
+
+<string name="pattern_details">Patroondetails</string>
+
+<string name="detected_patterns">%1$d patroon/patronen gedetecteerd</string>
+
+<string name="showing_patterns">%1$d van %2$d patroon/patronen worden weergegeven</string>
+
+<string name="clear_filter">Filter wissen</string>
+
+<string name="no_patterns_match_filter">Geen patronen komen overeen met het huidige filter</string>
+
+<string name="export_analysis_title">📤 Analyse exporteren</string>
+
+<string name="export_analysis_description">Exporteer uw patroonanalyse om te delen met uw arts of bewaar deze voor uw eigen administratie.</string>
+
+<string name="export_will_include">De export bevat:</string>
+
+<string name="export_includes_list">• Alle gedetecteerde patronen\n• Betrouwbaarheidsscores\n• Details van voorvallen\n• Risicoanalyse\n• Suggesties</string>
+
+<string name="export_to_txt">Exporteren naar TXT</string>
+
+<string name="after">Na: %1$s</string>
+
+<string name="dismiss">Sluiten</string>
+
+<string name="occurrences">%1$d keer voorgekomen</string>
+
+<string name="ignore_this_food">🚫 Deze voeding negeren</string>
+
+<string name="show_details">Details tonen</string>
+
+<string name="hide_details">Details verbergen</string>
+
+<string name="occurrences_label">Voorvallen:</string>
+
+<string name="show_all_occurrences">Alle %1$d voorvallen tonen</string>
+
+<string name="show_less">Minder tonen</string>
+
+<string name="ignore_food_title">Voeding negeren?</string>
+
+<string name="ignore_food_message">Weet u zeker dat u \'%1$s\' wilt negeren?</string>
+
+<string name="ignore_food_warning">Deze voeding zal geen patroonwaarschuwingen meer activeren, zelfs niet als er in de toekomst correlaties worden gedetecteerd.</string>
+
+<string name="ignore_food_button">Voeding negeren</string>
+
+<string name="high_confidence">Hoge betrouwbaarheid</string>
+
+<string name="medium_confidence">Gemiddelde betrouwbaarheid</string>
+
+<string name="low_confidence">Lage betrouwbaarheid</string>
+
+<string name="pattern_overview">📊 Patroonoverzicht</string>
+
+<string name="risk_distribution">Risicoverdeling</string>
+
+<string name="high_risk">Hoog risico</string>
+
+<string name="medium_risk">Gemiddeld risico</string>
+
+<string name="low_risk">Laag risico</string>
+
+<string name="pattern_types">Patroontypes</string>
+
+<string name="food_marker_correlations">Voeding-marker correlaties</string>
+
+<string name="blood_sugar_spikes">Bloedsuikerpieken</string>
+
+<string name="time_based_patterns">Tijdsgebaseerde patronen</string>
+
+<string name="top_risky_foods">⚠️ Belangrijkste risicovolle voeding</string>
+
+<string name="times">keer</string>
+
+<string name="blood_sugar_label">Bloedsuiker: %1$s</string>
+
+<string name="marker_feel_bad">Niet lekker voelen</string>
+
+<string name="marker_blood_sugar_spike">Bloedsuikerpiek</string>
+
+<string name="export_pattern_analysis">Patroonanalyse</string>
+
+<string name="include_pattern_analysis">Patroonanalyserapport toevoegen</string>
+
+<string name="export_format">Exportformaat:</string>
+
+<string name="pdf_document">PDF-document</string>
+
+<string name="text_file">Tekstbestand</string>
+
+<string name="pattern_analysis_exported_pdf">Patroonanalyse succesvol geëxporteerd als PDF!</string>
+
+<string name="pattern_analysis_exported_txt">Patroonanalyse succesvol geëxporteerd als TXT!</string>
+
+<string name="export_failed">Export mislukt. Probeer het opnieuw.</string>
+
+<string name="pdf_report_title">DIABETES PATROONANALYSERAPPORT</string>
+
+<string name="pdf_generated">Gegenereerd op:</string>
+
+<string name="pdf_total_patterns">Totaal aantal patronen:</string>
+
+<string name="pdf_summary">SAMENVATTING</string>
+
+<string name="pdf_risk_distribution">Risicoverdeling:</string>
+
+<string name="pdf_high_risk">Hoog risico (≥80%):</string>
+
+<string name="pdf_medium_risk">Gemiddeld risico (60-79%):</string>
+
+<string name="pdf_low_risk">Laag risico (&lt;60%):</string>
+
+<string name="pdf_pattern_types">Patroontypes:</string>
+
+<string name="pdf_food_marker_correlations">Voeding-marker correlaties:</string>
+
+<string name="pdf_blood_sugar_spikes">Bloedsuikerpieken:</string>
+
+<string name="pdf_time_based_patterns">Tijdsgebaseerde patronen:</string>
+
+<string name="pdf_top_risky_foods">Belangrijkste risicovolle voeding:</string>
+
+<string name="pdf_confidence">betrouwbaarheid</string>
+
+<string name="pdf_detailed_analysis">GEDETAILLEERDE PATROONANALYSE</string>
+
+<string name="pdf_pattern_number">PATROON #%1$d</string>
+
+<string name="pdf_type">Type:</string>
+
+<string name="pdf_food_item">Voeding/Item:</string>
+
+<string name="pdf_effect">Effect:</string>
+
+<string name="pdf_occurrences">Voorvallen:</string>
+
+<string name="pdf_confidence_label">Betrouwbaarheid:</string>
+
+<string name="pdf_time_range">Tijdsbereik:</string>
+
+<string name="pdf_risk_level">Risiconiveau:</string>
+
+<string name="pdf_high_risk_label">HOOG RISICO</string>
+
+<string name="pdf_medium_risk_label">GEMIDDELD RISICO</string>
+
+<string name="pdf_low_risk_label">LAAG RISICO</string>
+
+<string name="pdf_suggestion">Suggestie:</string>
+
+<string name="pdf_recent_occurrences">Recente voorvallen:</string>
+
+<string name="pdf_blood_sugar">Bloedsuiker:</string>
+
+<string name="pdf_more_occurrences">... en %1$d meer voorval(len)</string>
+
+<string name="pdf_disclaimer">DISCLAIMER:</string>
+
+<string name="pdf_disclaimer_text">Deze analyse is gebaseerd op uw bijgehouden gegevens en is uitsluitend bedoeld voor informatieve doeleinden. Raadpleeg uw zorgverlener voordat u wijzigingen aanbrengt in uw dieet of behandelplan.</string>
+
+<string name="pdf_pattern_s">patroon/patronen</string>
+
+<string name="pattern_alert_single">⚠️ Nieuw patroon: %1$s → %2$s (%3$dx)</string>
+
+<string name="pattern_alert_multiple">⚠️ %1$d nieuwe patronen gedetecteerd! Tik om te bekijken.</string>
+
+<string name="pattern_alert_action">Bekijken</string>
+
+</resources>

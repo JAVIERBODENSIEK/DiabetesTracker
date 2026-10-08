@@ -1,0 +1,297 @@
+﻿> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:compileDebugKotlin
+./gradlew : e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/Ma
+inActivity.kt:7796:41 Expecting an element
+In Zeile:1 Zeichen:1
++ ./gradlew :app:compileDebugKotlin --console=plain 2>&1 | Out-File -Fi ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (e: file:///C:/U...ting an element:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:7957:27 Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:8232:18 Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:8249:13 Expecting an element
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:8338:10 Expecting ','
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:8832:10 Expecting ','
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:9001:10 Expecting ','
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:9239:10 Expecting ')'
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:20142:2 Expecting '}'
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:2100:36 Unresolved reference: MainActivity
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:2101:33 Cannot infer a type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:2624:21 Unresolved reference: generatePDFToFile
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:2624:155 Unresolved reference: convertDateFormatForProcessing
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:2624:204 Unresolved reference: convertDateFormatForProcessing
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:2643:21 Unresolved reference: generateTXTToFile
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:2643:103 Unresolved reference: convertDateFormatForProcessing
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:2643:155 Unresolved reference: convertDateFormatForProcessing
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:3174:9 Unresolved reference: TimeChartDialog
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:3180:34 Cannot infer a type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:3220:9 Unresolved reference: AdvancedSettingsDialog
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:3233:35 Cannot infer a type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:3248:41 Cannot infer a type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:3252:39 Cannot infer a type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:3585:54 Unresolved reference: MainActivity
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:4463:29 Unresolved reference: TableHeader
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:4735:49 Unresolved reference: TableRow
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:4741:81 Cannot infer a type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:4741:90 Cannot infer a type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:4744:113 Overload resolution ambiguity: 
+public operator fun <T> Collection<TypeVariable(T)>.plus(elements: Array<out TypeVariable(T)>): List<TypeVariable(T)> 
+defined in kotlin.collections
+public operator fun <T> Collection<TypeVariable(T)>.plus(elements: Iterable<TypeVariable(T)>): List<TypeVariable(T)> 
+defined in kotlin.collections
+public operator fun <T> Collection<TypeVariable(T)>.plus(elements: Sequence<TypeVariable(T)>): List<TypeVariable(T)> 
+defined in kotlin.collections
+public operator fun <T> Iterable<TypeVariable(T)>.plus(elements: Array<out TypeVariable(T)>): List<TypeVariable(T)> 
+defined in kotlin.collections
+public operator fun <T> Iterable<TypeVariable(T)>.plus(elements: Iterable<TypeVariable(T)>): List<TypeVariable(T)> 
+defined in kotlin.collections
+public operator fun <T> Iterable<TypeVariable(T)>.plus(elements: Sequence<TypeVariable(T)>): List<TypeVariable(T)> 
+defined in kotlin.collections
+public operator fun <T> Set<TypeVariable(T)>.plus(elements: Array<out TypeVariable(T)>): Set<TypeVariable(T)> defined 
+in kotlin.collections
+public operator fun <T> Set<TypeVariable(T)>.plus(elements: Iterable<TypeVariable(T)>): Set<TypeVariable(T)> defined 
+in kotlin.collections
+public operator fun <T> Set<TypeVariable(T)>.plus(elements: Sequence<TypeVariable(T)>): Set<TypeVariable(T)> defined 
+in kotlin.collections
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:4748:72 Cannot infer a type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:4748:79 Cannot infer a type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:4760:71 Cannot infer a type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:4770:96 Type mismatch: inferred type is Unit but Boolean was expected
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:4770:128 Overload resolution ambiguity: 
+public final operator fun compareTo(other: Byte): Int defined in kotlin.Int
+public final operator fun compareTo(other: Double): Int defined in kotlin.Int
+public final operator fun compareTo(other: Float): Int defined in kotlin.Int
+public open fun compareTo(other: Int): Int defined in kotlin.Int
+public final operator fun compareTo(other: Long): Int defined in kotlin.Int
+public final operator fun compareTo(other: Short): Int defined in kotlin.Int
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:4771:112 Type mismatch: inferred type is Unit but Boolean was expected
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:4771:144 Overload resolution ambiguity: 
+public final operator fun compareTo(other: Byte): Int defined in kotlin.Int
+public final operator fun compareTo(other: Double): Int defined in kotlin.Int
+public final operator fun compareTo(other: Float): Int defined in kotlin.Int
+public open fun compareTo(other: Int): Int defined in kotlin.Int
+public final operator fun compareTo(other: Long): Int defined in kotlin.Int
+public final operator fun compareTo(other: Short): Int defined in kotlin.Int
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:4787:72 Cannot infer a type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:4790:86 Unresolved reference: it
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:4796:79 Cannot infer a type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:4801:105 Unresolved reference: it
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:4803:103 Unresolved reference: it
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:4805:95 Unresolved reference: it
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:4806:99 Unresolved reference: it
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:4809:57 Type mismatch: inferred type is ([Error type: Cannot infer a lambda parameter type]) -> Unit but Nothing? 
+was expected
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:4809:59 Cannot infer a type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:7243:17 Cannot find a parameter with this name: text
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:7244:21 @Composable invocations can only happen from the context of a @Composable function
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:7404:37 Unresolved reference: shareTextFile
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:7802:33 'fun item(key: Any? = ..., contentType: Any? = ..., content: LazyItemScope.() -> Unit): Unit' can't be 
+called in this context by implicit receiver. Use the explicit one if necessary
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:7827:33 'inline fun <T> LazyListScope.items(items: List<Pair<String, Int>>, noinline key: ((item: Pair<String, Int>) 
+-> Any)? = ..., noinline contentType: (item: Pair<String, Int>) -> Any? = ..., crossinline itemContent: 
+LazyItemScope.(item: Pair<String, Int>) -> Unit): Unit' can't be called in this context by implicit receiver. Use the 
+explicit one if necessary
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:7959:51 @Composable invocations can only happen from the context of a @Composable function
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:7969:33 @Composable invocations can only happen from the context of a @Composable function
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:7987:33 @Composable invocations can only happen from the context of a @Composable function
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:8233:17 Unresolved reference: confirmButton
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:8235:25 @Composable invocations can only happen from the context of a @Composable function
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:8253:17 @Composable invocations can only happen from the context of a @Composable function
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:8341:9 'if' must have both main and 'else' branches if used as an expression
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:8341:9 Mixing named and positioned arguments is not allowed
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:8835:9 'if' must have both main and 'else' branches if used as an expression
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:8835:9 Mixing named and positioned arguments is not allowed
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:9004:9 'if' must have both main and 'else' branches if used as an expression
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:9004:9 Mixing named and positioned arguments is not allowed
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:11867:61 Unresolved reference: FoodTagTooltip
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15110:21 Unresolved reference: ColorSlider
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15110:53 Unresolved reference: it
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15111:21 Unresolved reference: ColorSlider
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15111:59 Unresolved reference: it
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15112:21 Unresolved reference: ColorSlider
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15112:56 Unresolved reference: it
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15113:21 Unresolved reference: ColorSlider
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15113:59 Unresolved reference: it
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15198:1 Modifier 'enum' is not applicable to 'local class'
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15206:1 Modifier 'enum' is not applicable to 'local class'
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15213:1 Modifier 'enum' is not applicable to 'local class'
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15227:74 Enum entry 'ALL_AVERAGE' is uninitialized here
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15260:42 Enum entry 'MORNING' is uninitialized here
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15261:42 Enum entry 'AFTERNOON' is uninitialized here
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15262:42 Enum entry 'EVENING' is uninitialized here
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15263:42 Enum entry 'NIGHT' is uninitialized here
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15270:21 Unresolved reference: TimeFilterText
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15513:71 Enum entry 'ALL_AVERAGE' is uninitialized here
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15544:39 Enum entry 'MORNING' is uninitialized here
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15545:39 Enum entry 'AFTERNOON' is uninitialized here
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15546:39 Enum entry 'EVENING' is uninitialized here
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15553:21 Unresolved reference: TimeFilterText
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15842:66 Enum entry 'BLOOD_SUGAR' is uninitialized here
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15850:44 Enum entry 'CUSTOM_COLUMN' is uninitialized here
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15878:39 Enum entry 'INSULIN' is uninitialized here
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:15963:37 Unresolved reference: CustomColumnChart
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:16281:13 Unresolved reference: HeaderCell
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:16315:25 Unresolved reference: SubHeaderCell
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:16358:25 Unresolved reference: SubHeaderCell
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:16384:17 Unresolved reference: EditableHeaderCell
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:16386:39 Cannot infer a type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:17514:47 Unresolved reference: getChartData
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:17541:44 Unresolved reference: it
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:17542:44 Unresolved reference: it
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:17776:9 Unresolved reference: drawChart
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:18080:50 Unresolved reference: convertEntryDateForComparison
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:18108:21 Unresolved reference: createMultiChartPDFDocument
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:18115:21 Unresolved reference: createMultiChartWithTablePDFDocument
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/MainActivity.k
+t:18547:50 Unresolved reference: convertEntryDateForComparison
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/NotificationHe
+lper.kt:101:38 Unresolved reference: MainActivity
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/NotificationHe
+lper.kt:133:38 Unresolved reference: MainActivity
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/NotificationHe
+lper.kt:161:38 Unresolved reference: MainActivity
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/NotificationHe
+lper.kt:196:38 Unresolved reference: MainActivity
+e: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/app/src/main/java/com/j4/diabetestracker/PatternNotific
+ationHelper.kt:66:38 Unresolved reference: MainActivity
+
+> Task :app:compileDebugKotlin FAILED
+[Incubating] Problems report is available at: file:///C:/Users/javie/AndroidStudioProjects/DiabetesTracker/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugKotlin'.
+> A failure occurred while executing 
+org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.11.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 45s
+14 actionable tasks: 1 executed, 13 up-to-date

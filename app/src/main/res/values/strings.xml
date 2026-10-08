@@ -1,0 +1,407 @@
+<resources>
+    <string name="app_name">Diabetes Tracker</string>
+    
+    <!-- Undo/Redo functionality -->
+    <string name="undo">Undo</string>
+    <string name="redo">Redo</string>
+    <string name="undo_actions">Undo Actions</string>
+    <string name="redo_actions">Redo Actions</string>
+    <string name="redo_prefix">Redo: %1$s</string>
+    
+    <!-- Action descriptions -->
+    <string name="action_add_new_entry">Add new entry</string>
+    <string name="action_delete_entry">Delete entry</string>
+    <string name="action_edit_morning_blood_sugar">Edit morning blood sugar</string>
+    <string name="action_edit_afternoon_blood_sugar">Edit afternoon blood sugar</string>
+    <string name="action_edit_evening_blood_sugar">Edit evening blood sugar</string>
+    <string name="action_edit_night_blood_sugar">Edit night blood sugar</string>
+    <string name="action_edit_morning_insulin">Edit morning insulin</string>
+    <string name="action_edit_afternoon_insulin">Edit afternoon insulin</string>
+    <string name="action_edit_evening_insulin">Edit evening insulin</string>
+    <string name="action_edit_remarks">Edit remarks</string>
+    <string name="action_add_food_item">Add food item</string>
+    <string name="action_remove_food_item">Remove food item</string>
+    <string name="action_edit_food_item">Edit food item</string>
+    <string name="action_edit_entry">Edit entry</string>
+    
+    <!-- Date filtering -->
+    <string name="date_filter_all">All Entries</string>
+    <string name="date_filter_flexible">Flexible Range</string>
+    <string name="date_filter_custom">Custom Range</string>
+    <string name="date_filter_specific">Specific Date</string>
+    
+    <!-- Date filter descriptions -->
+    <string name="showing_all_entries">Showing all entries</string>
+    <string name="showing_entries_last">Showing entries from the last %1$d %2$s</string>
+    <string name="custom_range_format">Custom range: %1$s to %2$s</string>
+    <string name="custom_range_not_set">Custom range (not set)</string>
+    <string name="specific_date_format">Specific date: %1$s</string>
+    <string name="specific_date_not_set">Specific date (not set)</string>
+    
+    <!-- Time units -->
+    <string name="time_unit_day">day</string>
+    <string name="time_unit_days">days</string>
+    <string name="time_unit_week">week</string>
+    <string name="time_unit_weeks">weeks</string>
+    <string name="time_unit_month">month</string>
+    <string name="time_unit_months">months</string>
+    <string name="time_unit_year">year</string>
+    <string name="time_unit_years">years</string>
+    
+    <!-- Backup/Export -->
+    <string name="backup_type_settings">Settings</string>
+    <string name="backup_type_data">Data</string>
+    <string name="backup_type_complete">Complete</string>
+    <string name="backup_exported_success">%1$s backup exported successfully</string>
+    <string name="backup_export_failed">Failed to export backup: %1$s</string>
+    <string name="backup_read_failed">Failed to read backup file: %1$s</string>
+    <string name="backup_merged">merged</string>
+    <string name="backup_restored">restored</string>
+    <string name="backup_import_success">Backup %1$s successfully</string>
+    <string name="backup_import_failed">Failed to import backup: %1$s</string>
+    
+    <!-- UI Elements -->
+    <string name="menu">Menu</string>
+    <string name="zoom_controls">Zoom Controls</string>
+    <string name="filter_entries_by_date">Filter entries by date</string>
+    
+    <!-- Languages -->
+    <string name="language_english">English</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_german">Deutsch</string>
+    <string name="language_french">Français</string>
+    <string name="language_italian">Italiano</string>
+    <string name="language_portuguese">Português</string>
+    <string name="language_dutch">Nederlands</string>
+    <string name="language_russian">Русский</string>
+    <string name="language_japanese">日本語</string>
+    <string name="language_chinese">中文</string>
+    <string name="language_arabic">العربية</string>
+    <string name="language_hindi">हिन्दी</string>
+    
+    <!-- Settings and Navigation -->
+    <string name="settings">Settings</string>
+    <string name="language">Language</string>
+    <string name="theme">Theme</string>
+    <string name="colors">Colors</string>
+    <string name="font_color">Font Color</string>
+    <string name="background_color">Background Color</string>
+    <string name="grid_color">Grid Color</string>
+    <string name="insulin_column_color">Insulin Column Color</string>
+    <string name="advanced_settings">Advanced Settings</string>
+    <string name="view_settings_presets">View Settings &amp; Presets</string>
+    <string name="color_schemes">Color Schemes</string>
+    <string name="save_current_colors_scheme">Save Current Colors as Scheme</string>
+    <string name="load_color_schemes">Load Color Schemes</string>
+    <string name="reset_to_defaults">Reset to Defaults</string>
+    <string name="save_current_view">Save Current View</string>
+    <string name="saved_presets">Saved Presets</string>
+    <string name="close">Close</string>
+    
+    <!-- Zoom Controls -->
+    <string name="zoom_in">Zoom In</string>
+    <string name="zoom_out">Zoom Out</string>
+    <string name="increase_width">Increase Width</string>
+    <string name="decrease_width">Decrease Width</string>
+    <string name="reset_zoom_width">Reset Zoom and Width</string>
+    <string name="reset_view">Reset View</string>
+    <string name="zoom_format">Zoom: %1$d%%</string>
+    <string name="width_format">Width: %1$d%%</string>
+    <string name="scale_format">Scale: %1$d%%</string>
+    <string name="width_scale_format">Width Scale: %1$sx</string>
+    <string name="zoom_settings">Zoom Settings</string>
+    
+    <!-- Color Schemes -->
+    <string name="dark_mode_schemes">Dark Mode Schemes</string>
+    <string name="light_mode_schemes">Light Mode Schemes</string>
+    <string name="no_dark_schemes">No dark mode schemes saved</string>
+    <string name="no_light_schemes">No light mode schemes saved</string>
+    <string name="apply_scheme">Apply Scheme</string>
+    <string name="delete_scheme">Delete Scheme</string>
+    
+    <!-- Export Options -->
+    <string name="export_pdf">Export as PDF</string>
+    <string name="export_txt">Export as TXT</string>
+    
+    <!-- PDF Export Dialog -->
+    <string name="pdf_export_options">PDF Export Options</string>
+    <string name="export_content">Export Content:</string>
+    <string name="table">Table</string>
+    <string name="chart_graph">Chart/Graph</string>
+    <string name="chart_type">Chart Type:</string>
+    <string name="select_chart_types">Select Chart Types</string>
+    <string name="chart_selected_count">%1$d chart(s) selected</string>
+    <string name="select_all_charts">Select All Charts</string>
+    <string name="date_range">Date Range:</string>
+    <string name="export_all_data">Export all data</string>
+    <string name="custom_date_range">Custom date range</string>
+    <string name="selected_date_range">Selected: %1$s to %2$s</string>
+    <string name="start_date_format">Start: %1$s</string>
+    <string name="end_date_format">End: %1$s</string>
+    <string name="tap_to_select_date_range">Tap to select date range</string>
+    <string name="select_date_range">Select Date Range</string>
+    <string name="choose_start_end_dates">Choose start and end dates for your export:</string>
+    <string name="select_start_date">Select Start Date</string>
+    <string name="select_end_date">Select End Date</string>
+    <string name="done">Done</string>
+    <string name="export">Export</string>
+
+    <!-- TXT Export Dialog -->
+    <string name="txt_export_options">TXT Export Options</string>
+    
+    <!-- Chart Types -->
+    <string name="morning_blood_sugar">Morning Blood Sugar</string>
+    <string name="afternoon_blood_sugar">Afternoon Blood Sugar</string>
+    <string name="evening_blood_sugar">Evening Blood Sugar</string>
+    <string name="night_blood_sugar">Night Blood Sugar</string>
+    <string name="average_blood_sugar">Average Blood Sugar</string>
+    <string name="morning_insulin">Morning Insulin</string>
+    <string name="afternoon_insulin">Afternoon Insulin</string>
+    <string name="evening_insulin">Evening Insulin</string>
+    
+    <!-- Exit Messages -->
+    <string name="press_back_again_to_exit">Press back again to exit</string>
+    
+    <!-- Dialog Messages -->
+    <string name="edit_saved_data_title">Edit Saved Data?</string>
+    <string name="edit_saved_data_message">This data has already been saved. Do you really want to edit it?</string>
+    <string name="yes_edit">Yes, Edit</string>
+    <string name="cancel">Cancel</string>
+    <string name="unsaved_changes_title">Unsaved Changes</string>
+    <string name="unsaved_changes_message">You have unsaved changes. Do you want to save all changes?</string>
+    <string name="close_without_saving">Close without saving</string>
+    <string name="save_and_close">Save &amp; Close</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="preset_name">Preset Name</string>
+    <string name="delete_preset">Delete Preset</string>
+    <string name="delete_preset_confirmation">Are you sure you want to delete "%1$s"?</string>
+    <string name="all_changes_saved">All changes saved!</string>
+    <string name="delete_entry">Delete Entry</string>
+    <string name="delete_entry_confirmation">Are you sure you want to delete this entry?</string>
+    
+    <!-- Chart/Timeline -->
+    <string name="show_chart">Show Chart</string>
+    <string name="blood_sugar_over_time">Blood Sugar Over Time</string>
+    <string name="insulin_over_time">Insulin Over Time</string>
+    <string name="chart_title">Chart</string>
+    
+    <!-- Chart Labels -->
+    <string name="blood_sugar">Blood Sugar</string>
+    <string name="insulin">Insulin</string>
+    <string name="average">Average</string>
+    <string name="morning">Morning</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="evening">Evening</string>
+    <string name="night">Night</string>
+    <string name="date">Date</string>
+    
+    <!-- Statistics Labels -->
+    <string name="statistics_summary">Statistics Summary</string>
+    <string name="blood_sugar_statistics">Blood Sugar Statistics</string>
+    <string name="insulin_statistics">Insulin Statistics</string>
+    <string name="latest">Latest</string>
+    <string name="range">Range</string>
+    <string name="total">Total</string>
+    <string name="data_points">Data points</string>
+    <string name="filter">Filter</string>
+    
+    <!-- Chart Messages -->
+    <string name="no_data_available_time_period">No data available for the selected time period</string>
+    <string name="no_numeric_data_available">No numeric data available for</string>
+    <string name="enter_numeric_values_chart">Enter numeric values in the table to see the chart</string>
+    
+    <!-- Units -->
+    <string name="mg_dl">mg/dL</string>
+    <string name="units">units</string>
+    
+    <!-- Custom Column Charts -->
+    <string name="custom_over_time">%1$s Over Time</string>
+    
+    <!-- Export/Backup Options -->
+    <string name="settings_data_presets">Settings, data &amp; presets</string>
+    <string name="settings_only">Settings Only</string>
+    <string name="colors_zoom_language_etc">Colors, zoom, language, etc.</string>
+    <string name="auto_save_tip">💡 Tip: In Advanced Settings you can enable \'Auto-save on exit\' to skip this dialog.</string>
+    
+    <!-- Calendar -->
+    <string name="select_date">Select Date</string>
+    <string name="today">Today</string>
+    <string name="ok">OK</string>
+    <string name="clear">Clear</string>
+    <string name="pick_date">Pick Date...</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="preset_management">Preset Management</string>
+    <string name="current_view_saved">Current view saved</string>
+    <string name="saved_view_loaded">Saved view loaded</string>
+    <string name="no_saved_view_found">No saved view found</string>
+    <string name="preset_saved">Preset saved</string>
+    <string name="preset_loaded">Preset loaded</string>
+    <string name="preset_deleted">Preset deleted</string>
+    <string name="backup_restore">Backup &amp; Restore</string>
+    <string name="export_backup">Export Backup</string>
+    <string name="import_backup">Import Backup</string>
+    
+    <!-- Common Foods -->
+    <string name="common_foods">Common Foods</string>
+    <string name="food_apple">Apple</string>
+    <string name="food_banana">Banana</string>
+    <string name="food_bread">Bread</string>
+    <string name="food_meat">Meat</string>
+    <string name="food_salad">Salad</string>
+    <string name="food_milk">Milk</string>
+    <string name="food_rice">Rice</string>
+    <string name="food_egg">Egg</string>
+    <string name="food_fish">Fish</string>
+    <string name="food_potato">Potato</string>
+    <string name="food_carrot">Carrot</string>
+    <string name="food_pasta">Pasta</string>
+    
+    <!-- Common Food Actions -->
+    <string name="action_edit_common_food">Edit common food</string>
+    <string name="action_delete_common_food">Delete common food</string>
+    <string name="edit_common_food">Edit Common Food</string>
+    <string name="select_emoji">Select Emoji</string>
+    
+    <!-- Custom Columns -->
+    <string name="custom_columns">Custom Columns</string>
+    <string name="manage_custom_columns">Manage Custom Columns</string>
+    <string name="action_edit_custom_column">Edit custom column</string>
+    
+    <!-- Pattern Analysis -->
+    <string name="pattern_analysis">📊 Pattern Analysis</string>
+    <string name="back">Back</string>
+    <string name="export_analysis">Export Analysis</string>
+    <string name="no_patterns_detected">🔍 No patterns detected yet</string>
+    <string name="keep_tracking_message">Keep tracking your data and patterns will appear here</string>
+    <string name="pattern_details">Pattern Details</string>
+    <string name="detected_patterns">Detected %1$d pattern(s)</string>
+    <string name="showing_patterns">Showing %1$d of %2$d pattern(s)</string>
+    <string name="clear_filter">Clear Filter</string>
+    <string name="no_patterns_match_filter">No patterns match the current filter</string>
+    <string name="export_analysis_title">📤 Export Analysis</string>
+    <string name="export_analysis_description">Export your pattern analysis to share with your doctor or save for your records.</string>
+    <string name="export_will_include">The export will include:</string>
+    <string name="export_includes_list">• All detected patterns\n• Confidence scores\n• Occurrence details\n• Risk analysis\n• Suggestions</string>
+    <string name="export_to_txt">Export to TXT</string>
+    <string name="after">After: %1$s</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="occurrences">%1$d occurrence(s)</string>
+    <string name="ignore_this_food">🚫 Ignore This Food</string>
+    <string name="show_details">Show details</string>
+    <string name="hide_details">Hide details</string>
+    <string name="occurrences_label">Occurrences:</string>
+    <string name="show_all_occurrences">Show all %1$d occurrences</string>
+    <string name="show_less">Show less</string>
+    <string name="ignore_food_title">Ignore Food?</string>
+    <string name="ignore_food_message">Are you sure you want to ignore \'%1$s\'?</string>
+    <string name="ignore_food_warning">This food will no longer trigger pattern alerts, even if correlations are detected in the future.</string>
+    <string name="ignore_food_button">Ignore Food</string>
+    <string name="high_confidence">High Confidence</string>
+    <string name="medium_confidence">Medium Confidence</string>
+    <string name="low_confidence">Low Confidence</string>
+    <string name="pattern_overview">📊 Pattern Overview</string>
+    <string name="risk_distribution">Risk Distribution</string>
+    <string name="high_risk">High Risk</string>
+    <string name="medium_risk">Medium Risk</string>
+    <string name="low_risk">Low Risk</string>
+    <string name="pattern_types">Pattern Types</string>
+    <string name="pattern_types_show_all">Show all</string>
+    <string name="pattern_types_detected_only">Detected only</string>
+    <string name="pattern_insight_highlights">Insight highlights</string>
+    <string name="pattern_occurrence_count">Occurrences: %1$d</string>
+    <string name="food_marker_correlations">Food-Marker Correlations</string>
+    <string name="blood_sugar_spikes">Blood Sugar Spikes</string>
+    <string name="blood_sugar_drops">Blood Sugar Drops</string>
+    <string name="time_based_patterns">Time-Based Patterns</string>
+    <string name="insulin_patterns">Insulin Patterns</string>
+    <string name="custom_column_patterns">Custom Column Patterns</string>
+    <string name="top_risky_foods">⚠️ Top Risky Foods</string>
+    <string name="times">times</string>
+    <string name="blood_sugar_label">Blood Sugar: %1$s</string>
+    <string name="marker_calendar_overview">Marker Calendar Overview</string>
+    <string name="calendar_top_marker_legend">Top marker per day</string>
+    <string name="calendar_top_trigger_legend">Most common trigger</string>
+    <string name="calendar_today">Today</string>
+    <string name="calendar_previous_month">Previous month</string>
+    <string name="calendar_next_month">Next month</string>
+    <string name="calendar_days_with_markers_count">Marker days: %1$d</string>
+    <string name="calendar_days_with_triggers_count">Trigger days: %1$d</string>
+    <string name="calendar_days_with_patterns_count">Pattern days: %1$d</string>
+    <string name="calendar_filter_all_days">All days</string>
+    <string name="calendar_filter_marked_days">Marked</string>
+    <string name="calendar_filter_trigger_days">Trigger</string>
+    <string name="calendar_filter_pattern_days">Pattern</string>
+    <string name="calendar_filter_info_icon">Open filter explanation</string>
+    <string name="calendar_pick_month_year">Pick month and year</string>
+    <string name="calendar_pick_month">Month</string>
+    <string name="calendar_pick_year">Year</string>
+    <string name="calendar_day_details_title">Day details: %1$s</string>
+    <string name="calendar_day_details_markers">Markers</string>
+    <string name="calendar_day_details_triggers">Triggers</string>
+    <string name="calendar_day_details_patterns">Patterns (active filters)</string>
+    <string name="calendar_day_details_info">Show day explanation</string>
+    <string name="calendar_day_details_helper_title">Simple explanation</string>
+    <string name="calendar_day_details_helper_empty">No additional explanation is available for this day yet.</string>
+    <string name="calendar_view_table_day">Open table day</string>
+    <string name="calendar_marked_filter_title">Marker filters</string>
+    <string name="calendar_trigger_filter_title">Trigger filters</string>
+    <string name="calendar_pattern_filter_title">Pattern filters</string>
+    <string name="calendar_pattern_filter_all_types">All pattern types</string>
+    <string name="calendar_open_pattern_details">Open pattern details</string>
+    <string name="calendar_hide_pattern_workspace">Hide pattern workspace</string>
+    
+    <!-- Marker Names (for translation) -->
+    <string name="marker_feel_bad">Feel Bad</string>
+    <string name="marker_blood_sugar_spike">Blood Sugar Spike</string>
+    
+    <!-- Export Options -->
+    <string name="export_pattern_analysis">Pattern Analysis</string>
+    <string name="include_pattern_analysis">Include pattern analysis report</string>
+    <string name="export_format">Export Format:</string>
+    <string name="pdf_document">PDF Document</string>
+    <string name="text_file">Text File</string>
+    <string name="pattern_analysis_exported_pdf">Pattern analysis exported as PDF successfully!</string>
+    <string name="pattern_analysis_exported_txt">Pattern analysis exported as TXT successfully!</string>
+    <string name="export_failed">Export failed. Please try again.</string>
+    
+    <!-- PDF Export Content -->
+    <string name="pdf_report_title">DIABETES PATTERN ANALYSIS REPORT</string>
+    <string name="pdf_generated">Generated:</string>
+    <string name="pdf_total_patterns">Total Patterns:</string>
+    <string name="pdf_summary">SUMMARY</string>
+    <string name="pdf_risk_distribution">Risk Distribution:</string>
+    <string name="pdf_high_risk">High Risk (≥80%):</string>
+    <string name="pdf_medium_risk">Medium Risk (60-79%):</string>
+    <string name="pdf_low_risk">Low Risk (&lt;60%):</string>
+    <string name="pdf_pattern_types">Pattern Types:</string>
+    <string name="pdf_food_marker_correlations">Food-Marker Correlations:</string>
+    <string name="pdf_blood_sugar_spikes">Blood Sugar Spikes:</string>
+    <string name="pdf_time_based_patterns">Time-Based Patterns:</string>
+    <string name="pdf_top_risky_foods">Top Risky Foods:</string>
+    <string name="pdf_confidence">confidence</string>
+    <string name="pdf_detailed_analysis">DETAILED PATTERN ANALYSIS</string>
+    <string name="pdf_pattern_number">PATTERN #%1$d</string>
+    <string name="pdf_type">Type:</string>
+    <string name="pdf_food_item">Food/Item:</string>
+    <string name="pdf_effect">Effect:</string>
+    <string name="pdf_occurrences">Occurrences:</string>
+    <string name="pdf_confidence_label">Confidence:</string>
+    <string name="pdf_time_range">Time Range:</string>
+    <string name="pdf_risk_level">Risk Level:</string>
+    <string name="pdf_high_risk_label">HIGH RISK</string>
+    <string name="pdf_medium_risk_label">MEDIUM RISK</string>
+    <string name="pdf_low_risk_label">LOW RISK</string>
+    <string name="pdf_suggestion">Suggestion:</string>
+    <string name="pdf_recent_occurrences">Recent Occurrences:</string>
+    <string name="pdf_blood_sugar">Blood Sugar:</string>
+    <string name="pdf_more_occurrences">... and %1$d more occurrence(s)</string>
+    <string name="pdf_disclaimer">DISCLAIMER:</string>
+    <string name="pdf_disclaimer_text">This analysis is based on your tracked data and is intended for informational purposes only. Please consult with your healthcare provider before making any changes to your diet or treatment plan.</string>
+    <string name="pdf_pattern_s">pattern(s)</string>
+    
+    <!-- Pattern Alert Messages -->
+    <string name="pattern_alert_single">⚠️ New pattern: %1$s → %2$s (%3$dx)</string>
+    <string name="pattern_alert_multiple">⚠️ %1$d new patterns detected! Tap to view.</string>
+    <string name="pattern_alert_action">View</string>
+</resources>

@@ -1,0 +1,605 @@
+<resources>
+
+<string name="app_name">متعقب السكري</string>
+
+<string name="undo">تراجع</string>
+
+<string name="redo">إعادة</string>
+
+<string name="undo_actions">تراجع عن الإجراءات</string>
+
+<string name="redo_actions">إعادة الإجراءات</string>
+
+<string name="redo_prefix">إعادة: %1$s</string>
+
+<string name="action_add_new_entry">إضافة مدخلة جديدة</string>
+
+<string name="action_delete_entry">حذف المدخلة</string>
+
+<string name="action_edit_morning_blood_sugar">تعديل سكر الدم الصباحي</string>
+
+<string name="action_edit_afternoon_blood_sugar">تعديل سكر الدم في الظهيرة</string>
+
+<string name="action_edit_evening_blood_sugar">تعديل سكر الدم المسائي</string>
+
+<string name="action_edit_night_blood_sugar">تعديل سكر الدم الليلي</string>
+
+<string name="action_edit_morning_insulin">تعديل إنسولين الصباح</string>
+
+<string name="action_edit_afternoon_insulin">تعديل إنسولين الظهيرة</string>
+
+<string name="action_edit_evening_insulin">تعديل إنسولين المساء</string>
+
+<string name="action_edit_remarks">تعديل الملاحظات</string>
+
+<string name="action_add_food_item">إضافة صنف طعام</string>
+
+<string name="action_remove_food_item">إزالة صنف الطعام</string>
+
+<string name="action_edit_food_item">تعديل صنف الطعام</string>
+
+<string name="action_edit_entry">تعديل المدخلة</string>
+
+<string name="date_filter_all">جميع المدخلات</string>
+
+<string name="date_filter_flexible">نطاق مرن</string>
+
+<string name="date_filter_custom">نطاق مخصص</string>
+
+<string name="date_filter_specific">تاريخ محدد</string>
+
+<string name="showing_all_entries">عرض جميع المدخلات</string>
+
+<string name="showing_entries_last">عرض المدخلات من آخر %1$d %2$s</string>
+
+<string name="custom_range_format">نطاق مخصص: من %1$s إلى %2$s</string>
+
+<string name="custom_range_not_set">نطاق مخصص (لم يتم ضبطه)</string>
+
+<string name="specific_date_format">تاريخ محدد: %1$s</string>
+
+<string name="specific_date_not_set">تاريخ محدد (لم يتم ضبطه)</string>
+
+<string name="time_unit_day">يوم</string>
+
+<string name="time_unit_days">أيام</string>
+
+<string name="time_unit_week">أسبوع</string>
+
+<string name="time_unit_weeks">أسابيع</string>
+
+<string name="time_unit_month">شهر</string>
+
+<string name="time_unit_months">أشهر</string>
+
+<string name="time_unit_year">سنة</string>
+
+<string name="time_unit_years">سنوات</string>
+
+<string name="backup_type_settings">الإعدادات</string>
+
+<string name="backup_type_data">البيانات</string>
+
+<string name="backup_type_complete">كامل</string>
+
+<string name="backup_exported_success">تم تصدير نسخة %1$s الاحتياطية بنجاح</string>
+
+<string name="backup_export_failed">فشل تصدير النسخة الاحتياطية: %1$s</string>
+
+<string name="backup_read_failed">فشل قراءة ملف النسخة الاحتياطية: %1$s</string>
+
+<string name="backup_merged">دمج</string>
+
+<string name="backup_restored">استعادة</string>
+
+<string name="backup_import_success">تم %1$s النسخة الاحتياطية بنجاح</string>
+
+<string name="backup_import_failed">فشل استيراد النسخة الاحتياطية: %1$s</string>
+
+<string name="menu">القائمة</string>
+
+<string name="zoom_controls">عناصر التحكم في التكبير</string>
+
+<string name="filter_entries_by_date">تصفية المدخلات حسب التاريخ</string>
+
+<string name="language_english">English</string>
+
+<string name="language_spanish">Español</string>
+
+<string name="language_german">Deutsch</string>
+
+<string name="language_french">Français</string>
+
+<string name="language_italian">Italiano</string>
+
+<string name="language_portuguese">Português</string>
+
+<string name="language_dutch">Nederlands</string>
+
+<string name="language_russian">Русский</string>
+
+<string name="language_japanese">日本語</string>
+
+<string name="language_chinese">中文</string>
+
+<string name="language_arabic">العربية</string>
+
+<string name="language_hindi">हिन्दी</string>
+
+<string name="settings">الإعدادات</string>
+
+<string name="language">اللغة</string>
+
+<string name="theme">المظهر</string>
+
+<string name="colors">الألوان</string>
+
+<string name="font_color">لون الخط</string>
+
+<string name="background_color">لون الخلفية</string>
+
+<string name="grid_color">لون الشبكة</string>
+
+<string name="insulin_column_color">لون عمود الإنسولين</string>
+
+<string name="advanced_settings">إعدادات متقدمة</string>
+
+<string name="view_settings_presets">إعدادات العرض والقوالب</string>
+
+<string name="color_schemes">أنظمة الألوان</string>
+
+<string name="save_current_colors_scheme">حفظ الألوان الحالية كنمط</string>
+
+<string name="load_color_schemes">تحميل أنظمة الألوان</string>
+
+<string name="reset_to_defaults">إعادة الضبط للافتراضي</string>
+
+<string name="save_current_view">حفظ العرض الحالي</string>
+
+<string name="saved_presets">القوالب المحفوظة</string>
+
+<string name="close">إغلاق</string>
+
+<string name="zoom_in">تكبير</string>
+
+<string name="zoom_out">تصغير</string>
+
+<string name="increase_width">زيادة العرض</string>
+
+<string name="decrease_width">تقليل العرض</string>
+
+<string name="reset_zoom_width">إعادة ضبط التكبير والعرض</string>
+
+<string name="reset_view">إعادة ضبط العرض</string>
+
+<string name="zoom_format">التكبير: %1$d%%</string>
+
+<string name="width_format">العرض: %1$d%%</string>
+
+<string name="scale_format">المقياس: %1$d%%</string>
+
+<string name="width_scale_format">مقياس العرض: %1$sx</string>
+
+<string name="zoom_settings">إعدادات التكبير</string>
+
+<string name="dark_mode_schemes">أنماط الوضع الداكن</string>
+
+<string name="light_mode_schemes">أنماط الوضع الفاتح</string>
+
+<string name="no_dark_schemes">لا توجد أنماط محفوظة للوضع الداكن</string>
+
+<string name="no_light_schemes">لا توجد أنماط محفوظة للوضع الفاتح</string>
+
+<string name="apply_scheme">تطبيق النمط</string>
+
+<string name="delete_scheme">حذف النمط</string>
+
+<string name="export_pdf">تصدير كـ PDF</string>
+
+<string name="export_txt">تصدير كـ TXT</string>
+
+<string name="pdf_export_options">خيارات تصدير PDF</string>
+
+<string name="export_content">تصدير المحتوى:</string>
+
+<string name="table">جدول</string>
+
+<string name="chart_graph">رسم بياني/مخطط</string>
+
+<string name="chart_type">نوع المخطط:</string>
+
+<string name="select_chart_types">حدد أنواع المخططات</string>
+
+<string name="chart_selected_count">تم تحديد %1$d مخطط(ات)</string>
+
+<string name="select_all_charts">تحديد جميع المخططات</string>
+
+<string name="date_range">نطاق التاريخ:</string>
+
+<string name="export_all_data">تصدير جميع البيانات</string>
+
+<string name="custom_date_range">نطاق تاريخ مخصص</string>
+
+<string name="selected_date_range">محدد: من %1$s إلى %2$s</string>
+
+<string name="start_date_format">البدء: %1$s</string>
+
+<string name="end_date_format">الانتهاء: %1$s</string>
+
+<string name="tap_to_select_date_range">انقر لتحديد نطاق التاريخ</string>
+
+<string name="select_date_range">تحديد نطاق التاريخ</string>
+
+<string name="choose_start_end_dates">اختر تاريخي البدء والانتهاء لتصديرك:</string>
+
+<string name="select_start_date">تحديد تاريخ البدء</string>
+
+<string name="select_end_date">تحديد تاريخ الانتهاء</string>
+
+<string name="done">تم</string>
+
+<string name="export">تصدير</string>
+
+<string name="txt_export_options">خيارات تصدير TXT</string>
+
+<string name="morning_blood_sugar">سكر الدم الصباحي</string>
+
+<string name="afternoon_blood_sugar">سكر الدم في الظهيرة</string>
+
+<string name="evening_blood_sugar">سكر الدم المسائي</string>
+
+<string name="night_blood_sugar">سكر الدم الليلي</string>
+
+<string name="average_blood_sugar">متوسط سكر الدم</string>
+
+<string name="morning_insulin">إنسولين الصباح</string>
+
+<string name="afternoon_insulin">إنسولين الظهيرة</string>
+
+<string name="evening_insulin">إنسولين المساء</string>
+
+<string name="press_back_again_to_exit">اضغط رجوع مرة أخرى للخروج</string>
+
+<string name="edit_saved_data_title">تعديل البيانات المحفوظة؟</string>
+
+<string name="edit_saved_data_message">هذه البيانات تم حفظها بالفعل. هل تريد حقاً تعديلها؟</string>
+
+<string name="yes_edit">نعم، تعديل</string>
+
+<string name="cancel">إلغاء</string>
+
+<string name="unsaved_changes_title">تغييرات غير محفوظة</string>
+
+<string name="unsaved_changes_message">لديك تغييرات غير محفوظة. هل تريد حفظ جميع التغييرات؟</string>
+
+<string name="close_without_saving">إغلاق دون حفظ</string>
+
+<string name="save_and_close">حفظ وإغلاق</string>
+
+<string name="save">حفظ</string>
+
+<string name="delete">حذف</string>
+
+<string name="preset_name">اسم القالب</string>
+
+<string name="delete_preset">حذف القالب</string>
+
+<string name="delete_preset_confirmation">هل أنت متأكد من حذف \"%1$s\"؟</string>
+
+<string name="all_changes_saved">تم حفظ جميع التغييرات!</string>
+
+<string name="delete_entry">حذف المدخلة</string>
+
+<string name="delete_entry_confirmation">هل أنت متأكد من حذف هذه المدخلة؟</string>
+
+<string name="show_chart">عرض المخطط</string>
+
+<string name="blood_sugar_over_time">سكر الدم مع مرور الوقت</string>
+
+<string name="insulin_over_time">الإنسولين مع مرور الوقت</string>
+
+<string name="chart_title">المخطط</string>
+
+<string name="blood_sugar">سكر الدم</string>
+
+<string name="insulin">إنسولين</string>
+
+<string name="average">المتوسط</string>
+
+<string name="morning">الصباح</string>
+
+<string name="afternoon">الظهيرة</string>
+
+<string name="evening">المساء</string>
+
+<string name="night">الليل</string>
+
+<string name="date">التاريخ</string>
+
+<string name="statistics_summary">ملخص الإحصائيات</string>
+
+<string name="blood_sugar_statistics">إحصائيات سكر الدم</string>
+
+<string name="insulin_statistics">إحصائيات الإنسولين</string>
+
+<string name="latest">الأحدث</string>
+
+<string name="range">النطاق</string>
+
+<string name="total">الإجمالي</string>
+
+<string name="data_points">نقاط البيانات</string>
+
+<string name="filter">تصفية</string>
+
+<string name="no_data_available_time_period">لا تتوفر بيانات للفترة الزمنية المحددة</string>
+
+<string name="no_numeric_data_available">لا تتوفر بيانات رقمية لـ</string>
+
+<string name="enter_numeric_values_chart">أدخل قيماً رقمية في الجدول لرؤية المخطط</string>
+
+<string name="mg_dl">مجم/ديسيلتر</string>
+
+<string name="units">وحدات</string>
+
+<string name="custom_over_time">%1$s مع مرور الوقت</string>
+
+<string name="settings_data_presets">الإعدادات والبيانات والقوالب</string>
+
+<string name="settings_only">الإعدادات فقط</string>
+
+<string name="colors_zoom_language_etc">الألوان، التكبير، اللغة، إلخ.</string>
+
+<string name="auto_save_tip">💡 نصيحة: في الإعدادات المتقدمة يمكنك تفعيل \'الحفظ التلقائي عند الخروج\' لتجاوز هذا الحوار.</string>
+
+<string name="select_date">تحديد التاريخ</string>
+
+<string name="today">اليوم</string>
+
+<string name="ok">موافق</string>
+
+<string name="clear">مسح</string>
+
+<string name="pick_date">اختر تاريخاً...</string>
+
+<string name="dark_mode">الوضع الداكن</string>
+
+<string name="preset_management">إدارة القوالب</string>
+
+<string name="current_view_saved">تم حفظ العرض الحالي</string>
+
+<string name="saved_view_loaded">تم تحميل العرض المحفوظ</string>
+
+<string name="no_saved_view_found">لم يتم العثور على عرض محفوظ</string>
+
+<string name="preset_saved">تم حفظ القالب</string>
+
+<string name="preset_loaded">تم تحميل القالب</string>
+
+<string name="preset_deleted">تم حذف القالب</string>
+
+<string name="backup_restore">النسخ الاحتياطي والاستعادة</string>
+
+<string name="export_backup">تصدير نسخة احتياطية</string>
+
+<string name="import_backup">استيراد نسخة احتياطية</string>
+
+<string name="common_foods">الأطعمة الشائعة</string>
+
+<string name="food_apple">تفاح</string>
+
+<string name="food_banana">موز</string>
+
+<string name="food_bread">خبز</string>
+
+<string name="food_meat">لحم</string>
+
+<string name="food_salad">سلطة</string>
+
+<string name="food_milk">حليب</string>
+
+<string name="food_rice">أرز</string>
+
+<string name="food_egg">بيض</string>
+
+<string name="food_fish">سمك</string>
+
+<string name="food_potato">بطاطس</string>
+
+<string name="food_carrot">جزر</string>
+
+<string name="food_pasta">معكرونة</string>
+
+<string name="action_edit_common_food">تعديل طعام شائع</string>
+
+<string name="action_delete_common_food">حذف طعام شائع</string>
+
+<string name="edit_common_food">تعديل الأطعمة الشائعة</string>
+
+<string name="select_emoji">اختر رمزاً تعبيرياً</string>
+
+<string name="custom_columns">أعمدة مخصصة</string>
+
+<string name="manage_custom_columns">إدارة الأعمدة المخصصة</string>
+
+<string name="action_edit_custom_column">تعديل عمود مخصص</string>
+
+<string name="pattern_analysis">📊 تحليل الأنماط</string>
+
+<string name="back">رجوع</string>
+
+<string name="export_analysis">تصدير التحليل</string>
+
+<string name="no_patterns_detected">🔍 لم يتم اكتشاف أنماط بعد</string>
+
+<string name="keep_tracking_message">استمر في تتبع بياناتك وستظهر الأنماط هنا</string>
+
+<string name="pattern_details">تفاصيل النمط</string>
+
+<string name="detected_patterns">تم اكتشاف %1$d نمط(ات)</string>
+
+<string name="showing_patterns">عرض %1$d من أصل %2$d نمط(ات)</string>
+
+<string name="clear_filter">مسح التصفية</string>
+
+<string name="no_patterns_match_filter">لا توجد أنماط تطابق التصفية الحالية</string>
+
+<string name="export_analysis_title">📤 تصدير التحليل</string>
+
+<string name="export_analysis_description">قم بتصدير تحليل أنماطك لمشاركته مع طبيبك أو حفظه في سجلاتك.</string>
+
+<string name="export_will_include">التصدير سيشمل:</string>
+
+<string name="export_includes_list">• جميع الأنماط المكتشفة\n• درجات الثقة\n• تفاصيل الحدوث\n• تحليل المخاطر\n• الاقتراحات</string>
+
+<string name="export_to_txt">تصدير إلى TXT</string>
+
+<string name="after">بعد: %1$s</string>
+
+<string name="dismiss">تجاهل</string>
+
+<string name="occurrences">%1$d حدوث</string>
+
+<string name="ignore_this_food">🚫 تجاهل هذا الطعام</string>
+
+<string name="show_details">عرض التفاصيل</string>
+
+<string name="hide_details">إخفاء التفاصيل</string>
+
+<string name="occurrences_label">عدد مرات الحدوث:</string>
+
+<string name="show_all_occurrences">عرض جميع الـ %1$d حدوث</string>
+
+<string name="show_less">عرض أقل</string>
+
+<string name="ignore_food_title">تجاهل الطعام؟</string>
+
+<string name="ignore_food_message">هل أنت متأكد من رغبتك في تجاهل \'%1$s\'؟</string>
+
+<string name="ignore_food_warning">لن يؤدي هذا الطعام إلى إطلاق تنبيهات الأنماط بعد الآن، حتى لو تم اكتشاف ارتباطات في المستقبل.</string>
+
+<string name="ignore_food_button">تجاهل الطعام</string>
+
+<string name="high_confidence">ثقة عالية</string>
+
+<string name="medium_confidence">ثقة متوسطة</string>
+
+<string name="low_confidence">ثقة منخفضة</string>
+
+<string name="pattern_overview">📊 نظرة عامة على الأنماط</string>
+
+<string name="risk_distribution">توزيع المخاطر</string>
+
+<string name="high_risk">مخاطر عالية</string>
+
+<string name="medium_risk">مخاطر متوسطة</string>
+
+<string name="low_risk">مخاطر منخفضة</string>
+
+<string name="pattern_types">أنواع الأنماط</string>
+
+<string name="food_marker_correlations">ارتباطات الغذاء والواسمات</string>
+
+<string name="blood_sugar_spikes">ارتفاعات مفاجئة في سكر الدم</string>
+
+<string name="time_based_patterns">أنماط قائمة على الوقت</string>
+
+<string name="top_risky_foods">⚠️ الأطعمة الأكثر خطورة</string>
+
+<string name="times">مرات</string>
+
+<string name="blood_sugar_label">سكر الدم: %1$s</string>
+
+<string name="marker_feel_bad">شعور بالسوء</string>
+
+<string name="marker_blood_sugar_spike">ارتفاع سكر الدم</string>
+
+<string name="export_pattern_analysis">تحليل الأنماط</string>
+
+<string name="include_pattern_analysis">تضمين تقرير تحليل الأنماط</string>
+
+<string name="export_format">صيغة التصدير:</string>
+
+<string name="pdf_document">مستند PDF</string>
+
+<string name="text_file">ملف نصي</string>
+
+<string name="pattern_analysis_exported_pdf">تم تصدير تحليل الأنماط كـ PDF بنجاح!</string>
+
+<string name="pattern_analysis_exported_txt">تم تصدير تحليل الأنماط كـ TXT بنجاح!</string>
+
+<string name="export_failed">فشل التصدير. يرجى المحاولة مرة أخرى.</string>
+
+<string name="pdf_report_title">تقرير تحليل أنماط السكري</string>
+
+<string name="pdf_generated">تم الإنشاء في:</string>
+
+<string name="pdf_total_patterns">إجمالي الأنماط:</string>
+
+<string name="pdf_summary">الملخص</string>
+
+<string name="pdf_risk_distribution">توزيع المخاطر:</string>
+
+<string name="pdf_high_risk">مخاطر عالية (≥80%):</string>
+
+<string name="pdf_medium_risk">مخاطر متوسطة (60-79%):</string>
+
+<string name="pdf_low_risk">مخاطر منخفضة (&lt;60%):</string>
+
+<string name="pdf_pattern_types">أنواع الأنماط:</string>
+
+<string name="pdf_food_marker_correlations">ارتباطات الغذاء والواسمات:</string>
+
+<string name="pdf_blood_sugar_spikes">ارتفاعات مفاجئة في سكر الدم:</string>
+
+<string name="pdf_time_based_patterns">أنماط قائمة على الوقت:</string>
+
+<string name="pdf_top_risky_foods">الأطعمة الأكثر خطورة:</string>
+
+<string name="pdf_confidence">الثقة</string>
+
+<string name="pdf_detailed_analysis">تحليل الأنماط المفصل</string>
+
+<string name="pdf_pattern_number">نمط رقم %1$d</string>
+
+<string name="pdf_type">النوع:</string>
+
+<string name="pdf_food_item">الغذاء/الصنف:</string>
+
+<string name="pdf_effect">التأثير:</string>
+
+<string name="pdf_occurrences">عدد مرات الحدوث:</string>
+
+<string name="pdf_confidence_label">الثقة:</string>
+
+<string name="pdf_time_range">النطاق الزمني:</string>
+
+<string name="pdf_risk_level">مستوى المخاطر:</string>
+
+<string name="pdf_high_risk_label">مخاطر عالية</string>
+
+<string name="pdf_medium_risk_label">مخاطر متوسطة</string>
+
+<string name="pdf_low_risk_label">مخاطر منخفضة</string>
+
+<string name="pdf_suggestion">اقتراح:</string>
+
+<string name="pdf_recent_occurrences">حالات الحدوث الأخيرة:</string>
+
+<string name="pdf_blood_sugar">سكر الدم:</string>
+
+<string name="pdf_more_occurrences">... و %1$d حدوثات أخرى</string>
+
+<string name="pdf_disclaimer">إخلاء مسؤولية:</string>
+
+<string name="pdf_disclaimer_text">يعتمد هذا التحليل على بياناتك المتبعة وهو مخصص للأغراض المعلوماتية فقط. يرجى استشارة مقدم الرعاية الصحية الخاص بك قبل إجراء أي تغييرات على نظامك الغذائي أو خطتك العلاجية.</string>
+
+<string name="pdf_pattern_s">نمط(ات)</string>
+
+<string name="pattern_alert_single">⚠️ نمط جديد: %1$s ← %2$s (%3$dx)</string>
+
+<string name="pattern_alert_multiple">⚠️ تم اكتشاف %1$d أنماط جديدة! انقر للعرض.</string>
+
+<string name="pattern_alert_action">عرض</string>
+
+</resources>

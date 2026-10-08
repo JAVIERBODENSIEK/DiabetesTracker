@@ -1,0 +1,605 @@
+<resources>
+
+<string name="app_name">糖尿病トラッカー</string>
+
+<string name="undo">元に戻す</string>
+
+<string name="redo">やり直し</string>
+
+<string name="undo_actions">操作を元に戻す</string>
+
+<string name="redo_actions">操作をやり直す</string>
+
+<string name="redo_prefix">やり直し: %1$s</string>
+
+<string name="action_add_new_entry">新規項目の追加</string>
+
+<string name="action_delete_entry">項目の削除</string>
+
+<string name="action_edit_morning_blood_sugar">朝の血糖値を編集</string>
+
+<string name="action_edit_afternoon_blood_sugar">昼の血糖値を編集</string>
+
+<string name="action_edit_evening_blood_sugar">夕方の血糖値を編集</string>
+
+<string name="action_edit_night_blood_sugar">夜間の血糖値を編集</string>
+
+<string name="action_edit_morning_insulin">朝のインスリンを編集</string>
+
+<string name="action_edit_afternoon_insulin">昼のインスリンを編集</string>
+
+<string name="action_edit_evening_insulin">夕方のインスリンを編集</string>
+
+<string name="action_edit_remarks">備考を編集</string>
+
+<string name="action_add_food_item">食品を追加</string>
+
+<string name="action_remove_food_item">食品を削除</string>
+
+<string name="action_edit_food_item">食品を編集</string>
+
+<string name="action_edit_entry">項目を編集</string>
+
+<string name="date_filter_all">すべての項目</string>
+
+<string name="date_filter_flexible">フレキシブルな範囲</string>
+
+<string name="date_filter_custom">カスタム範囲</string>
+
+<string name="date_filter_specific">特定の付</string>
+
+<string name="showing_all_entries">すべての項目を表示しています</string>
+
+<string name="showing_entries_last">直近の %1$d %2$s の項目を表示しています</string>
+
+<string name="custom_range_format">カスタム範囲: %1$s ～ %2$s</string>
+
+<string name="custom_range_not_set">カスタム範囲 (未設定)</string>
+
+<string name="specific_date_format">特定の付: %1$s</string>
+
+<string name="specific_date_not_set">特定の付 (未設定)</string>
+
+<string name="time_unit_day">日</string>
+
+<string name="time_unit_days">日</string>
+
+<string name="time_unit_week">週間</string>
+
+<string name="time_unit_weeks">週間</string>
+
+<string name="time_unit_month">ヶ月</string>
+
+<string name="time_unit_months">ヶ月</string>
+
+<string name="time_unit_year">年</string>
+
+<string name="time_unit_years">年</string>
+
+<string name="backup_type_settings">設定</string>
+
+<string name="backup_type_data">データ</string>
+
+<string name="backup_type_complete">完全</string>
+
+<string name="backup_exported_success">%1$s のバックアップが正常にエクスポートされました</string>
+
+<string name="backup_export_failed">バックアップのエクスポートに失敗しました: %1$s</string>
+
+<string name="backup_read_failed">バックアップファイルの読み込みに失敗しました: %1$s</string>
+
+<string name="backup_merged">マージ完了</string>
+
+<string name="backup_restored">復元完了</string>
+
+<string name="backup_import_success">バックアップの %1$s に成功しました</string>
+
+<string name="backup_import_failed">バックアップのインポートに失敗しました: %1$s</string>
+
+<string name="menu">メニュー</string>
+
+<string name="zoom_controls">ズームコントロール</string>
+
+<string name="filter_entries_by_date">日付で項目をフィルタリング</string>
+
+<string name="language_english">English</string>
+
+<string name="language_spanish">Español</string>
+
+<string name="language_german">Deutsch</string>
+
+<string name="language_french">Français</string>
+
+<string name="language_italian">Italiano</string>
+
+<string name="language_portuguese">Português</string>
+
+<string name="language_dutch">Nederlands</string>
+
+<string name="language_russian">Русский</string>
+
+<string name="language_japanese">日本語</string>
+
+<string name="language_chinese">中文</string>
+
+<string name="language_arabic">العربية</string>
+
+<string name="language_hindi">हिन्दी</string>
+
+<string name="settings">設定</string>
+
+<string name="language">言語</string>
+
+<string name="theme">テーマ</string>
+
+<string name="colors">カラー</string>
+
+<string name="font_color">フォントの色</string>
+
+<string name="background_color">背景色</string>
+
+<string name="grid_color">グリッドの色</string>
+
+<string name="insulin_column_color">インスリン列の色</string>
+
+<string name="advanced_settings">詳細設定</string>
+
+<string name="view_settings_presets">表示設定とプリセット</string>
+
+<string name="color_schemes">カラースキーム</string>
+
+<string name="save_current_colors_scheme">現在の色をスキームとして保存</string>
+
+<string name="load_color_schemes">カラースキームを読み込む</string>
+
+<string name="reset_to_defaults">デフォルトにリセット</string>
+
+<string name="save_current_view">現在のビューを保存</string>
+
+<string name="saved_presets">保存済みプリセット</string>
+
+<string name="close">閉じる</string>
+
+<string name="zoom_in">ズームイン</string>
+
+<string name="zoom_out">ズームアウト</string>
+
+<string name="increase_width">幅を広げる</string>
+
+<string name="decrease_width">幅を狭める</string>
+
+<string name="reset_zoom_width">ズームと幅をリセット</string>
+
+<string name="reset_view">ビューをリセット</string>
+
+<string name="zoom_format">ズーム: %1$d%%</string>
+
+<string name="width_format">幅: %1$d%%</string>
+
+<string name="scale_format">スケール: %1$d%%</string>
+
+<string name="width_scale_format">幅のスケール: %1$sx</string>
+
+<string name="zoom_settings">ズーム設定</string>
+
+<string name="dark_mode_schemes">ダークモードスキーム</string>
+
+<string name="light_mode_schemes">ライトモードスキーム</string>
+
+<string name="no_dark_schemes">保存されたダークモードスキームはありません</string>
+
+<string name="no_light_schemes">保存されたライトモードスキームはありません</string>
+
+<string name="apply_scheme">スキームを適用</string>
+
+<string name="delete_scheme">スキームを削除</string>
+
+<string name="export_pdf">PDFとしてエクスポート</string>
+
+<string name="export_txt">TXTとしてエクスポート</string>
+
+<string name="pdf_export_options">PDFエクスポート設定</string>
+
+<string name="export_content">エクスポートするコンテンツ:</string>
+
+<string name="table">テーブル</string>
+
+<string name="chart_graph">チャート/グラフ</string>
+
+<string name="chart_type">グラフの種類:</string>
+
+<string name="select_chart_types">グラフの種類を選択</string>
+
+<string name="chart_selected_count">%1$d 個のグラフが選択されました</string>
+
+<string name="select_all_charts">すべてのグラフを選択</string>
+
+<string name="date_range">日付範囲:</string>
+
+<string name="export_all_data">すべてのデータをエクスポート</string>
+
+<string name="custom_date_range">日付範囲を指定</string>
+
+<string name="selected_date_range">選択中: %1$s ～ %2$s</string>
+
+<string name="start_date_format">開始: %1$s</string>
+
+<string name="end_date_format">終了: %1$s</string>
+
+<string name="tap_to_select_date_range">タップして日付範囲を選択</string>
+
+<string name="select_date_range">日付範囲を選択</string>
+
+<string name="choose_start_end_dates">エクスポートする開始日と終了日を選択してください:</string>
+
+<string name="select_start_date">開始日を選択</string>
+
+<string name="select_end_date">終了日を選択</string>
+
+<string name="done">完了</string>
+
+<string name="export">エクスポート</string>
+
+<string name="txt_export_options">TXTエクスポート設定</string>
+
+<string name="morning_blood_sugar">朝の血糖値</string>
+
+<string name="afternoon_blood_sugar">昼の血糖値</string>
+
+<string name="evening_blood_sugar">夕方の血糖値</string>
+
+<string name="night_blood_sugar">夜間の血糖値</string>
+
+<string name="average_blood_sugar">平均血糖値</string>
+
+<string name="morning_insulin">朝のインスリン</string>
+
+<string name="afternoon_insulin">昼のインスリン</string>
+
+<string name="evening_insulin">夕方のインスリン</string>
+
+<string name="press_back_again_to_exit">もう一度戻るを押すと終了します</string>
+
+<string name="edit_saved_data_title">保存済みデータを編集しますか？</string>
+
+<string name="edit_saved_data_message">このデータは既に保存されています。本当に編集しますか？</string>
+
+<string name="yes_edit">はい、編集する</string>
+
+<string name="cancel">キャンセル</string>
+
+<string name="unsaved_changes_title">未保存の変更</string>
+
+<string name="unsaved_changes_message">未保存の変更があります。すべての変更を保存しますか？</string>
+
+<string name="close_without_saving">保存せずに閉じる</string>
+
+<string name="save_and_close">保存して閉じる</string>
+
+<string name="save">保存</string>
+
+<string name="delete">削除</string>
+
+<string name="preset_name">プリセット名</string>
+
+<string name="delete_preset">プリセットを削除</string>
+
+<string name="delete_preset_confirmation">\"%1$s\" を削除してもよろしいですか？</string>
+
+<string name="all_changes_saved">すべての変更が保存されました！</string>
+
+<string name="delete_entry">項目を削除</string>
+
+<string name="delete_entry_confirmation">この項目を削除してもよろしいですか？</string>
+
+<string name="show_chart">グラフを表示</string>
+
+<string name="blood_sugar_over_time">血糖値の推移</string>
+
+<string name="insulin_over_time">インスリンの推移</string>
+
+<string name="chart_title">グラフ</string>
+
+<string name="blood_sugar">血糖値</string>
+
+<string name="insulin">インスリン</string>
+
+<string name="average">平均</string>
+
+<string name="morning">朝</string>
+
+<string name="afternoon">昼</string>
+
+<string name="evening">夕方</string>
+
+<string name="night">夜間</string>
+
+<string name="date">日付</string>
+
+<string name="statistics_summary">統計サマリー</string>
+
+<string name="blood_sugar_statistics">血糖値の統計</string>
+
+<string name="insulin_statistics">インスリンの統計</string>
+
+<string name="latest">最新</string>
+
+<string name="range">範囲</string>
+
+<string name="total">合計</string>
+
+<string name="data_points">データポイント</string>
+
+<string name="filter">フィルター</string>
+
+<string name="no_data_available_time_period">選択された期間のデータはありません</string>
+
+<string name="no_numeric_data_available">数値データがありません:</string>
+
+<string name="enter_numeric_values_chart">グラフを表示するには、テーブルに数値を入力してください</string>
+
+<string name="mg_dl">mg/dL</string>
+
+<string name="units">単位</string>
+
+<string name="custom_over_time">%1$s の推移</string>
+
+<string name="settings_data_presets">設定、データ、プリセット</string>
+
+<string name="settings_only">設定のみ</string>
+
+<string name="colors_zoom_language_etc">カラー、ズーム、言語など</string>
+
+<string name="auto_save_tip">💡 ヒント: 詳細設定で「終了時に自動保存」を有効にすると、このダイアログを表示しないようにできます。</string>
+
+<string name="select_date">日付を選択</string>
+
+<string name="today">今日</string>
+
+<string name="ok">OK</string>
+
+<string name="clear">クリア</string>
+
+<string name="pick_date">日付を選択...</string>
+
+<string name="dark_mode">ダークモード</string>
+
+<string name="preset_management">プリセット管理</string>
+
+<string name="current_view_saved">現在のビューが保存されました</string>
+
+<string name="saved_view_loaded">保存されたビューを読み込みました</string>
+
+<string name="no_saved_view_found">保存されたビューは見つかりませんでした</string>
+
+<string name="preset_saved">プリセットが保存されました</string>
+
+<string name="preset_loaded">プリセットが読み込まれました</string>
+
+<string name="preset_deleted">プリセットが削除されました</string>
+
+<string name="backup_restore">バックアップと復元</string>
+
+<string name="export_backup">バックアップをエクスポート</string>
+
+<string name="import_backup">バックアップをインポート</string>
+
+<string name="common_foods">よく使う食品</string>
+
+<string name="food_apple">リンゴ</string>
+
+<string name="food_banana">バナナ</string>
+
+<string name="food_bread">パン</string>
+
+<string name="food_meat">肉</string>
+
+<string name="food_salad">サラダ</string>
+
+<string name="food_milk">牛乳</string>
+
+<string name="food_rice">ご飯</string>
+
+<string name="food_egg">卵</string>
+
+<string name="food_fish">魚</string>
+
+<string name="food_potato">ジャガイモ</string>
+
+<string name="food_carrot">人参</string>
+
+<string name="food_pasta">パスタ</string>
+
+<string name="action_edit_common_food">よく使う食品を編集</string>
+
+<string name="action_delete_common_food">よく使う食品を削除</string>
+
+<string name="edit_common_food">よく使う食品の編集</string>
+
+<string name="select_emoji">絵文字を選択</string>
+
+<string name="custom_columns">カスタム列</string>
+
+<string name="manage_custom_columns">カスタム列の管理</string>
+
+<string name="action_edit_custom_column">カスタム列を編集</string>
+
+<string name="pattern_analysis">📊 パターン分析</string>
+
+<string name="back">戻る</string>
+
+<string name="export_analysis">分析をエクスポート</string>
+
+<string name="no_patterns_detected">🔍 パターンはまだ検出されていません</string>
+
+<string name="keep_tracking_message">データの記録を続けると、ここにパターンが表示されます</string>
+
+<string name="pattern_details">パターンの詳細</string>
+
+<string name="detected_patterns">%1$d 個のパターンが検出されました</string>
+
+<string name="showing_patterns">%2$d 個中 %1$d 個のパターンを表示中</string>
+
+<string name="clear_filter">フィルターをクリア</string>
+
+<string name="no_patterns_match_filter">現在のフィルターに一致するパターンはありません</string>
+
+<string name="export_analysis_title">📤 分析のエクスポート</string>
+
+<string name="export_analysis_description">パターン分析をエクスポートして、医師と共有したり記録として保存したりできます。</string>
+
+<string name="export_will_include">エクスポート内容:</string>
+
+<string name="export_includes_list">• 検出されたすべてのパターン\n• 信頼度スコア\n• 発生の詳細\n• リスク分析\n• 提案</string>
+
+<string name="export_to_txt">TXTとしてエクスポート</string>
+
+<string name="after">後: %1$s</string>
+
+<string name="dismiss">閉じる</string>
+
+<string name="occurrences">%1$d 回の発生</string>
+
+<string name="ignore_this_food">🚫 この食品を無視する</string>
+
+<string name="show_details">詳細を表示</string>
+
+<string name="hide_details">詳細を隠す</string>
+
+<string name="occurrences_label">発生回数:</string>
+
+<string name="show_all_occurrences">全 %1$d 件の発生を表示</string>
+
+<string name="show_less">表示を減らす</string>
+
+<string name="ignore_food_title">食品を無視しますか？</string>
+
+<string name="ignore_food_message">\'%1$s\' を無視してもよろしいですか？</string>
+
+<string name="ignore_food_warning">この食品は、将来的に相関が検出された場合でも、パターンアラートをトリガーしなくなります。</string>
+
+<string name="ignore_food_button">食品を無視する</string>
+
+<string name="high_confidence">高い信頼度</string>
+
+<string name="medium_confidence">中程度の信頼度</string>
+
+<string name="low_confidence">低い信頼度</string>
+
+<string name="pattern_overview">📊 パターンの概要</string>
+
+<string name="risk_distribution">リスク分布</string>
+
+<string name="high_risk">高リスク</string>
+
+<string name="medium_risk">中リスク</string>
+
+<string name="low_risk">低リスク</string>
+
+<string name="pattern_types">パターンの種類</string>
+
+<string name="food_marker_correlations">食品と指標の相関</string>
+
+<string name="blood_sugar_spikes">血糖値の急上昇</string>
+
+<string name="time_based_patterns">時間ベースのパターン</string>
+
+<string name="top_risky_foods">⚠️ リスクの高い主な食品</string>
+
+<string name="times">回</string>
+
+<string name="blood_sugar_label">血糖値: %1$s</string>
+
+<string name="marker_feel_bad">体調不良</string>
+
+<string name="marker_blood_sugar_spike">血糖値スパイク</string>
+
+<string name="export_pattern_analysis">パターン分析</string>
+
+<string name="include_pattern_analysis">パターン分析レポートを含める</string>
+
+<string name="export_format">エクスポート形式:</string>
+
+<string name="pdf_document">PDFドキュメント</string>
+
+<string name="text_file">テキストファイル</string>
+
+<string name="pattern_analysis_exported_pdf">パターン分析がPDFとして正常にエクスポートされました！</string>
+
+<string name="pattern_analysis_exported_txt">パターン分析がTXTとして正常にエクスポートされました！</string>
+
+<string name="export_failed">エクスポートに失敗しました。もう一度お試しください。</string>
+
+<string name="pdf_report_title">糖尿病パターン分析レポート</string>
+
+<string name="pdf_generated">作成日:</string>
+
+<string name="pdf_total_patterns">総パターン数:</string>
+
+<string name="pdf_summary">概要</string>
+
+<string name="pdf_risk_distribution">リスク分布:</string>
+
+<string name="pdf_high_risk">高リスク (≥80%):</string>
+
+<string name="pdf_medium_risk">中リスク (60-79%):</string>
+
+<string name="pdf_low_risk">低リスク (&lt;60%):</string>
+
+<string name="pdf_pattern_types">パターンの種類:</string>
+
+<string name="pdf_food_marker_correlations">食品と指標の相関:</string>
+
+<string name="pdf_blood_sugar_spikes">血糖値の急上昇:</string>
+
+<string name="pdf_time_based_patterns">時間ベースのパターン:</string>
+
+<string name="pdf_top_risky_foods">リスクの高い主な食品:</string>
+
+<string name="pdf_confidence">信頼度</string>
+
+<string name="pdf_detailed_analysis">詳細なパターン分析</string>
+
+<string name="pdf_pattern_number">パターン #%1$d</string>
+
+<string name="pdf_type">タイプ:</string>
+
+<string name="pdf_food_item">食品/項目:</string>
+
+<string name="pdf_effect">影響:</string>
+
+<string name="pdf_occurrences">発生回数:</string>
+
+<string name="pdf_confidence_label">信頼度:</string>
+
+<string name="pdf_time_range">時間範囲:</string>
+
+<string name="pdf_risk_level">リスクレベル:</string>
+
+<string name="pdf_high_risk_label">高リスク</string>
+
+<string name="pdf_medium_risk_label">中リスク</string>
+
+<string name="pdf_low_risk_label">低リスク</string>
+
+<string name="pdf_suggestion">提案:</string>
+
+<string name="pdf_recent_occurrences">最近の発生:</string>
+
+<string name="pdf_blood_sugar">血糖値:</string>
+
+<string name="pdf_more_occurrences">... 他 %1$d 件の発生</string>
+
+<string name="pdf_disclaimer">免責事項:</string>
+
+<string name="pdf_disclaimer_text">この分析は記録されたデータに基づいており、情報提供のみを目的としています。食事や治療計画を変更する前に、必ず医療提供者に相談してください。</string>
+
+<string name="pdf_pattern_s">パターン</string>
+
+<string name="pattern_alert_single">⚠️ 新しいパターン: %1$s → %2$s (%3$dx)</string>
+
+<string name="pattern_alert_multiple">⚠️ %1$d 個の新しいパターンを検出しました！タップして表示します。</string>
+
+<string name="pattern_alert_action">表示</string>
+
+</resources>

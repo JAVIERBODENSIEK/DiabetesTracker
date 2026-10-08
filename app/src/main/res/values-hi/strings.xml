@@ -1,0 +1,605 @@
+<resources>
+
+<string name="app_name">मधुमेह ट्रैकर</string>
+
+<string name="undo">पूर्ववत करें</string>
+
+<string name="redo">फिर से करें</string>
+
+<string name="undo_actions">कार्रवाई पूर्ववत करें</string>
+
+<string name="redo_actions">कार्रवाई फिर से करें</string>
+
+<string name="redo_prefix">फिर से करें: %1$s</string>
+
+<string name="action_add_new_entry">नई प्रविष्टि जोड़ें</string>
+
+<string name="action_delete_entry">प्रविष्टि हटाएं</string>
+
+<string name="action_edit_morning_blood_sugar">सुबह का ब्लड शुगर बदलें</string>
+
+<string name="action_edit_afternoon_blood_sugar">दोपहर का ब्लड शुगर बदलें</string>
+
+<string name="action_edit_evening_blood_sugar">शाम का ब्लड शुगर बदलें</string>
+
+<string name="action_edit_night_blood_sugar">रात का ब्लड शुगर बदलें</string>
+
+<string name="action_edit_morning_insulin">सुबह की इंसुलिन बदलें</string>
+
+<string name="action_edit_afternoon_insulin">दोपहर की इंसुलिन बदलें</string>
+
+<string name="action_edit_evening_insulin">शाम की इंसुलिन बदलें</string>
+
+<string name="action_edit_remarks">टिप्पणियाँ बदलें</string>
+
+<string name="action_add_food_item">भोजन सामग्री जोड़ें</string>
+
+<string name="action_remove_food_item">भोजन सामग्री हटाएं</string>
+
+<string name="action_edit_food_item">भोजन सामग्री बदलें</string>
+
+<string name="action_edit_entry">प्रविष्टि बदलें</string>
+
+<string name="date_filter_all">सभी प्रविष्टियाँ</string>
+
+<string name="date_filter_flexible">लचीली सीमा</string>
+
+<string name="date_filter_custom">कस्टम सीमा</string>
+
+<string name="date_filter_specific">विशिष्ट तिथि</string>
+
+<string name="showing_all_entries">सभी प्रविष्टियाँ दिखाई जा रही हैं</string>
+
+<string name="showing_entries_last">पिछले %1$d %2$s की प्रविष्टियाँ दिखाई जा रही हैं</string>
+
+<string name="custom_range_format">कस्टम सीमा: %1$s से %2$s</string>
+
+<string name="custom_range_not_set">कस्टम सीमा (सेट नहीं है)</string>
+
+<string name="specific_date_format">विशिष्ट तिथि: %1$s</string>
+
+<string name="specific_date_not_set">विशिष्ट तिथि (सेट नहीं है)</string>
+
+<string name="time_unit_day">दिन</string>
+
+<string name="time_unit_days">दिनों</string>
+
+<string name="time_unit_week">सप्ताह</string>
+
+<string name="time_unit_weeks">सप्ताहों</string>
+
+<string name="time_unit_month">महीना</string>
+
+<string name="time_unit_months">महीनों</string>
+
+<string name="time_unit_year">वर्ष</string>
+
+<string name="time_unit_years">वर्षों</string>
+
+<string name="backup_type_settings">सेटिंग्स</string>
+
+<string name="backup_type_data">डेटा</string>
+
+<string name="backup_type_complete">पूर्ण</string>
+
+<string name="backup_exported_success">%1$s बैकअप सफलतापूर्वक एक्सपोर्ट किया गया</string>
+
+<string name="backup_export_failed">बैकअप एक्सपोर्ट करने में विफल: %1$s</string>
+
+<string name="backup_read_failed">बैकअप फ़ाइल पढ़ने में विफल: %1$s</string>
+
+<string name="backup_merged">मर्ज किया गया</string>
+
+<string name="backup_restored">रीस्टोर किया गया</string>
+
+<string name="backup_import_success">बैकअप सफलतापूर्वक %1$s हुआ</string>
+
+<string name="backup_import_failed">बैकअप इम्पोर्ट करने में विफल: %1$s</string>
+
+<string name="menu">मेन्यू</string>
+
+<string name="zoom_controls">ज़ूम कंट्रोल</string>
+
+<string name="filter_entries_by_date">तारीख के अनुसार प्रविष्टियाँ फ़िल्टर करें</string>
+
+<string name="language_english">English</string>
+
+<string name="language_spanish">Español</string>
+
+<string name="language_german">Deutsch</string>
+
+<string name="language_french">Français</string>
+
+<string name="language_italian">Italiano</string>
+
+<string name="language_portuguese">Português</string>
+
+<string name="language_dutch">Nederlands</string>
+
+<string name="language_russian">Русский</string>
+
+<string name="language_japanese">日本語</string>
+
+<string name="language_chinese">中文</string>
+
+<string name="language_arabic">العربية</string>
+
+<string name="language_hindi">हिन्दी</string>
+
+<string name="settings">सेटिंग्स</string>
+
+<string name="language">भाषा</string>
+
+<string name="theme">थीम</string>
+
+<string name="colors">रंग</string>
+
+<string name="font_color">फ़ॉन्ट का रंग</string>
+
+<string name="background_color">पृष्ठभूमि का रंग</string>
+
+<string name="grid_color">ग्रिड का रंग</string>
+
+<string name="insulin_column_color">इंसुलिन कॉलम का रंग</string>
+
+<string name="advanced_settings">उन्नत सेटिंग्स</string>
+
+<string name="view_settings_presets">व्यू सेटिंग्स और प्रीसेट</string>
+
+<string name="color_schemes">रंग योजनाएँ</string>
+
+<string name="save_current_colors_scheme">वर्तमान रंगों को योजना के रूप में सहेजें</string>
+
+<string name="load_color_schemes">रंग योजनाएं लोड करें</string>
+
+<string name="reset_to_defaults">डिफ़ॉल्ट पर रीसेट करें</string>
+
+<string name="save_current_view">वर्तमान व्यू सहेजें</string>
+
+<string name="saved_presets">सहेजे गए प्रीसेट</string>
+
+<string name="close">बंद करें</string>
+
+<string name="zoom_in">ज़ूम इन</string>
+
+<string name="zoom_out">ज़ूम आउट</string>
+
+<string name="increase_width">चौड़ाई बढ़ाएँ</string>
+
+<string name="decrease_width">चौड़ाई घटाएँ</string>
+
+<string name="reset_zoom_width">ज़ूम और चौड़ाई रीसेट करें</string>
+
+<string name="reset_view">व्यू रीसेट करें</string>
+
+<string name="zoom_format">ज़ूम: %1$d%%</string>
+
+<string name="width_format">चौड़ाई: %1$d%%</string>
+
+<string name="scale_format">स्केल: %1$d%%</string>
+
+<string name="width_scale_format">चौड़ाई स्केल: %1$sx</string>
+
+<string name="zoom_settings">ज़ूम सेटिंग्स</string>
+
+<string name="dark_mode_schemes">डार्क मोड योजनाएं</string>
+
+<string name="light_mode_schemes">लाइट मोड योजनाएं</string>
+
+<string name="no_dark_schemes">कोई डार्क मोड योजना सहेजी नहीं गई है</string>
+
+<string name="no_light_schemes">कोई लाइट मोड योजना सहेजी नहीं गई है</string>
+
+<string name="apply_scheme">योजना लागू करें</string>
+
+<string name="delete_scheme">योजना हटाएं</string>
+
+<string name="export_pdf">PDF के रूप में एक्सपोर्ट करें</string>
+
+<string name="export_txt">TXT के रूप में एक्सपोर्ट करें</string>
+
+<string name="pdf_export_options">PDF एक्सपोर्ट विकल्प</string>
+
+<string name="export_content">सामग्री एक्सपोर्ट करें:</string>
+
+<string name="table">तालिका (Table)</string>
+
+<string name="chart_graph">चार्ट/ग्राफ</string>
+
+<string name="chart_type">चार्ट का प्रकार:</string>
+
+<string name="select_chart_types">चार्ट प्रकार चुनें</string>
+
+<string name="chart_selected_count">%1$d चार्ट चुने गए</string>
+
+<string name="select_all_charts">सभी चार्ट चुनें</string>
+
+<string name="date_range">तिथि सीमा:</string>
+
+<string name="export_all_data">सारा डेटा एक्सपोर्ट करें</string>
+
+<string name="custom_date_range">कस्टम तिथि सीमा</string>
+
+<string name="selected_date_range">चयनित: %1$s से %2$s</string>
+
+<string name="start_date_format">आरंभ: %1$s</string>
+
+<string name="end_date_format">अंत: %1$s</string>
+
+<string name="tap_to_select_date_range">तिथि सीमा चुनने के लिए टैप करें</string>
+
+<string name="select_date_range">तिथि सीमा चुनें</string>
+
+<string name="choose_start_end_dates">अपने एक्सपोर्ट के लिए आरंभ और अंत तिथियां चुनें:</string>
+
+<string name="select_start_date">आरंभ तिथि चुनें</string>
+
+<string name="select_end_date">अंत तिथि चुनें</string>
+
+<string name="done">हो गया</string>
+
+<string name="export">एक्सपोर्ट</string>
+
+<string name="txt_export_options">TXT एक्सपोर्ट विकल्प</string>
+
+<string name="morning_blood_sugar">सुबह का ब्लड शुगर</string>
+
+<string name="afternoon_blood_sugar">दोपहर का ब्लड शुगर</string>
+
+<string name="evening_blood_sugar">शाम का ब्लड शुगर</string>
+
+<string name="night_blood_sugar">रात का ब्लड शुगर</string>
+
+<string name="average_blood_sugar">औसत ब्लड शुगर</string>
+
+<string name="morning_insulin">सुबह की इंसुलिन</string>
+
+<string name="afternoon_insulin">दोपहर की इंसुलिन</string>
+
+<string name="evening_insulin">शाम की इंसुलिन</string>
+
+<string name="press_back_again_to_exit">बाहर निकलने के लिए फिर से बैक बटन दबाएं</string>
+
+<string name="edit_saved_data_title">सहेजे गए डेटा को बदलें?</string>
+
+<string name="edit_saved_data_message">यह डेटा पहले ही सहेजा जा चुका है। क्या आप वाकई इसे बदलना चाहते हैं?</string>
+
+<string name="yes_edit">हाँ, बदलें</string>
+
+<string name="cancel">रद्द करें</string>
+
+<string name="unsaved_changes_title">बिना सहेजे गए बदलाव</string>
+
+<string name="unsaved_changes_message">आपके पास कुछ बदलाव हैं जो सहेजे नहीं गए हैं। क्या आप सभी बदलाव सहेजना चाहते हैं?</string>
+
+<string name="close_without_saving">बिना सहेजे बंद करें</string>
+
+<string name="save_and_close">सहेजें और बंद करें</string>
+
+<string name="save">सहेजें</string>
+
+<string name="delete">हटाएं</string>
+
+<string name="preset_name">प्रीसेट नाम</string>
+
+<string name="delete_preset">प्रीसेट हटाएं</string>
+
+<string name="delete_preset_confirmation">क्या आप वाकई \"%1$s\" को हटाना चाहते हैं?</string>
+
+<string name="all_changes_saved">सभी बदलाव सहेजे गए!</string>
+
+<string name="delete_entry">प्रविष्टि हटाएं</string>
+
+<string name="delete_entry_confirmation">क्या आप वाकई इस प्रविष्टि को हटाना चाहते हैं?</string>
+
+<string name="show_chart">चार्ट दिखाएं</string>
+
+<string name="blood_sugar_over_time">समय के साथ ब्लड शुगर</string>
+
+<string name="insulin_over_time">समय के साथ इंसुलिन</string>
+
+<string name="chart_title">चार्ट</string>
+
+<string name="blood_sugar">ब्लड शुगर</string>
+
+<string name="insulin">इंसुलिन</string>
+
+<string name="average">औसत</string>
+
+<string name="morning">सुबह</string>
+
+<string name="afternoon">दोपहर</string>
+
+<string name="evening">शाम</string>
+
+<string name="night">रात</string>
+
+<string name="date">तारीख</string>
+
+<string name="statistics_summary">सांख्यिकी सारांश</string>
+
+<string name="blood_sugar_statistics">ब्लड शुगर सांख्यिकी</string>
+
+<string name="insulin_statistics">इंसुलिन सांख्यिकी</string>
+
+<string name="latest">नवीनतम</string>
+
+<string name="range">सीमा</string>
+
+<string name="total">कुल</string>
+
+<string name="data_points">डेटा पॉइंट्स</string>
+
+<string name="filter">फ़िल्टर</string>
+
+<string name="no_data_available_time_period">चुनी गई समयावधि के लिए कोई डेटा उपलब्ध नहीं है</string>
+
+<string name="no_numeric_data_available">इसके लिए कोई संख्यात्मक डेटा उपलब्ध नहीं है:</string>
+
+<string name="enter_numeric_values_chart">चार्ट देखने के लिए तालिका में संख्यात्मक मान दर्ज करें</string>
+
+<string name="mg_dl">mg/dL</string>
+
+<string name="units">यूनिट्स</string>
+
+<string name="custom_over_time">समय के साथ %1$s</string>
+
+<string name="settings_data_presets">सेटिंग्स, डेटा और प्रीसेट</string>
+
+<string name="settings_only">केवल सेटिंग्स</string>
+
+<string name="colors_zoom_language_etc">रंग, ज़ूम, भाषा, आदि</string>
+
+<string name="auto_save_tip">💡 सुझाव: उन्नत सेटिंग्स में आप इस संवाद को छोड़ने के लिए \'बाहर निकलने पर ऑटो-सेव\' सक्षम कर सकते हैं।</string>
+
+<string name="select_date">तारीख चुनें</string>
+
+<string name="today">आज</string>
+
+<string name="ok">ठीक है</string>
+
+<string name="clear">साफ़ करें</string>
+
+<string name="pick_date">तारीख चुनें...</string>
+
+<string name="dark_mode">डार्क मोड</string>
+
+<string name="preset_management">प्रीसेट प्रबंधन</string>
+
+<string name="current_view_saved">वर्तमान व्यू सहेजा गया</string>
+
+<string name="saved_view_loaded">सहेजा गया व्यू लोड हुआ</string>
+
+<string name="no_saved_view_found">कोई सहेजा गया व्यू नहीं मिला</string>
+
+<string name="preset_saved">प्रीसेट सहेजा गया</string>
+
+<string name="preset_loaded">प्रीसेट लोड हुआ</string>
+
+<string name="preset_deleted">प्रीसेट हटाया गया</string>
+
+<string name="backup_restore">बैकअप और रीस्टोर</string>
+
+<string name="export_backup">बैकअप एक्सपोर्ट करें</string>
+
+<string name="import_backup">बैकअप इम्पोर्ट करें</string>
+
+<string name="common_foods">सामान्य भोजन</string>
+
+<string name="food_apple">सेब</string>
+
+<string name="food_banana">केला</string>
+
+<string name="food_bread">रोटी</string>
+
+<string name="food_meat">मांस</string>
+
+<string name="food_salad">सलाद</string>
+
+<string name="food_milk">दूध</string>
+
+<string name="food_rice">चावल</string>
+
+<string name="food_egg">अंडा</string>
+
+<string name="food_fish">मछली</string>
+
+<string name="food_potato">आलू</string>
+
+<string name="food_carrot">गाजर</string>
+
+<string name="food_pasta">पास्ता</string>
+
+<string name="action_edit_common_food">सामान्य भोजन बदलें</string>
+
+<string name="action_delete_common_food">सामान्य भोजन हटाएं</string>
+
+<string name="edit_common_food">सामान्य भोजन बदलें</string>
+
+<string name="select_emoji">इमोजी चुनें</string>
+
+<string name="custom_columns">कस्टम कॉलम</string>
+
+<string name="manage_custom_columns">कस्टम कॉलम प्रबंधित करें</string>
+
+<string name="action_edit_custom_column">कस्टम कॉलम बदलें</string>
+
+<string name="pattern_analysis">📊 पैटर्न विश्लेषण</string>
+
+<string name="back">पीछे</string>
+
+<string name="export_analysis">विश्लेषण एक्सपोर्ट करें</string>
+
+<string name="no_patterns_detected">🔍 अभी तक कोई पैटर्न नहीं मिला है</string>
+
+<string name="keep_tracking_message">डेटा ट्रैक करते रहें और पैटर्न यहाँ दिखाई देंगे</string>
+
+<string name="pattern_details">पैटर्न विवरण</string>
+
+<string name="detected_patterns">%1$d पैटर्न मिले</string>
+
+<string name="showing_patterns">%2$d में से %1$d पैटर्न दिखा रहा है</string>
+
+<string name="clear_filter">फ़िल्टर साफ़ करें</string>
+
+<string name="no_patterns_match_filter">वर्तमान फ़िल्टर से कोई पैटर्न मेल नहीं खाता</string>
+
+<string name="export_analysis_title">📤 विश्लेषण एक्सपोर्ट करें</string>
+
+<string name="export_analysis_description">अपने डॉक्टर के साथ साझा करने या अपने रिकॉर्ड के लिए अपना पैटर्न विश्लेषण एक्सपोर्ट करें।</string>
+
+<string name="export_will_include">एक्सपोर्ट में शामिल होगा:</string>
+
+<string name="export_includes_list">• सभी मिले हुए पैटर्न\n• विश्वसनीयता स्कोर\n• घटनाओं का विवरण\n• जोखिम विश्लेषण\n• सुझाव</string>
+
+<string name="export_to_txt">TXT में एक्सपोर्ट करें</string>
+
+<string name="after">बाद में: %1$s</string>
+
+<string name="dismiss">हटाएं</string>
+
+<string name="occurrences">%1$d बार हुआ</string>
+
+<string name="ignore_this_food">🚫 इस भोजन को अनदेखा करें</string>
+
+<string name="show_details">विवरण दिखाएं</string>
+
+<string name="hide_details">विवरण छिपाएं</string>
+
+<string name="occurrences_label">घटनाएं:</string>
+
+<string name="show_all_occurrences">सभी %1$d घटनाएं दिखाएं</string>
+
+<string name="show_less">कम दिखाएं</string>
+
+<string name="ignore_food_title">भोजन अनदेखा करें?</string>
+
+<string name="ignore_food_message">क्या आप वाकई \'%1$s\' को अनदेखा करना चाहते हैं?</string>
+
+<string name="ignore_food_warning">यह भोजन अब पैटर्न अलर्ट ट्रिगर नहीं करेगा, भले ही भविष्य में कोई संबंध पाया जाए।</string>
+
+<string name="ignore_food_button">भोजन अनदेखा करें</string>
+
+<string name="high_confidence">उच्च विश्वसनीयता</string>
+
+<string name="medium_confidence">मध्यम विश्वसनीयता</string>
+
+<string name="low_confidence">कम विश्वसनीयता</string>
+
+<string name="pattern_overview">📊 पैटर्न अवलोकन</string>
+
+<string name="risk_distribution">जोखिम वितरण</string>
+
+<string name="high_risk">उच्च जोखिम</string>
+
+<string name="medium_risk">मध्यम जोखिम</string>
+
+<string name="low_risk">कम जोखिम</string>
+
+<string name="pattern_types">पैटर्न के प्रकार</string>
+
+<string name="food_marker_correlations">भोजन-मार्कर सहसंबंध</string>
+
+<string name="blood_sugar_spikes">ब्लड शुगर में वृद्धि</string>
+
+<string name="time_based_patterns">समय-आधारित पैटर्न</string>
+
+<string name="top_risky_foods">⚠️ शीर्ष जोखिम वाले खाद्य पदार्थ</string>
+
+<string name="times">बार</string>
+
+<string name="blood_sugar_label">ब्लड शुगर: %1$s</string>
+
+<string name="marker_feel_bad">बुरा महसूस होना</string>
+
+<string name="marker_blood_sugar_spike">ब्लड शुगर में उछाल</string>
+
+<string name="export_pattern_analysis">पैटर्न विश्लेषण</string>
+
+<string name="include_pattern_analysis">पैटर्न विश्लेषण रिपोर्ट शामिल करें</string>
+
+<string name="export_format">एक्सपोर्ट फॉर्मेट:</string>
+
+<string name="pdf_document">PDF दस्तावेज़</string>
+
+<string name="text_file">टेक्स्ट फ़ाइल</string>
+
+<string name="pattern_analysis_exported_pdf">पैटर्न विश्लेषण सफलतापूर्वक PDF के रूप में एक्सपोर्ट किया गया!</string>
+
+<string name="pattern_analysis_exported_txt">पैटर्न विश्लेषण सफलतापूर्वक TXT के रूप में एक्सपोर्ट किया गया!</string>
+
+<string name="export_failed">एक्सपोर्ट विफल रहा। कृपया पुनः प्रयास करें।</string>
+
+<string name="pdf_report_title">मधुमेह पैटर्न विश्लेषण रिपोर्ट</string>
+
+<string name="pdf_generated">जनरेट किया गया:</string>
+
+<string name="pdf_total_patterns">कुल पैटर्न:</string>
+
+<string name="pdf_summary">सारांश</string>
+
+<string name="pdf_risk_distribution">जोखिम वितरण:</string>
+
+<string name="pdf_high_risk">उच्च जोखिम (≥80%):</string>
+
+<string name="pdf_medium_risk">मध्यम जोखिम (60-79%):</string>
+
+<string name="pdf_low_risk">कम जोखिम (&lt;60%):</string>
+
+<string name="pdf_pattern_types">पैटर्न के प्रकार:</string>
+
+<string name="pdf_food_marker_correlations">भोजन-मार्कर सहसंबंध:</string>
+
+<string name="pdf_blood_sugar_spikes">ब्लड शुगर में वृद्धि:</string>
+
+<string name="pdf_time_based_patterns">समय-आधारित पैटर्न:</string>
+
+<string name="pdf_top_risky_foods">शीर्ष जोखिम वाले खाद्य पदार्थ:</string>
+
+<string name="pdf_confidence">विश्वसनीयता</string>
+
+<string name="pdf_detailed_analysis">विस्तृत पैटर्न विश्लेषण</string>
+
+<string name="pdf_pattern_number">पैटर्न #%1$d</string>
+
+<string name="pdf_type">प्रकार:</string>
+
+<string name="pdf_food_item">भोजन/सामग्री:</string>
+
+<string name="pdf_effect">प्रभाव:</string>
+
+<string name="pdf_occurrences">घटनाएं:</string>
+
+<string name="pdf_confidence_label">विश्वसनीयता:</string>
+
+<string name="pdf_time_range">समय सीमा:</string>
+
+<string name="pdf_risk_level">जोखिम स्तर:</string>
+
+<string name="pdf_high_risk_label">उच्च जोखिम</string>
+
+<string name="pdf_medium_risk_label">मध्यम जोखिम</string>
+
+<string name="pdf_low_risk_label">कम जोखिम</string>
+
+<string name="pdf_suggestion">सुझाव:</string>
+
+<string name="pdf_recent_occurrences">हाल की घटनाएं:</string>
+
+<string name="pdf_blood_sugar">ब्लड शुगर:</string>
+
+<string name="pdf_more_occurrences">... और %1$d अधिक घटनाएं</string>
+
+<string name="pdf_disclaimer">अस्वीकरण (Disclaimer):</string>
+
+<string name="pdf_disclaimer_text">यह विश्लेषण आपके ट्रैक किए गए डेटा पर आधारित है और केवल सूचनात्मक उद्देश्यों के लिए है। अपने आहार या उपचार योजना में कोई भी बदलाव करने से पहले कृपया अपने स्वास्थ्य सेवा प्रदाता से परामर्श करें।</string>
+
+<string name="pdf_pattern_s">पैटर्न</string>
+
+<string name="pattern_alert_single">⚠️ नया पैटर्न: %1$s → %2$s (%3$dx)</string>
+
+<string name="pattern_alert_multiple">⚠️ %1$d नए पैटर्न मिले! देखने के लिए टैप करें।</string>
+
+<string name="pattern_alert_action">देखें</string>
+
+</resources>

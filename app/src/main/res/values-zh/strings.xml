@@ -1,0 +1,605 @@
+<resources>
+
+<string name="app_name">糖尿病追踪器</string>
+
+<string name="undo">撤销</string>
+
+<string name="redo">重做</string>
+
+<string name="undo_actions">撤销操作</string>
+
+<string name="redo_actions">重做操作</string>
+
+<string name="redo_prefix">重做：%1$s</string>
+
+<string name="action_add_new_entry">添加新记录</string>
+
+<string name="action_delete_entry">删除记录</string>
+
+<string name="action_edit_morning_blood_sugar">编辑早晨血糖</string>
+
+<string name="action_edit_afternoon_blood_sugar">编辑下午血糖</string>
+
+<string name="action_edit_evening_blood_sugar">编辑晚上血糖</string>
+
+<string name="action_edit_night_blood_sugar">编辑夜间血糖</string>
+
+<string name="action_edit_morning_insulin">编辑早晨胰岛素</string>
+
+<string name="action_edit_afternoon_insulin">编辑下午胰岛素</string>
+
+<string name="action_edit_evening_insulin">编辑晚上胰岛素</string>
+
+<string name="action_edit_remarks">编辑备注</string>
+
+<string name="action_add_food_item">添加食物项</string>
+
+<string name="action_remove_food_item">移除食物项</string>
+
+<string name="action_edit_food_item">编辑食物项</string>
+
+<string name="action_edit_entry">编辑记录</string>
+
+<string name="date_filter_all">所有记录</string>
+
+<string name="date_filter_flexible">灵活范围</string>
+
+<string name="date_filter_custom">自定义范围</string>
+
+<string name="date_filter_specific">特定日期</string>
+
+<string name="showing_all_entries">显示所有记录</string>
+
+<string name="showing_entries_last">显示最近 %1$d %2$s 的记录</string>
+
+<string name="custom_range_format">自定义范围：%1$s 至 %2$s</string>
+
+<string name="custom_range_not_set">自定义范围（未设置）</string>
+
+<string name="specific_date_format">特定日期：%1$s</string>
+
+<string name="specific_date_not_set">特定日期（未设置）</string>
+
+<string name="time_unit_day">天</string>
+
+<string name="time_unit_days">天</string>
+
+<string name="time_unit_week">周</string>
+
+<string name="time_unit_weeks">周</string>
+
+<string name="time_unit_month">月</string>
+
+<string name="time_unit_months">个月</string>
+
+<string name="time_unit_year">年</string>
+
+<string name="time_unit_years">年</string>
+
+<string name="backup_type_settings">设置</string>
+
+<string name="backup_type_data">数据</string>
+
+<string name="backup_type_complete">完整</string>
+
+<string name="backup_exported_success">%1$s 备份导出成功</string>
+
+<string name="backup_export_failed">导出备份失败：%1$s</string>
+
+<string name="backup_read_failed">读取备份文件失败：%1$s</string>
+
+<string name="backup_merged">已合并</string>
+
+<string name="backup_restored">已恢复</string>
+
+<string name="backup_import_success">备份 %1$s 成功</string>
+
+<string name="backup_import_failed">导入备份失败：%1$s</string>
+
+<string name="menu">菜单</string>
+
+<string name="zoom_controls">缩放控制</string>
+
+<string name="filter_entries_by_date">按日期过滤记录</string>
+
+<string name="language_english">English</string>
+
+<string name="language_spanish">Español</string>
+
+<string name="language_german">Deutsch</string>
+
+<string name="language_french">Français</string>
+
+<string name="language_italian">Italiano</string>
+
+<string name="language_portuguese">Português</string>
+
+<string name="language_dutch">Nederlands</string>
+
+<string name="language_russian">Русский</string>
+
+<string name="language_japanese">日本語</string>
+
+<string name="language_chinese">中文</string>
+
+<string name="language_arabic">العربية</string>
+
+<string name="language_hindi">हिन्दी</string>
+
+<string name="settings">设置</string>
+
+<string name="language">语言</string>
+
+<string name="theme">主题</string>
+
+<string name="colors">颜色</string>
+
+<string name="font_color">字体颜色</string>
+
+<string name="background_color">背景颜色</string>
+
+<string name="grid_color">网格颜色</string>
+
+<string name="insulin_column_color">胰岛素列颜色</string>
+
+<string name="advanced_settings">高级设置</string>
+
+<string name="view_settings_presets">视图设置与预设</string>
+
+<string name="color_schemes">配色方案</string>
+
+<string name="save_current_colors_scheme">将当前颜色保存为方案</string>
+
+<string name="load_color_schemes">加载配色方案</string>
+
+<string name="reset_to_defaults">恢复默认设置</string>
+
+<string name="save_current_view">保存当前视图</string>
+
+<string name="saved_presets">已保存的预设</string>
+
+<string name="close">关闭</string>
+
+<string name="zoom_in">放大</string>
+
+<string name="zoom_out">缩小</string>
+
+<string name="increase_width">增加宽度</string>
+
+<string name="decrease_width">减小宽度</string>
+
+<string name="reset_zoom_width">重置缩放和宽度</string>
+
+<string name="reset_view">重置视图</string>
+
+<string name="zoom_format">缩放：%1$d%%</string>
+
+<string name="width_format">宽度：%1$d%%</string>
+
+<string name="scale_format">比例：%1$d%%</string>
+
+<string name="width_scale_format">宽度比例：%1$sx</string>
+
+<string name="zoom_settings">缩放设置</string>
+
+<string name="dark_mode_schemes">深色模式方案</string>
+
+<string name="light_mode_schemes">浅色模式方案</string>
+
+<string name="no_dark_schemes">未保存深色模式方案</string>
+
+<string name="no_light_schemes">未保存浅色模式方案</string>
+
+<string name="apply_scheme">应用方案</string>
+
+<string name="delete_scheme">删除方案</string>
+
+<string name="export_pdf">导出为 PDF</string>
+
+<string name="export_txt">导出为 TXT</string>
+
+<string name="pdf_export_options">PDF 导出选项</string>
+
+<string name="export_content">导出内容：</string>
+
+<string name="table">表格</string>
+
+<string name="chart_graph">图表/图形</string>
+
+<string name="chart_type">图表类型：</string>
+
+<string name="select_chart_types">选择图表类型</string>
+
+<string name="chart_selected_count">已选择 %1$d 个图表</string>
+
+<string name="select_all_charts">选择所有图表</string>
+
+<string name="date_range">日期范围：</string>
+
+<string name="export_all_data">导出所有数据</string>
+
+<string name="custom_date_range">自定义日期范围</string>
+
+<string name="selected_date_range">已选：从 %1$s 到 %2$s</string>
+
+<string name="start_date_format">开始：%1$s</string>
+
+<string name="end_date_format">结束：%1$s</string>
+
+<string name="tap_to_select_date_range">点击选择日期范围</string>
+
+<string name="select_date_range">选择日期范围</string>
+
+<string name="choose_start_end_dates">为您的导出选择开始和结束日期：</string>
+
+<string name="select_start_date">选择开始日期</string>
+
+<string name="select_end_date">选择结束日期</string>
+
+<string name="done">完成</string>
+
+<string name="export">导出</string>
+
+<string name="txt_export_options">TXT 导出选项</string>
+
+<string name="morning_blood_sugar">早晨血糖</string>
+
+<string name="afternoon_blood_sugar">下午血糖</string>
+
+<string name="evening_blood_sugar">晚上血糖</string>
+
+<string name="night_blood_sugar">夜间血糖</string>
+
+<string name="average_blood_sugar">平均血糖</string>
+
+<string name="morning_insulin">早晨胰岛素</string>
+
+<string name="afternoon_insulin">下午胰岛素</string>
+
+<string name="evening_insulin">晚上胰岛素</string>
+
+<string name="press_back_again_to_exit">再次按返回键退出</string>
+
+<string name="edit_saved_data_title">编辑已保存数据？</string>
+
+<string name="edit_saved_data_message">此数据已保存。您确定要编辑它吗？</string>
+
+<string name="yes_edit">是的，编辑</string>
+
+<string name="cancel">取消</string>
+
+<string name="unsaved_changes_title">未保存的更改</string>
+
+<string name="unsaved_changes_message">您有未保存的更改。是否保存所有更改？</string>
+
+<string name="close_without_saving">不保存并关闭</string>
+
+<string name="save_and_close">保存并关闭</string>
+
+<string name="save">保存</string>
+
+<string name="delete">删除</string>
+
+<string name="preset_name">预设名称</string>
+
+<string name="delete_preset">删除预设</string>
+
+<string name="delete_preset_confirmation">您确定要删除“%1$s”吗？</string>
+
+<string name="all_changes_saved">所有更改已保存！</string>
+
+<string name="delete_entry">删除记录</string>
+
+<string name="delete_entry_confirmation">您确定要删除此条记录吗？</string>
+
+<string name="show_chart">显示图表</string>
+
+<string name="blood_sugar_over_time">血糖随时间变化趋势</string>
+
+<string name="insulin_over_time">胰岛素随时间变化趋势</string>
+
+<string name="chart_title">图表</string>
+
+<string name="blood_sugar">血糖</string>
+
+<string name="insulin">胰岛素</string>
+
+<string name="average">平均值</string>
+
+<string name="morning">早晨</string>
+
+<string name="afternoon">下午</string>
+
+<string name="evening">晚上</string>
+
+<string name="night">夜间</string>
+
+<string name="date">日期</string>
+
+<string name="statistics_summary">统计摘要</string>
+
+<string name="blood_sugar_statistics">血糖统计</string>
+
+<string name="insulin_statistics">胰岛素统计</string>
+
+<string name="latest">最新</string>
+
+<string name="range">范围</string>
+
+<string name="total">总计</string>
+
+<string name="data_points">数据点</string>
+
+<string name="filter">过滤</string>
+
+<string name="no_data_available_time_period">所选时间段内没有可用数据</string>
+
+<string name="no_numeric_data_available">没有可用的数值数据：</string>
+
+<string name="enter_numeric_values_chart">在表格中输入数值以查看图表</string>
+
+<string name="mg_dl">mg/dL</string>
+
+<string name="units">单位</string>
+
+<string name="custom_over_time">%1$s 随时间变化趋势</string>
+
+<string name="settings_data_presets">设置、数据与预设</string>
+
+<string name="settings_only">仅设置</string>
+
+<string name="colors_zoom_language_etc">颜色、缩放、语言等</string>
+
+<string name="auto_save_tip">💡 提示：在高级设置中，您可以启用“退出时自动保存”来跳过此对话框。</string>
+
+<string name="select_date">选择日期</string>
+
+<string name="today">今天</string>
+
+<string name="ok">确定</string>
+
+<string name="clear">清除</string>
+
+<string name="pick_date">选择日期...</string>
+
+<string name="dark_mode">深色模式</string>
+
+<string name="preset_management">预设管理</string>
+
+<string name="current_view_saved">当前视图已保存</string>
+
+<string name="saved_view_loaded">已加载保存的视图</string>
+
+<string name="no_saved_view_found">未找到保存的视图</string>
+
+<string name="preset_saved">预设已保存</string>
+
+<string name="preset_loaded">预设已加载</string>
+
+<string name="preset_deleted">预设已删除</string>
+
+<string name="backup_restore">备份与恢复</string>
+
+<string name="export_backup">导出备份</string>
+
+<string name="import_backup">导入备份</string>
+
+<string name="common_foods">常用食物</string>
+
+<string name="food_apple">苹果</string>
+
+<string name="food_banana">香蕉</string>
+
+<string name="food_bread">面包</string>
+
+<string name="food_meat">肉类</string>
+
+<string name="food_salad">沙拉</string>
+
+<string name="food_milk">牛奶</string>
+
+<string name="food_rice">米饭</string>
+
+<string name="food_egg">鸡蛋</string>
+
+<string name="food_fish">鱼类</string>
+
+<string name="food_potato">马铃薯</string>
+
+<string name="food_carrot">胡萝卜</string>
+
+<string name="food_pasta">意面</string>
+
+<string name="action_edit_common_food">编辑常用食物</string>
+
+<string name="action_delete_common_food">删除常用食物</string>
+
+<string name="edit_common_food">编辑常用食物</string>
+
+<string name="select_emoji">选择表情符号</string>
+
+<string name="custom_columns">自定义列</string>
+
+<string name="manage_custom_columns">管理自定义列</string>
+
+<string name="action_edit_custom_column">编辑自定义列</string>
+
+<string name="pattern_analysis">📊 规律分析</string>
+
+<string name="back">返回</string>
+
+<string name="export_analysis">导出分析</string>
+
+<string name="no_patterns_detected">🔍 尚未检测到规律</string>
+
+<string name="keep_tracking_message">继续记录您的数据，规律将显示在此处</string>
+
+<string name="pattern_details">规律细节</string>
+
+<string name="detected_patterns">检测到 %1$d 个规律</string>
+
+<string name="showing_patterns">正在显示 %1$d / %2$d 个规律</string>
+
+<string name="clear_filter">清除过滤器</string>
+
+<string name="no_patterns_match_filter">没有符合当前过滤条件的规律</string>
+
+<string name="export_analysis_title">📤 导出分析</string>
+
+<string name="export_analysis_description">导出您的规律分析报告，以便与医生分享或存档。</string>
+
+<string name="export_will_include">导出将包含：</string>
+
+<string name="export_includes_list">• 所有检测到的规律\n• 可信度分数\n• 发生细节\n• 风险分析\n• 建议</string>
+
+<string name="export_to_txt">导出为 TXT</string>
+
+<string name="after">之后：%1$s</string>
+
+<string name="dismiss">忽略</string>
+
+<string name="occurrences">%1$d 次发生</string>
+
+<string name="ignore_this_food">🚫 忽略此食物</string>
+
+<string name="show_details">显示详情</string>
+
+<string name="hide_details">隐藏详情</string>
+
+<string name="occurrences_label">发生次数：</string>
+
+<string name="show_all_occurrences">显示全部 %1$d 次发生</string>
+
+<string name="show_less">显示更少</string>
+
+<string name="ignore_food_title">忽略食物？</string>
+
+<string name="ignore_food_message">您确定要忽略“%1$s”吗？</string>
+
+<string name="ignore_food_warning">此食物将不再触发规律提醒，即使将来检测到相关性。</string>
+
+<string name="ignore_food_button">忽略食物</string>
+
+<string name="high_confidence">高可信度</string>
+
+<string name="medium_confidence">中可信度</string>
+
+<string name="low_confidence">低可信度</string>
+
+<string name="pattern_overview">📊 规律概览</string>
+
+<string name="risk_distribution">风险分布</string>
+
+<string name="high_risk">高风险</string>
+
+<string name="medium_risk">中风险</string>
+
+<string name="low_risk">低风险</string>
+
+<string name="pattern_types">规律类型</string>
+
+<string name="food_marker_correlations">食物-标记相关性</string>
+
+<string name="blood_sugar_spikes">血糖飙升</string>
+
+<string name="time_based_patterns">基于时间的规律</string>
+
+<string name="top_risky_foods">⚠️ 高风险食物排行</string>
+
+<string name="times">次</string>
+
+<string name="blood_sugar_label">血糖：%1$s</string>
+
+<string name="marker_feel_bad">感觉不适</string>
+
+<string name="marker_blood_sugar_spike">血糖飙升</string>
+
+<string name="export_pattern_analysis">规律分析</string>
+
+<string name="include_pattern_analysis">包含规律分析报告</string>
+
+<string name="export_format">导出格式：</string>
+
+<string name="pdf_document">PDF 文档</string>
+
+<string name="text_file">文本文件</string>
+
+<string name="pattern_analysis_exported_pdf">规律分析已成功导出为 PDF！</string>
+
+<string name="pattern_analysis_exported_txt">规律分析已成功导出为 TXT！</string>
+
+<string name="export_failed">导出失败。请重试。</string>
+
+<string name="pdf_report_title">糖尿病规律分析报告</string>
+
+<string name="pdf_generated">生成时间：</string>
+
+<string name="pdf_total_patterns">总规律数：</string>
+
+<string name="pdf_summary">摘要</string>
+
+<string name="pdf_risk_distribution">风险分布：</string>
+
+<string name="pdf_high_risk">高风险 (≥80%)：</string>
+
+<string name="pdf_medium_risk">中风险 (60-79%)：</string>
+
+<string name="pdf_low_risk">低风险 (&lt;60%)：</string>
+
+<string name="pdf_pattern_types">规律类型：</string>
+
+<string name="pdf_food_marker_correlations">食物-标记相关性：</string>
+
+<string name="pdf_blood_sugar_spikes">血糖飙升：</string>
+
+<string name="pdf_time_based_patterns">基于时间的规律：</string>
+
+<string name="pdf_top_risky_foods">高风险食物排行：</string>
+
+<string name="pdf_confidence">可信度</string>
+
+<string name="pdf_detailed_analysis">详细规律分析</string>
+
+<string name="pdf_pattern_number">规律 #%1$d</string>
+
+<string name="pdf_type">类型：</string>
+
+<string name="pdf_food_item">食物/项目：</string>
+
+<string name="pdf_effect">影响：</string>
+
+<string name="pdf_occurrences">发生次数：</string>
+
+<string name="pdf_confidence_label">可信度：</string>
+
+<string name="pdf_time_range">时间范围：</string>
+
+<string name="pdf_risk_level">风险等级：</string>
+
+<string name="pdf_high_risk_label">高风险</string>
+
+<string name="pdf_medium_risk_label">中风险</string>
+
+<string name="pdf_low_risk_label">低风险</string>
+
+<string name="pdf_suggestion">建议：</string>
+
+<string name="pdf_recent_occurrences">最近发生：</string>
+
+<string name="pdf_blood_sugar">血糖：</string>
+
+<string name="pdf_more_occurrences">... 以及另外 %1$d 次发生</string>
+
+<string name="pdf_disclaimer">免责声明：</string>
+
+<string name="pdf_disclaimer_text">此分析基于您的记录数据，仅供参考。在更改饮食或治疗方案之前，请咨询您的医疗保健医生。</string>
+
+<string name="pdf_pattern_s">个规律</string>
+
+<string name="pattern_alert_single">⚠️ 新规律：%1$s → %2$s (%3$dx)</string>
+
+<string name="pattern_alert_multiple">⚠️ 检测到 %1$d 个新规律！点击查看。</string>
+
+<string name="pattern_alert_action">查看</string>
+
+</resources>

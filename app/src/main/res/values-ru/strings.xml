@@ -1,0 +1,605 @@
+<resources>
+
+<string name="app_name">Трекер диабета</string>
+
+<string name="undo">Отменить</string>
+
+<string name="redo">Повторить</string>
+
+<string name="undo_actions">Отменить действия</string>
+
+<string name="redo_actions">Повторить действия</string>
+
+<string name="redo_prefix">Повторить: %1$s</string>
+
+<string name="action_add_new_entry">Добавить новую запись</string>
+
+<string name="action_delete_entry">Удалить запись</string>
+
+<string name="action_edit_morning_blood_sugar">Изменить утренний сахар</string>
+
+<string name="action_edit_afternoon_blood_sugar">Изменить дневной сахар</string>
+
+<string name="action_edit_evening_blood_sugar">Изменить вечерний сахар</string>
+
+<string name="action_edit_night_blood_sugar">Изменить ночной сахар</string>
+
+<string name="action_edit_morning_insulin">Изменить утренний инсулин</string>
+
+<string name="action_edit_afternoon_insulin">Изменить дневной инсулин</string>
+
+<string name="action_edit_evening_insulin">Изменить вечерний инсулин</string>
+
+<string name="action_edit_remarks">Изменить примечания</string>
+
+<string name="action_add_food_item">Добавить продукт</string>
+
+<string name="action_remove_food_item">Удалить продукт</string>
+
+<string name="action_edit_food_item">Изменить продукт</string>
+
+<string name="action_edit_entry">Изменить запись</string>
+
+<string name="date_filter_all">Все записи</string>
+
+<string name="date_filter_flexible">Гибкий диапазон</string>
+
+<string name="date_filter_custom">Свой диапазон</string>
+
+<string name="date_filter_specific">Конкретная дата</string>
+
+<string name="showing_all_entries">Показаны все записи</string>
+
+<string name="showing_entries_last">Показаны записи за последние %1$d %2$s</string>
+
+<string name="custom_range_format">Диапазон: с %1$s по %2$s</string>
+
+<string name="custom_range_not_set">Диапазон (не установлен)</string>
+
+<string name="specific_date_format">Конкретная дата: %1$s</string>
+
+<string name="specific_date_not_set">Конкретная дата (не установлена)</string>
+
+<string name="time_unit_day">день</string>
+
+<string name="time_unit_days">дн.</string>
+
+<string name="time_unit_week">неделя</string>
+
+<string name="time_unit_weeks">нед.</string>
+
+<string name="time_unit_month">месяц</string>
+
+<string name="time_unit_months">мес.</string>
+
+<string name="time_unit_year">год</string>
+
+<string name="time_unit_years">лет</string>
+
+<string name="backup_type_settings">Настройки</string>
+
+<string name="backup_type_data">Данные</string>
+
+<string name="backup_type_complete">Полная копия</string>
+
+<string name="backup_exported_success">Резервная копия (%1$s) успешно экспортирована</string>
+
+<string name="backup_export_failed">Ошибка экспорта: %1$s</string>
+
+<string name="backup_read_failed">Не удалось прочитать файл: %1$s</string>
+
+<string name="backup_merged">объединено</string>
+
+<string name="backup_restored">восстановлено</string>
+
+<string name="backup_import_success">Резервная копия успешно %1$s</string>
+
+<string name="backup_import_failed">Ошибка импорта: %1$s</string>
+
+<string name="menu">Меню</string>
+
+<string name="zoom_controls">Масштаб</string>
+
+<string name="filter_entries_by_date">Фильтр записей по дате</string>
+
+<string name="language_english">English</string>
+
+<string name="language_spanish">Español</string>
+
+<string name="language_german">Deutsch</string>
+
+<string name="language_french">Français</string>
+
+<string name="language_italian">Italiano</string>
+
+<string name="language_portuguese">Português</string>
+
+<string name="language_dutch">Nederlands</string>
+
+<string name="language_russian">Русский</string>
+
+<string name="language_japanese">日本語</string>
+
+<string name="language_chinese">中文</string>
+
+<string name="language_arabic">العربية</string>
+
+<string name="language_hindi">हिन्दी</string>
+
+<string name="settings">Настройки</string>
+
+<string name="language">Язык</string>
+
+<string name="theme">Тема</string>
+
+<string name="colors">Цвета</string>
+
+<string name="font_color">Цвет шрифта</string>
+
+<string name="background_color">Цвет фона</string>
+
+<string name="grid_color">Цвет сетки</string>
+
+<string name="insulin_column_color">Цвет колонки инсулина</string>
+
+<string name="advanced_settings">Расширенные настройки</string>
+
+<string name="view_settings_presets">Вид и пресеты</string>
+
+<string name="color_schemes">Цветовые схемы</string>
+
+<string name="save_current_colors_scheme">Сохранить текущие цвета как схему</string>
+
+<string name="load_color_schemes">Загрузить схемы</string>
+
+<string name="reset_to_defaults">Сброс по умолчанию</string>
+
+<string name="save_current_view">Сохранить текущий вид</string>
+
+<string name="saved_presets">Сохраненные пресеты</string>
+
+<string name="close">Закрыть</string>
+
+<string name="zoom_in">Увеличить</string>
+
+<string name="zoom_out">Уменьшить</string>
+
+<string name="increase_width">Увеличить ширину</string>
+
+<string name="decrease_width">Уменьшить ширину</string>
+
+<string name="reset_zoom_width">Сбросить масштаб и ширину</string>
+
+<string name="reset_view">Сбросить вид</string>
+
+<string name="zoom_format">Масштаб: %1$d%%</string>
+
+<string name="width_format">Ширина: %1$d%%</string>
+
+<string name="scale_format">Размер: %1$d%%</string>
+
+<string name="width_scale_format">Множитель ширины: %1$sx</string>
+
+<string name="zoom_settings">Настройки масштаба</string>
+
+<string name="dark_mode_schemes">Тёмные схемы</string>
+
+<string name="light_mode_schemes">Светлые схемы</string>
+
+<string name="no_dark_schemes">Нет сохраненных тёмных схем</string>
+
+<string name="no_light_schemes">Нет сохраненных светлых схем</string>
+
+<string name="apply_scheme">Применить схему</string>
+
+<string name="delete_scheme">Удалить схему</string>
+
+<string name="export_pdf">Экспорт в PDF</string>
+
+<string name="export_txt">Экспорт в TXT</string>
+
+<string name="pdf_export_options">Параметры PDF-экспорта</string>
+
+<string name="export_content">Содержимое:</string>
+
+<string name="table">Таблица</string>
+
+<string name="chart_graph">График/Диаграмма</string>
+
+<string name="chart_type">Тип графика:</string>
+
+<string name="select_chart_types">Выбрать типы графиков</string>
+
+<string name="chart_selected_count">Выбрано графиков: %1$d</string>
+
+<string name="select_all_charts">Выбрать все графики</string>
+
+<string name="date_range">Диапазон дат:</string>
+
+<string name="export_all_data">Экспортировать всё</string>
+
+<string name="custom_date_range">Свой диапазон дат</string>
+
+<string name="selected_date_range">Выбрано: с %1$s по %2$s</string>
+
+<string name="start_date_format">Начало: %1$s</string>
+
+<string name="end_date_format">Конец: %1$s</string>
+
+<string name="tap_to_select_date_range">Нажмите, чтобы выбрать диапазон</string>
+
+<string name="select_date_range">Выбрать диапазон дат</string>
+
+<string name="choose_start_end_dates">Выберите даты начала и окончания для экспорта:</string>
+
+<string name="select_start_date">Дата начала</string>
+
+<string name="select_end_date">Дата окончания</string>
+
+<string name="done">Готово</string>
+
+<string name="export">Экспорт</string>
+
+<string name="txt_export_options">Параметры TXT-экспорта</string>
+
+<string name="morning_blood_sugar">Утренний сахар</string>
+
+<string name="afternoon_blood_sugar">Дневной сахар</string>
+
+<string name="evening_blood_sugar">Вечерний сахар</string>
+
+<string name="night_blood_sugar">Ночной сахар</string>
+
+<string name="average_blood_sugar">Средний сахар</string>
+
+<string name="morning_insulin">Утренний инсулин</string>
+
+<string name="afternoon_insulin">Дневной инсулин</string>
+
+<string name="evening_insulin">Вечерний инсулин</string>
+
+<string name="press_back_again_to_exit">Нажмите «Назад» еще раз для выхода</string>
+
+<string name="edit_saved_data_title">Изменить сохраненные данные?</string>
+
+<string name="edit_saved_data_message">Эти данные уже сохранены. Вы действительно хотите их отредактировать?</string>
+
+<string name="yes_edit">Да, изменить</string>
+
+<string name="cancel">Отмена</string>
+
+<string name="unsaved_changes_title">Несохраненные изменения</string>
+
+<string name="unsaved_changes_message">У вас есть несохраненные изменения. Хотите сохранить их все?</string>
+
+<string name="close_without_saving">Закрыть без сохранения</string>
+
+<string name="save_and_close">Сохранить и закрыть</string>
+
+<string name="save">Сохранить</string>
+
+<string name="delete">Удалить</string>
+
+<string name="preset_name">Имя пресета</string>
+
+<string name="delete_preset">Удалить пресет</string>
+
+<string name="delete_preset_confirmation">Вы уверены, что хотите удалить «%1$s»?</string>
+
+<string name="all_changes_saved">Все изменения сохранены!</string>
+
+<string name="delete_entry">Удалить запись</string>
+
+<string name="delete_entry_confirmation">Вы уверены, что хотите удалить эту запись?</string>
+
+<string name="show_chart">Показать график</string>
+
+<string name="blood_sugar_over_time">Динамика сахара в крови</string>
+
+<string name="insulin_over_time">Динамика инсулина</string>
+
+<string name="chart_title">График</string>
+
+<string name="blood_sugar">Сахар в крови</string>
+
+<string name="insulin">Инсулин</string>
+
+<string name="average">Среднее</string>
+
+<string name="morning">Утро</string>
+
+<string name="afternoon">День</string>
+
+<string name="evening">Вечер</string>
+
+<string name="night">Ночь</string>
+
+<string name="date">Дата</string>
+
+<string name="statistics_summary">Статистика (сводка)</string>
+
+<string name="blood_sugar_statistics">Статистика сахара</string>
+
+<string name="insulin_statistics">Статистика инсулина</string>
+
+<string name="latest">Последний</string>
+
+<string name="range">Диапазон</string>
+
+<string name="total">Всего</string>
+
+<string name="data_points">Точки данных</string>
+
+<string name="filter">Фильтр</string>
+
+<string name="no_data_available_time_period">Нет данных за выбранный период</string>
+
+<string name="no_numeric_data_available">Нет числовых данных для</string>
+
+<string name="enter_numeric_values_chart">Введите числовые значения в таблицу, чтобы увидеть график</string>
+
+<string name="mg_dl">мг/дл</string>
+
+<string name="units">ед.</string>
+
+<string name="custom_over_time">%1$s: динамика</string>
+
+<string name="settings_data_presets">Настройки, данные и пресеты</string>
+
+<string name="settings_only">Только настройки</string>
+
+<string name="colors_zoom_language_etc">Цвета, масштаб, язык и пр.</string>
+
+<string name="auto_save_tip">💡 Совет: В расширенных настройках можно включить «Автосохранение при выходе».</string>
+
+<string name="select_date">Выбрать дату</string>
+
+<string name="today">Сегодня</string>
+
+<string name="ok">ОК</string>
+
+<string name="clear">Очистить</string>
+
+<string name="pick_date">Выбор даты...</string>
+
+<string name="dark_mode">Тёмная тема</string>
+
+<string name="preset_management">Управление пресетами</string>
+
+<string name="current_view_saved">Текущий вид сохранен</string>
+
+<string name="saved_view_loaded">Вид загружен</string>
+
+<string name="no_saved_view_found">Сохраненный вид не найден</string>
+
+<string name="preset_saved">Пресет сохранен</string>
+
+<string name="preset_loaded">Пресет загружен</string>
+
+<string name="preset_deleted">Пресет удален</string>
+
+<string name="backup_restore">Резервное копирование</string>
+
+<string name="export_backup">Экспорт копии</string>
+
+<string name="import_backup">Импорт копии</string>
+
+<string name="common_foods">Частые продукты</string>
+
+<string name="food_apple">Яблоко</string>
+
+<string name="food_banana">Банан</string>
+
+<string name="food_bread">Хлеб</string>
+
+<string name="food_meat">Мясо</string>
+
+<string name="food_salad">Салат</string>
+
+<string name="food_milk">Молоко</string>
+
+<string name="food_rice">Рис</string>
+
+<string name="food_egg">Яйцо</string>
+
+<string name="food_fish">Рыба</string>
+
+<string name="food_potato">Картофель</string>
+
+<string name="food_carrot">Морковь</string>
+
+<string name="food_pasta">Макароны</string>
+
+<string name="action_edit_common_food">Изменить частый продукт</string>
+
+<string name="action_delete_common_food">Удалить частый продукт</string>
+
+<string name="edit_common_food">Изменение продуктов</string>
+
+<string name="select_emoji">Выбрать эмодзи</string>
+
+<string name="custom_columns">Свои колонки</string>
+
+<string name="manage_custom_columns">Управление колонками</string>
+
+<string name="action_edit_custom_column">Изменить свою колонку</string>
+
+<string name="pattern_analysis">📊 Анализ закономерностей</string>
+
+<string name="back">Назад</string>
+
+<string name="export_analysis">Экспорт анализа</string>
+
+<string name="no_patterns_detected">🔍 Закономерности пока не обнаружены</string>
+
+<string name="keep_tracking_message">Продолжайте вносить данные, и здесь появятся выявленные связи</string>
+
+<string name="pattern_details">Детали закономерности</string>
+
+<string name="detected_patterns">Обнаружено закономерностей: %1$d</string>
+
+<string name="showing_patterns">Показано %1$d из %2$d</string>
+
+<string name="clear_filter">Сбросить фильтр</string>
+
+<string name="no_patterns_match_filter">Нет совпадений по фильтру</string>
+
+<string name="export_analysis_title">📤 Экспорт анализа</string>
+
+<string name="export_analysis_description">Экспортируйте анализ закономерностей для врача или личного архива.</string>
+
+<string name="export_will_include">Экспорт будет содержать:</string>
+
+<string name="export_includes_list">• Все обнаруженные связи\n• Степень достоверности\n• Детали совпадений\n• Анализ рисков\n• Рекомендации</string>
+
+<string name="export_to_txt">Экспорт в TXT</string>
+
+<string name="after">После: %1$s</string>
+
+<string name="dismiss">Закрыть</string>
+
+<string name="occurrences">Число совпадений: %1$d</string>
+
+<string name="ignore_this_food">🚫 Игнорировать этот продукт</string>
+
+<string name="show_details">Подробнее</string>
+
+<string name="hide_details">Скрыть детали</string>
+
+<string name="occurrences_label">Совпадения:</string>
+
+<string name="show_all_occurrences">Показать все (%1$d)</string>
+
+<string name="show_less">Свернуть</string>
+
+<string name="ignore_food_title">Игнорировать продукт?</string>
+
+<string name="ignore_food_message">Вы уверены, что хотите игнорировать «%1$s»?</string>
+
+<string name="ignore_food_warning">Этот продукт больше не будет участвовать в анализе связей, даже при совпадениях в будущем.</string>
+
+<string name="ignore_food_button">Игнорировать</string>
+
+<string name="high_confidence">Высокая достоверность</string>
+
+<string name="medium_confidence">Средняя достоверность</string>
+
+<string name="low_confidence">Низкая достоверность</string>
+
+<string name="pattern_overview">📊 Обзор закономерностей</string>
+
+<string name="risk_distribution">Распределение рисков</string>
+
+<string name="high_risk">Высокий риск</string>
+
+<string name="medium_risk">Средний риск</string>
+
+<string name="low_risk">Низкий риск</string>
+
+<string name="pattern_types">Типы закономерностей</string>
+
+<string name="food_marker_correlations">Связь Еда-Маркер</string>
+
+<string name="blood_sugar_spikes">Скачки сахара</string>
+
+<string name="time_based_patterns">Зависимость от времени</string>
+
+<string name="top_risky_foods">⚠️ Продукты в зоне риска</string>
+
+<string name="times">раз(а)</string>
+
+<string name="blood_sugar_label">Сахар: %1$s</string>
+
+<string name="marker_feel_bad">Плохое самочувствие</string>
+
+<string name="marker_blood_sugar_spike">Скачок сахара</string>
+
+<string name="export_pattern_analysis">Анализ закономерностей</string>
+
+<string name="include_pattern_analysis">Включить отчет об анализе</string>
+
+<string name="export_format">Формат экспорта:</string>
+
+<string name="pdf_document">Документ PDF</string>
+
+<string name="text_file">Текстовый файл</string>
+
+<string name="pattern_analysis_exported_pdf">Анализ успешно экспортирован в PDF!</string>
+
+<string name="pattern_analysis_exported_txt">Анализ успешно экспортирован в TXT!</string>
+
+<string name="export_failed">Ошибка экспорта. Пожалуйста, попробуйте снова.</string>
+
+<string name="pdf_report_title">ОТЧЕТ ОБ АНАЛИЗЕ ДИАБЕТИЧЕСКИХ ЗАКОНОМЕРНОСТЕЙ</string>
+
+<string name="pdf_generated">Сформировано:</string>
+
+<string name="pdf_total_patterns">Всего выявлено:</string>
+
+<string name="pdf_summary">СВОДКА</string>
+
+<string name="pdf_risk_distribution">Анализ рисков:</string>
+
+<string name="pdf_high_risk">Высокий риск (≥80%):</string>
+
+<string name="pdf_medium_risk">Средний риск (60-79%):</string>
+
+<string name="pdf_low_risk">Низкий риск (&lt;60%):</string>
+
+<string name="pdf_pattern_types">Типы выявленных связей:</string>
+
+<string name="pdf_food_marker_correlations">Связи Еда-Маркер:</string>
+
+<string name="pdf_blood_sugar_spikes">Скачки сахара:</string>
+
+<string name="pdf_time_based_patterns">Временные закономерности:</string>
+
+<string name="pdf_top_risky_foods">Основные продукты риска:</string>
+
+<string name="pdf_confidence">достоверность</string>
+
+<string name="pdf_detailed_analysis">ДЕТАЛЬНЫЙ АНАЛИЗ</string>
+
+<string name="pdf_pattern_number">СВЯЗЬ №%1$d</string>
+
+<string name="pdf_type">Тип:</string>
+
+<string name="pdf_food_item">Продукт/Позиция:</string>
+
+<string name="pdf_effect">Эффект:</string>
+
+<string name="pdf_occurrences">Совпадений:</string>
+
+<string name="pdf_confidence_label">Достоверность:</string>
+
+<string name="pdf_time_range">Временной интервал:</string>
+
+<string name="pdf_risk_level">Уровень риска:</string>
+
+<string name="pdf_high_risk_label">ВЫСОКИЙ РИСК</string>
+
+<string name="pdf_medium_risk_label">СРЕДНИЙ РИСК</string>
+
+<string name="pdf_low_risk_label">НИЗКИЙ РИСК</string>
+
+<string name="pdf_suggestion">Рекомендация:</string>
+
+<string name="pdf_recent_occurrences">Последние случаи:</string>
+
+<string name="pdf_blood_sugar">Сахар:</string>
+
+<string name="pdf_more_occurrences">... и еще %1$d случаев</string>
+
+<string name="pdf_disclaimer">ОТКАЗ ОТ ОТВЕТСТВЕННОСТИ:</string>
+
+<string name="pdf_disclaimer_text">Данный анализ основан на ваших данных и носит исключительно информационный характер. Пожалуйста, проконсультируйтесь с врачом перед изменением диеты или плана лечения.</string>
+
+<string name="pdf_pattern_s">связей</string>
+
+<string name="pattern_alert_single">⚠️ Новая связь: %1$s → %2$s (%3$dx)</string>
+
+<string name="pattern_alert_multiple">⚠️ Обнаружено %1$d новых связей! Нажмите для просмотра.</string>
+
+<string name="pattern_alert_action">Обзор</string>
+
+</resources>
