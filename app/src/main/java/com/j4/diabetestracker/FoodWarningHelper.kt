@@ -1,6 +1,9 @@
 package com.j4.diabetestracker
 
 import android.content.Context
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.util.Locale
 
 /**
  * Helper object for checking food patterns and generating warnings
@@ -21,6 +24,9 @@ object FoodWarningHelper {
         
         // Get active patterns
         val patterns = PatternStorageManager.getActivePatterns(context)
+        if (isFoodContradicted(foodName, context, patterns)) {
+            return null
+        }
         
         // Find patterns related to this food
         val foodPatterns = patterns.filter { pattern ->
@@ -58,9 +64,65 @@ object FoodWarningHelper {
         }
         
         val patterns = PatternStorageManager.getActivePatterns(context)
+        if (isFoodContradicted(foodName, context, patterns)) {
+            return emptyList()
+        }
+
         return patterns.filter { pattern ->
             pattern.patternType == PatternType.FOOD_MARKER_CORRELATION &&
             pattern.correlatedItem.equals(foodName, ignoreCase = true)
+        }
+    }
+
+    fun isFoodContradicted(
+        foodName: String,
+        context: Context,
+        patterns: List<DetectedPattern> = PatternStorageManager.getActivePatterns(context)
+    ): Boolean {
+        val foodKey = normalizeFoodWarningKey(foodName)
+        if (foodKey.isBlank()) return false
+
+        val foodPatterns = patterns.filter { pattern ->
+            pattern.patternType == PatternType.FOOD_MARKER_CORRELATION &&
+                normalizeFoodWarningKey(pattern.correlatedItem) == foodKey
+        }
+        if (foodPatterns.isEmpty()) return false
+
+        val entries = DataManager.getEntries(context)
+        val entrySnapshots = entries.mapNotNull { entry ->
+            val date = parseFoodWarningDate(entry.date) ?: return@mapNotNull null
+            val consumedFoodKeys = entry.foodEntriesByColumn.values
+                .flatten()
+                .map { normalizeFoodWarningKey(it.name) }
+                .filter { it.isNotBlank() }
+                .toSet()
+            val hasFeelBadMarker = entry.markers.any { marker ->
+                marker.type.equals("feel_bad", ignoreCase = true) ||
+                    marker.type.equals("i feel bad", ignoreCase = true)
+            }
+            FoodWarningEntrySnapshot(
+                date = date,
+                consumedFoodKeys = consumedFoodKeys,
+                hasFeelBadMarker = hasFeelBadMarker,
+            )
+        }
+
+        val supportDates = foodPatterns
+            .flatMap { pattern -> pattern.details }
+            .mapNotNull { detail -> parseFoodWarningDate(detail.date) }
+            .distinct()
+            .ifEmpty {
+                entrySnapshots
+                    .filter { snapshot -> foodKey in snapshot.consumedFoodKeys }
+                    .map { snapshot -> snapshot.date }
+                    .distinct()
+            }
+
+        val earliestSupportDate = supportDates.minOrNull() ?: return false
+        return entrySnapshots.any { snapshot ->
+            snapshot.hasFeelBadMarker &&
+                !snapshot.date.isBefore(earliestSupportDate) &&
+                foodKey !in snapshot.consumedFoodKeys
         }
     }
     
@@ -99,5 +161,23 @@ object FoodWarningHelper {
             1 -> androidx.compose.ui.graphics.Color(0xFFFFF9C4) // Light yellow
             else -> null // No highlighting
         }
+    }
+
+    private data class FoodWarningEntrySnapshot(
+        val date: LocalDate,
+        val consumedFoodKeys: Set<String>,
+        val hasFeelBadMarker: Boolean,
+    )
+
+    private fun normalizeFoodWarningKey(raw: String): String = raw.trim().lowercase(Locale.ROOT)
+
+    private fun parseFoodWarningDate(rawDate: String): LocalDate? {
+        val formats = listOf("dd.MM.yyyy", "dd-MM-yyyy", "yyyy-MM-dd")
+        formats.forEach { pattern ->
+            runCatching {
+                return LocalDate.parse(rawDate, DateTimeFormatter.ofPattern(pattern))
+            }
+        }
+        return null
     }
 }
