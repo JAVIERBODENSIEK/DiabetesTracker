@@ -108,9 +108,6 @@ import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.lazy.grid.*
 import androidx.compose.foundation.rememberScrollState
-import androidx.compose.ui.input.nestedscroll.NestedScrollConnection
-import androidx.compose.ui.input.nestedscroll.NestedScrollSource
-import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardActions
@@ -11007,70 +11004,50 @@ fun EditableTableCell(
                         )
                     }
                 } else {
-                    val nestedScrollConnection = remember {
-                        object : NestedScrollConnection {
-                            override fun onPostScroll(
-                                consumed: Offset,
-                                available: Offset,
-                                source: NestedScrollSource
-                            ): Offset {
-                                // Only consume remaining horizontal scroll to prevent parent scrolling
-                                return if (available.x != 0f) Offset(available.x, 0f) else Offset.Zero
-                            }
-                        }
-                    }
-                    
-                    LazyRow(
+                    Row(
                         modifier = Modifier
                             .fillMaxWidth()
-                            .nestedScroll(nestedScrollConnection),
-                        horizontalArrangement = Arrangement.Center,
-                        userScrollEnabled = true
+                            .padding(horizontal = 4.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.Center
                     ) {
-                        item {
-                            Row(
-                                verticalAlignment = Alignment.CenterVertically,
-                                modifier = Modifier.padding(horizontal = 4.dp)
-                            ) {
-                                Text(
-                                    text = value.text.ifEmpty { hint },
-                                    fontSize = 14.sp,
-                                    textAlign = TextAlign.Center,
-                                    color = if (value.text.isEmpty()) fontColor.copy(alpha = 0.5f) else fontColor,
-                                    maxLines = 1,
-                                    overflow = TextOverflow.Visible,
-                                    softWrap = false,
-                                    modifier = Modifier
-                                        .padding(start = 4.dp, end = 2.dp)
-                                        .clickable {
-                                            // Only open context menu if it wasn't a long press
-                                            if (!isLongPressHandled) {
-                                                if (value.text.isEmpty()) {
-                                                    val today = LocalDate.now().format(DateTimeFormatter.ofPattern("dd.MM.yyyy"))
-                                                    onValueChange(TextFieldValue(today))
-                                                }
-                                                showContextMenu = true
-                                            }
+                        Text(
+                            text = value.text.ifEmpty { hint },
+                            fontSize = 14.sp,
+                            textAlign = TextAlign.Center,
+                            color = if (value.text.isEmpty()) fontColor.copy(alpha = 0.5f) else fontColor,
+                            maxLines = 1,
+                            overflow = TextOverflow.Visible,
+                            softWrap = false,
+                            modifier = Modifier
+                                .padding(start = 4.dp, end = 2.dp)
+                                .clickable {
+                                    // Only open context menu if it wasn't a long press
+                                    if (!isLongPressHandled) {
+                                        if (value.text.isEmpty()) {
+                                            val today = LocalDate.now().format(DateTimeFormatter.ofPattern("dd.MM.yyyy"))
+                                            onValueChange(TextFieldValue(today))
                                         }
-                                )
-                                
-                                IconButton(
-                                    onClick = { 
-                                        // Only open context menu if it wasn't a long press
-                                        if (!isLongPressHandled) {
-                                            showContextMenu = true
-                                        }
-                                    },
-                                    modifier = Modifier.size(24.dp)
-                                ) {
-                                    Icon(
-                                        imageVector = Icons.Default.DateRange,
-                                        contentDescription = "Date options",
-                                        tint = fontColor.copy(alpha = 0.6f),
-                                        modifier = Modifier.size(16.dp)
-                                    )
+                                        showContextMenu = true
+                                    }
                                 }
-                            }
+                        )
+
+                        IconButton(
+                            onClick = {
+                                // Only open context menu if it wasn't a long press
+                                if (!isLongPressHandled) {
+                                    showContextMenu = true
+                                }
+                            },
+                            modifier = Modifier.size(24.dp)
+                        ) {
+                            Icon(
+                                imageVector = Icons.Default.DateRange,
+                                contentDescription = "Date options",
+                                tint = fontColor.copy(alpha = 0.6f),
+                                modifier = Modifier.size(16.dp)
+                            )
                         }
                     }
                     DropdownMenu(
@@ -11138,16 +11115,21 @@ fun EditableTableCell(
 
             // Only show food chips/add button in the dedicated food column
             if (isFoodCell) {
-                val blinkTransition = rememberInfiniteTransition(label = "foodCounterBlink")
-                val blinkPulse by blinkTransition.animateFloat(
-                    initialValue = 0f,
-                    targetValue = 1f,
-                    animationSpec = infiniteRepeatable(
-                        animation = tween(durationMillis = 420, easing = LinearEasing),
-                        repeatMode = RepeatMode.Reverse
-                    ),
-                    label = "foodCounterBlinkPulse"
-                )
+                val blinkPulse = if (isFoodCounterBlinking) {
+                    val blinkTransition = rememberInfiniteTransition(label = "foodCounterBlink")
+                    val animatedPulse by blinkTransition.animateFloat(
+                        initialValue = 0f,
+                        targetValue = 1f,
+                        animationSpec = infiniteRepeatable(
+                            animation = tween(durationMillis = 420, easing = LinearEasing),
+                            repeatMode = RepeatMode.Reverse
+                        ),
+                        label = "foodCounterBlinkPulse"
+                    )
+                    animatedPulse
+                } else {
+                    0f
+                }
                 val foodChipColor = if (isFoodCounterBlinking) {
                     lerp(
                         MaterialTheme.colorScheme.primaryContainer,

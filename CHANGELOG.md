@@ -16,6 +16,46 @@ This file documents all features, bug fixes, and development decisions made thro
 
 ## [Unreleased]
 
+### Performance Fix: Remove Nested Date-Cell Horizontal Scroller
+- **Date**: October 23, 2026
+- **Status**: ✅ Complete
+- **File**: `app/src/main/java/com/j4/diabetestracker/MainActivity.kt` (`EditableTableCell` date cell)
+
+#### Problem:
+- Each date cell contained a one-item, horizontally scrollable `LazyRow` and a `NestedScrollConnection` that consumed remaining horizontal drag distance before it could reach the outer diary-table scroller.
+
+#### Solution:
+- Replaced the inner `LazyRow` with an equivalently centered, non-scrolling `Row`.
+- Removed the date-cell `NestedScrollConnection` and its now-unused imports.
+- Preserved date text placement, horizontal padding, empty-date-to-today behavior, calendar icon behavior, context menu, and date picker flow.
+- Did not change the outer `horizontalScroll`, long-press handling, paging, table structure, data models, or business logic.
+
+#### Verification:
+- ✅ Independent read-only code review confirmed the change is isolated to the date-cell scroller and its exclusive imports.
+- ✅ `:app:compileDebugKotlin --no-daemon` completed successfully.
+- ✅ `:app:assembleDebug --no-daemon` completed successfully.
+- ✅ Debug APKs were signature-verified with APK Signature Scheme v2.
+- Runtime scrolling behavior has not yet been tested on a smartphone; no measured performance improvement is claimed.
+
+### Performance Fix: Prevent Idle Food Counter Blink Animations
+- **Date**: October 22, 2026
+- **Status**: ✅ Complete
+- **File**: `app/src/main/java/com/j4/diabetestracker/MainActivity.kt` (`EditableTableCell`)
+
+#### Problem:
+- Every food and insulin cell created an infinite 420 ms blink animation even while its food counter was not blinking.
+
+#### Solution:
+- `rememberInfiniteTransition` and `animateFloat` are now composed only when `isFoodCounterBlinking` is `true`.
+- In the inactive state, the pulse is the constant `0f`; no animation state is continuously updated.
+- The active blink duration, reverse repeat mode, chip color interpolation, aura color, scale, and alpha behavior are unchanged.
+- No data handling, table structure, layout, scroll containers, `LazyRow`, or `NestedScrollConnection` were modified.
+
+#### Verification:
+- ✅ `:app:compileDebugKotlin --no-daemon` completed successfully.
+- ✅ `:app:assembleDebug --no-daemon` completed successfully.
+- Runtime scroll performance has not yet been measured on a device; this change removes a confirmed source of idle animation work but does not by itself prove a measured improvement.
+
 ### Enhancement: Contradiction-Aware Food Warning Suppression (Phase 5)
 - **Date**: June 7, 2026
 - **Status**: ✅ Complete
