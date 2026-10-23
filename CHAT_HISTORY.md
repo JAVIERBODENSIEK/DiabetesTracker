@@ -1,6 +1,27 @@
 # Chat History - DiabetesTracker Development
-
 This file captures the actual conversation between User and Cascade during development sessions.
+
+---
+
+## Session: October 22, 2026 — Idle Food Counter Animation Fix
+
+---
+
+**User:** Approved only the low-risk removal of unnecessary continuous food-counter animations in `EditableTableCell()`.
+
+**Cascade:**
+- Verified a clean `main` worktree at `f568f2f` and created the GitHub backup tag `backup/vor-animation-fix-2026-10-22` before modifying code.
+- Changed only the food-counter pulse block in `MainActivity.kt`:
+  - `rememberInfiniteTransition` and `animateFloat` are now created only while `isFoodCounterBlinking` is `true`.
+  - When inactive, `blinkPulse` is the constant `0f`, so no infinite animation remains in composition.
+  - The existing 420 ms reverse animation, chip interpolation, aura color, scale, and alpha behavior remain intact while blinking is active.
+- Did not change data handling, table structure, layout, `horizontalScroll`, the date-cell `LazyRow`, or its `NestedScrollConnection`.
+
+Verification:
+- ✅ Independent read-only review confirmed that the local diff is limited to the intended animation behavior.
+- ✅ `:app:compileDebugKotlin --no-daemon` completed successfully (existing warnings only).
+- ✅ `:app:assembleDebug --no-daemon` completed successfully.
+- ⚠️ No on-device runtime or frame-time measurement was performed; an actual scroll-performance improvement is therefore not yet confirmed.
 
 ---
 
@@ -2325,4 +2346,3 @@ Verification:
 Verification:
 - ✅ `:app:compileDebugKotlin` successful
 - ✅ Back button now shows a clear border in the pending prompt card
-

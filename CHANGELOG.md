@@ -16,6 +16,25 @@ This file documents all features, bug fixes, and development decisions made thro
 
 ## [Unreleased]
 
+### Performance Fix: Prevent Idle Food Counter Blink Animations
+- **Date**: October 22, 2026
+- **Status**: ✅ Complete
+- **File**: `app/src/main/java/com/j4/diabetestracker/MainActivity.kt` (`EditableTableCell`)
+
+#### Problem:
+- Every food and insulin cell created an infinite 420 ms blink animation even while its food counter was not blinking.
+
+#### Solution:
+- `rememberInfiniteTransition` and `animateFloat` are now composed only when `isFoodCounterBlinking` is `true`.
+- In the inactive state, the pulse is the constant `0f`; no animation state is continuously updated.
+- The active blink duration, reverse repeat mode, chip color interpolation, aura color, scale, and alpha behavior are unchanged.
+- No data handling, table structure, layout, scroll containers, `LazyRow`, or `NestedScrollConnection` were modified.
+
+#### Verification:
+- ✅ `:app:compileDebugKotlin --no-daemon` completed successfully.
+- ✅ `:app:assembleDebug --no-daemon` completed successfully.
+- Runtime scroll performance has not yet been measured on a device; this change removes a confirmed source of idle animation work but does not by itself prove a measured improvement.
+
 ### Enhancement: Contradiction-Aware Food Warning Suppression (Phase 5)
 - **Date**: June 7, 2026
 - **Status**: ✅ Complete

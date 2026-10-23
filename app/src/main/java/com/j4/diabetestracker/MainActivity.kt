@@ -11138,16 +11138,21 @@ fun EditableTableCell(
 
             // Only show food chips/add button in the dedicated food column
             if (isFoodCell) {
-                val blinkTransition = rememberInfiniteTransition(label = "foodCounterBlink")
-                val blinkPulse by blinkTransition.animateFloat(
-                    initialValue = 0f,
-                    targetValue = 1f,
-                    animationSpec = infiniteRepeatable(
-                        animation = tween(durationMillis = 420, easing = LinearEasing),
-                        repeatMode = RepeatMode.Reverse
-                    ),
-                    label = "foodCounterBlinkPulse"
-                )
+                val blinkPulse = if (isFoodCounterBlinking) {
+                    val blinkTransition = rememberInfiniteTransition(label = "foodCounterBlink")
+                    val animatedPulse by blinkTransition.animateFloat(
+                        initialValue = 0f,
+                        targetValue = 1f,
+                        animationSpec = infiniteRepeatable(
+                            animation = tween(durationMillis = 420, easing = LinearEasing),
+                            repeatMode = RepeatMode.Reverse
+                        ),
+                        label = "foodCounterBlinkPulse"
+                    )
+                    animatedPulse
+                } else {
+                    0f
+                }
                 val foodChipColor = if (isFoodCounterBlinking) {
                     lerp(
                         MaterialTheme.colorScheme.primaryContainer,
