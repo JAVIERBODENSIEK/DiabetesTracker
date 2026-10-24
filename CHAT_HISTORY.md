@@ -1,6 +1,73 @@
 # Chat History - DiabetesTracker Development
-
 This file captures the actual conversation between User and Cascade during development sessions.
+
+---
+
+## Session: October 24, 2026 — Measurement Digit Limits
+
+---
+
+**User:** Requested that blood sugar fields accept at most three digits and insulin fields at most two digits, while preserving decimal formatting, paste, replacement, deletion, and all other numeric fields.
+
+**Cascade:**
+- Audited the shared `EditableTableCell` input path and the seven standard measurement-cell call sites before making changes.
+- Created and pushed the GitHub backup branch `backup/vor-input-limit-fix-2026-10-24` at commit `6704d07` before editing. The branch preserves the known local scroll/animation worktree snapshot; `main` remained active and unchanged on GitHub.
+- Added the optional `maxDigitCount` input rule only to the four blood sugar cells (`3`) and three insulin cells (`2`).
+- Kept existing number normalization: spaces are removed and comma is normalized to dot. The limit counts digits, not decimal separators.
+- Rejected complete overlong `TextFieldValue` proposals instead of truncating them, so the controlled previous value, cursor selection, and composition remain intact.
+- Kept the previous unbounded numeric-field normalization behavior for custom and other numeric fields.
+- Added six local JVM tests for limits, decimal separators, overlong paste/replacement rejection, existing-value replacement/deletion, selection after normalization, and an unlimited numeric control case.
+
+Verification:
+- ✅ `:app:testDebugUnitTest` completed successfully: 7 tests, 0 failures, 0 errors.
+- ✅ `:app:compileDebugKotlin --no-daemon` completed successfully (existing warnings only).
+- ✅ `:app:assembleDebug --no-daemon` completed successfully.
+- ✅ Debug APK verified with APK Signature Scheme v2; package `com.j4.diabetestracker`.
+- ⚠️ No on-device interaction test was performed. The generated APK must still be tested manually for typing, paste, replacement, and deletion behavior.
+
+---
+
+## Session: October 23, 2026 — Date-Cell Horizontal Scroll Fix
+
+---
+
+**User:** Approved only the replacement of the inner date-cell `LazyRow` and its `NestedScrollConnection` to remove a possible conflict with the outer diary-table horizontal scroll.
+
+**Cascade:**
+- Confirmed that `main` was at `f568f2f` with only the known uncommitted animation fix and its documentation.
+- Created and pushed the GitHub backup branch `backup/vor-datumzell-scroll-fix-2026-10-23` before changing code. It preserves the exact pre-fix working-tree snapshot; `main` remained active and was not changed remotely.
+- Replaced the one-item, horizontally scrollable date-cell `LazyRow` with a centered non-scrolling `Row` in `EditableTableCell`.
+- Removed the exclusively used `NestedScrollConnection`, `NestedScrollSource`, and `nestedScroll` imports.
+- Kept unchanged: date text click behavior, automatic insertion of today's date for an empty cell, calendar icon behavior, context menu, date picker, long-press handling, outer `horizontalScroll`, paging, data models, and business logic.
+
+Verification:
+- ✅ Independent read-only review confirmed that the date-cell block and its three exclusive imports are the only new code changes relative to the backup branch.
+- ✅ `:app:compileDebugKotlin --no-daemon` completed successfully (existing warnings only).
+- ✅ `:app:assembleDebug --no-daemon` completed successfully.
+- ✅ Regular and side-by-side test APKs were built and verified with APK Signature Scheme v2.
+- ⚠️ No smartphone runtime test was performed. The change removes a confirmed gesture-routing conflict but does not yet prove a measured scrolling improvement.
+
+---
+
+## Session: October 22, 2026 — Idle Food Counter Animation Fix
+
+---
+
+**User:** Approved only the low-risk removal of unnecessary continuous food-counter animations in `EditableTableCell()`.
+
+**Cascade:**
+- Verified a clean `main` worktree at `f568f2f` and created the GitHub backup tag `backup/vor-animation-fix-2026-10-22` before modifying code.
+- Changed only the food-counter pulse block in `MainActivity.kt`:
+  - `rememberInfiniteTransition` and `animateFloat` are now created only while `isFoodCounterBlinking` is `true`.
+  - When inactive, `blinkPulse` is the constant `0f`, so no infinite animation remains in composition.
+  - The existing 420 ms reverse animation, chip interpolation, aura color, scale, and alpha behavior remain intact while blinking is active.
+- Did not change data handling, table structure, layout, `horizontalScroll`, the date-cell `LazyRow`, or its `NestedScrollConnection`.
+
+Verification:
+- ✅ Independent read-only review confirmed that the local diff is limited to the intended animation behavior.
+- ✅ `:app:compileDebugKotlin --no-daemon` completed successfully (existing warnings only).
+- ✅ `:app:assembleDebug --no-daemon` completed successfully.
+- ⚠️ No on-device runtime or frame-time measurement was performed; an actual scroll-performance improvement is therefore not yet confirmed.
 
 ---
 
@@ -2325,4 +2392,3 @@ Verification:
 Verification:
 - ✅ `:app:compileDebugKotlin` successful
 - ✅ Back button now shows a clear border in the pending prompt card
-

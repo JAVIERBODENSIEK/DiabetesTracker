@@ -16,6 +16,71 @@ This file documents all features, bug fixes, and development decisions made thro
 
 ## [Unreleased]
 
+### Enhancement: Digit Limits for Blood Sugar and Insulin Entry
+- **Date**: October 24, 2026
+- **Status**: ✅ Complete
+- **Files**:
+  - `app/src/main/java/com/j4/diabetestracker/MainActivity.kt`
+  - `app/src/test/java/com/j4/diabetestracker/EditableCellInputValidationTest.kt`
+
+#### Goal:
+- Prevent accidental excessively long measurement values from distorting charts while preserving existing decimal formatting and all other numeric fields.
+
+#### Implementation:
+- Added an optional `maxDigitCount` to `EditableTableCell`.
+- Applied a three-digit limit to the four blood sugar fields and a two-digit limit to the three insulin fields.
+- Existing number normalization remains in place: spaces are removed and decimal commas become decimal points.
+- The limit counts digits only, so decimal separators do not consume a digit. A complete overlong typing, paste, or selection-replacement proposal is rejected instead of being truncated.
+- Limited measurement fields retain a corrected selection/composition after space normalization. Unlimited numeric fields keep their existing normalization path unchanged.
+- Existing stored/imported values are not modified automatically; custom numeric columns, charts, data models, sorting, and other business logic were not changed.
+
+#### Verification:
+- ✅ Local JVM tests: 7 total, 0 failures, 0 errors (`EditableCellInputValidationTest`: 6 focused cases).
+- ✅ `:app:compileDebugKotlin --no-daemon` completed successfully.
+- ✅ `:app:assembleDebug --no-daemon` completed successfully.
+- ✅ Debug APK was verified with APK Signature Scheme v2.
+- ⚠️ No on-device runtime test was performed; manual testing of typing, paste, replacement, and deletion on a device remains advisable.
+
+### Performance Fix: Remove Nested Date-Cell Horizontal Scroller
+- **Date**: October 23, 2026
+- **Status**: ✅ Complete
+- **File**: `app/src/main/java/com/j4/diabetestracker/MainActivity.kt` (`EditableTableCell` date cell)
+
+#### Problem:
+- Each date cell contained a one-item, horizontally scrollable `LazyRow` and a `NestedScrollConnection` that consumed remaining horizontal drag distance before it could reach the outer diary-table scroller.
+
+#### Solution:
+- Replaced the inner `LazyRow` with an equivalently centered, non-scrolling `Row`.
+- Removed the date-cell `NestedScrollConnection` and its now-unused imports.
+- Preserved date text placement, horizontal padding, empty-date-to-today behavior, calendar icon behavior, context menu, and date picker flow.
+- Did not change the outer `horizontalScroll`, long-press handling, paging, table structure, data models, or business logic.
+
+#### Verification:
+- ✅ Independent read-only code review confirmed the change is isolated to the date-cell scroller and its exclusive imports.
+- ✅ `:app:compileDebugKotlin --no-daemon` completed successfully.
+- ✅ `:app:assembleDebug --no-daemon` completed successfully.
+- ✅ Debug APKs were signature-verified with APK Signature Scheme v2.
+- Runtime scrolling behavior has not yet been tested on a smartphone; no measured performance improvement is claimed.
+
+### Performance Fix: Prevent Idle Food Counter Blink Animations
+- **Date**: October 22, 2026
+- **Status**: ✅ Complete
+- **File**: `app/src/main/java/com/j4/diabetestracker/MainActivity.kt` (`EditableTableCell`)
+
+#### Problem:
+- Every food and insulin cell created an infinite 420 ms blink animation even while its food counter was not blinking.
+
+#### Solution:
+- `rememberInfiniteTransition` and `animateFloat` are now composed only when `isFoodCounterBlinking` is `true`.
+- In the inactive state, the pulse is the constant `0f`; no animation state is continuously updated.
+- The active blink duration, reverse repeat mode, chip color interpolation, aura color, scale, and alpha behavior are unchanged.
+- No data handling, table structure, layout, scroll containers, `LazyRow`, or `NestedScrollConnection` were modified.
+
+#### Verification:
+- ✅ `:app:compileDebugKotlin --no-daemon` completed successfully.
+- ✅ `:app:assembleDebug --no-daemon` completed successfully.
+- Runtime scroll performance has not yet been measured on a device; this change removes a confirmed source of idle animation work but does not by itself prove a measured improvement.
+
 ### Enhancement: Contradiction-Aware Food Warning Suppression (Phase 5)
 - **Date**: June 7, 2026
 - **Status**: ✅ Complete
