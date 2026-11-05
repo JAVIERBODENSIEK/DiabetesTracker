@@ -108,9 +108,6 @@ import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.lazy.grid.*
 import androidx.compose.foundation.rememberScrollState
-import androidx.compose.ui.input.nestedscroll.NestedScrollConnection
-import androidx.compose.ui.input.nestedscroll.NestedScrollSource
-import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardActions
@@ -10509,6 +10506,42 @@ fun MarqueeText(
     )
 }
 
+internal fun normalizeEditableCellValue(
+    newValue: TextFieldValue,
+    customKeyboardType: String,
+    maxDigitCount: Int? = null
+): TextFieldValue? {
+    if (customKeyboardType != "number") return newValue
+
+    val normalizedText = newValue.text.replace(" ", "").replace(',', '.')
+    if (maxDigitCount != null && normalizedText.count(Char::isDigit) > maxDigitCount) {
+        return null
+    }
+    if (normalizedText == newValue.text || maxDigitCount == null) {
+        // Preserve the established unbounded numeric-field behavior outside the
+        // explicitly limited blood-sugar and insulin cells.
+        return newValue.copy(text = normalizedText)
+    }
+
+    fun normalizedOffset(offset: Int): Int = newValue.text
+        .take(offset.coerceIn(0, newValue.text.length))
+        .count { it != ' ' }
+
+    return newValue.copy(
+        text = normalizedText,
+        selection = TextRange(
+            normalizedOffset(newValue.selection.start),
+            normalizedOffset(newValue.selection.end)
+        ),
+        composition = newValue.composition?.let { composition ->
+            TextRange(
+                normalizedOffset(composition.start),
+                normalizedOffset(composition.end)
+            )
+        }
+    )
+}
+
 @Composable
 fun EditableTableCell(
     value: TextFieldValue,
@@ -10537,6 +10570,7 @@ fun EditableTableCell(
     heightScale: Float = 1f,
     selectedLanguage: String = "English",
     customKeyboardType: String = "number", // "text" or "number" for custom columns
+    maxDigitCount: Int? = null,
     currentEntry: DiabetesEntry? = null,
     onEntryUpdate: ((DiabetesEntry) -> Unit)? = null,
     timeOfDay: String? = null, // "morning", "afternoon", "evening", "night" for blood sugar cells
@@ -10930,16 +10964,16 @@ fun EditableTableCell(
                             value = value,
                             enabled = allowTextFieldInteraction, // Only allow interaction when explicitly enabled
                             onValueChange = { newValue ->
-                            // Allow normal editing - confirmation dialog is now handled on focus
-                            // Normalize comma to dot for decimal input (supports both European and US formats)
-                            val normalizedText = if (customKeyboardType == "number") {
-                                // Remove spaces and replace comma with dot for numeric input
-                                newValue.text.replace(" ", "").replace(',', '.')
-                            } else {
-                                newValue.text
-                            }
-                            val normalizedValue = newValue.copy(text = normalizedText)
-                            onValueChange(normalizedValue)
+                                val normalizedValue = normalizeEditableCellValue(
+                                    newValue = newValue,
+                                    customKeyboardType = customKeyboardType,
+                                    maxDigitCount = maxDigitCount
+                                )
+                                // Reject the complete proposal instead of truncating it so the
+                                // current text, selection, and composition remain intact.
+                                if (normalizedValue != null) {
+                                    onValueChange(normalizedValue)
+                                }
                         },
                         textStyle = TextStyle(
                             color = fontColor,
@@ -11007,70 +11041,50 @@ fun EditableTableCell(
                         )
                     }
                 } else {
-                    val nestedScrollConnection = remember {
-                        object : NestedScrollConnection {
-                            override fun onPostScroll(
-                                consumed: Offset,
-                                available: Offset,
-                                source: NestedScrollSource
-                            ): Offset {
-                                // Only consume remaining horizontal scroll to prevent parent scrolling
-                                return if (available.x != 0f) Offset(available.x, 0f) else Offset.Zero
-                            }
-                        }
-                    }
-                    
-                    LazyRow(
+                    Row(
                         modifier = Modifier
                             .fillMaxWidth()
-                            .nestedScroll(nestedScrollConnection),
-                        horizontalArrangement = Arrangement.Center,
-                        userScrollEnabled = true
+                            .padding(horizontal = 4.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.Center
                     ) {
-                        item {
-                            Row(
-                                verticalAlignment = Alignment.CenterVertically,
-                                modifier = Modifier.padding(horizontal = 4.dp)
-                            ) {
-                                Text(
-                                    text = value.text.ifEmpty { hint },
-                                    fontSize = 14.sp,
-                                    textAlign = TextAlign.Center,
-                                    color = if (value.text.isEmpty()) fontColor.copy(alpha = 0.5f) else fontColor,
-                                    maxLines = 1,
-                                    overflow = TextOverflow.Visible,
-                                    softWrap = false,
-                                    modifier = Modifier
-                                        .padding(start = 4.dp, end = 2.dp)
-                                        .clickable {
-                                            // Only open context menu if it wasn't a long press
-                                            if (!isLongPressHandled) {
-                                                if (value.text.isEmpty()) {
-                                                    val today = LocalDate.now().format(DateTimeFormatter.ofPattern("dd.MM.yyyy"))
-                                                    onValueChange(TextFieldValue(today))
-                                                }
-                                                showContextMenu = true
-                                            }
+                        Text(
+                            text = value.text.ifEmpty { hint },
+                            fontSize = 14.sp,
+                            textAlign = TextAlign.Center,
+                            color = if (value.text.isEmpty()) fontColor.copy(alpha = 0.5f) else fontColor,
+                            maxLines = 1,
+                            overflow = TextOverflow.Visible,
+                            softWrap = false,
+                            modifier = Modifier
+                                .padding(start = 4.dp, end = 2.dp)
+                                .clickable {
+                                    // Only open context menu if it wasn't a long press
+                                    if (!isLongPressHandled) {
+                                        if (value.text.isEmpty()) {
+                                            val today = LocalDate.now().format(DateTimeFormatter.ofPattern("dd.MM.yyyy"))
+                                            onValueChange(TextFieldValue(today))
                                         }
-                                )
-                                
-                                IconButton(
-                                    onClick = { 
-                                        // Only open context menu if it wasn't a long press
-                                        if (!isLongPressHandled) {
-                                            showContextMenu = true
-                                        }
-                                    },
-                                    modifier = Modifier.size(24.dp)
-                                ) {
-                                    Icon(
-                                        imageVector = Icons.Default.DateRange,
-                                        contentDescription = "Date options",
-                                        tint = fontColor.copy(alpha = 0.6f),
-                                        modifier = Modifier.size(16.dp)
-                                    )
+                                        showContextMenu = true
+                                    }
                                 }
-                            }
+                        )
+
+                        IconButton(
+                            onClick = {
+                                // Only open context menu if it wasn't a long press
+                                if (!isLongPressHandled) {
+                                    showContextMenu = true
+                                }
+                            },
+                            modifier = Modifier.size(24.dp)
+                        ) {
+                            Icon(
+                                imageVector = Icons.Default.DateRange,
+                                contentDescription = "Date options",
+                                tint = fontColor.copy(alpha = 0.6f),
+                                modifier = Modifier.size(16.dp)
+                            )
                         }
                     }
                     DropdownMenu(
@@ -11138,16 +11152,21 @@ fun EditableTableCell(
 
             // Only show food chips/add button in the dedicated food column
             if (isFoodCell) {
-                val blinkTransition = rememberInfiniteTransition(label = "foodCounterBlink")
-                val blinkPulse by blinkTransition.animateFloat(
-                    initialValue = 0f,
-                    targetValue = 1f,
-                    animationSpec = infiniteRepeatable(
-                        animation = tween(durationMillis = 420, easing = LinearEasing),
-                        repeatMode = RepeatMode.Reverse
-                    ),
-                    label = "foodCounterBlinkPulse"
-                )
+                val blinkPulse = if (isFoodCounterBlinking) {
+                    val blinkTransition = rememberInfiniteTransition(label = "foodCounterBlink")
+                    val animatedPulse by blinkTransition.animateFloat(
+                        initialValue = 0f,
+                        targetValue = 1f,
+                        animationSpec = infiniteRepeatable(
+                            animation = tween(durationMillis = 420, easing = LinearEasing),
+                            repeatMode = RepeatMode.Reverse
+                        ),
+                        label = "foodCounterBlinkPulse"
+                    )
+                    animatedPulse
+                } else {
+                    0f
+                }
                 val foodChipColor = if (isFoodCounterBlinking) {
                     lerp(
                         MaterialTheme.colorScheme.primaryContainer,
@@ -17911,6 +17930,7 @@ fun TableRow(
                     hint = "0",
                     isDateCell = false,
                     isFoodCell = true,
+                    maxDigitCount = 3,
                     isSecured = isSecured,
                     cellKey = "${entryIndex}_morningBloodSugar",
                     confirmedEditingSessions = confirmedEditingSessions,
@@ -17965,6 +17985,7 @@ fun TableRow(
                     hint = "0",
                     isDateCell = false,
                     isFoodCell = true,
+                    maxDigitCount = 3,
                     isSecured = isSecured,
                     cellKey = "${entryIndex}_afternoonBloodSugar",
                     confirmedEditingSessions = confirmedEditingSessions,
@@ -18015,6 +18036,7 @@ fun TableRow(
                     hint = "0",
                     isDateCell = false,
                     isFoodCell = true,
+                    maxDigitCount = 3,
                     isSecured = isSecured,
                     cellKey = "${entryIndex}_eveningBloodSugar",
                     confirmedEditingSessions = confirmedEditingSessions,
@@ -18065,6 +18087,7 @@ fun TableRow(
                     hint = "0",
                     isDateCell = false,
                     isFoodCell = true,
+                    maxDigitCount = 3,
                     isSecured = isSecured,
                     cellKey = "${entryIndex}_nightBloodSugar",
                     confirmedEditingSessions = confirmedEditingSessions,
@@ -18129,6 +18152,7 @@ fun TableRow(
                     isDateCell = false,
                     isFoodCell = true,
                     isInsulinCell = true,
+                    maxDigitCount = 2,
                     isSecured = isSecured,
                     cellKey = "${entryIndex}_morningInsulin",
                     confirmedEditingSessions = confirmedEditingSessions,
@@ -18180,6 +18204,7 @@ fun TableRow(
                     isDateCell = false,
                     isFoodCell = true,
                     isInsulinCell = true,
+                    maxDigitCount = 2,
                     isSecured = isSecured,
                     cellKey = "${entryIndex}_afternoonInsulin",
                     confirmedEditingSessions = confirmedEditingSessions,
@@ -18231,6 +18256,7 @@ fun TableRow(
                     isDateCell = false,
                     isFoodCell = true,
                     isInsulinCell = true,
+                    maxDigitCount = 2,
                     isSecured = isSecured,
                     cellKey = "${entryIndex}_eveningInsulin",
                     confirmedEditingSessions = confirmedEditingSessions,
@@ -21520,8 +21546,6 @@ fun createMultiChartWithTablePDFDocument(validEntries: List<DiabetesEntry>, lang
     
     return pdfDocument
 }
-
-
 
 
 
